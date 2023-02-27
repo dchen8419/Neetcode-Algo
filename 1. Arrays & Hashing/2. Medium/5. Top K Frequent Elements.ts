@@ -27,7 +27,7 @@ const topKFrequent = (nums: number[], k:number) => {
             cache[number] +=1
         }
     }
-    let sortedAnswer = Object.entries(cache).sort(([k1, v1], [k2, v2]) => {
+    let sortedAnswer = Object.entries(cache).sort(([k1, v1]: any, [k2, v2]: any) => {
         return v2- v1
     })
         
