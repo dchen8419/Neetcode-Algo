@@ -23,7 +23,32 @@
 
 
 var isPalindrome = function(s:string) {
-    
+    let validCharacters = "abcdefghijklmnopqrstuvwxyz0123456789"
+    let cache = {}
+    for (let char of validCharacters) {
+        cache[char] = true
+    }
+
+    let filtered = s.toLowerCase().split("").filter(char => {
+        if(cache[char]){
+            return char
+        }
+    }).join("")
+    // two pointers, one at the begingging and one at the end
+    let i = 0;
+    let j = filtered.length - 1;
+
+    while (i <= j) {
+        if (filtered[i] === filtered[j]){
+            i ++
+            j --
+        } else {
+            return false
+        }
+    }
+    return true
+    // time compelxity o(n)
+    // space complexity o(1)
 };
 
 console.log(isPalindrome("A man, a plan, a canal: Panama")) //true
