@@ -25,7 +25,19 @@
 // Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 
 var twoSum = function(numbers: number[], target:number) {
-    
+    let pointerA = 0;
+    let pointerB = numbers.length - 1;
+    while (pointerA < pointerB) {
+        let currentSum = numbers[pointerA] + numbers[pointerB];
+        if (currentSum === target) {
+            return [pointerA + 1, pointerB + 1]
+        }
+        if (currentSum < target) {
+            pointerA++
+        } else if (currentSum > target) {
+            pointerB--
+        }
+    }
 };
 
 console.log(twoSum([2,7,11,15],9)) //[1,2]
