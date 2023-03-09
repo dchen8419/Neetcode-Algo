@@ -19,7 +19,17 @@
 // Explanation: In this case, no transactions are done and the max profit = 0.
 
 var maxProfit = function(prices: number[]) {
-    
+    let min = Infinity; 
+    let max = 0;
+    for (let i = 0; i < prices.length; i+=1){
+        if (prices[i]<min){
+            min=prices[i]
+        }
+        if(prices[i]-min>max){
+            max=prices[i]-min
+        }
+    }
+    return max;
 };
 
 console.log(maxProfit([7,1,5,3,6,4])) //5
