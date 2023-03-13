@@ -22,9 +22,32 @@
 
 
 var lengthOfLongestSubstring = function(s: string) {
-    
+    // way to keep track of our idnexes of our letters {}
+    const indexCache = {};
+    // keep track of our starting poitner (red)
+    let startingPointer = 0;
+    // keep track of our longest length
+    let longestLength = 0;
+
+    // keep track of our current pointer
+    for (let i = 0; i < s.length; i ++) {
+        let currentLetter = s[i]
+        // if the current letter already exists inside of our cache (aka it is not undefined), we want to 
+        // update that starting pointer to prev index + 1
+        if (indexCache[currentLetter] !== undefined) {
+            startingPointer = Math.max(indexCache[currentLetter] + 1, startingPointer)
+        }
+        // set the key (our current letter) to be equal to the current index
+        indexCache[currentLetter] = i;
+        //update the length if the (black pointer - red pointer) is greater than the longest length
+        if (i - startingPointer + 1 > longestLength) {
+            longestLength = i - startingPointer + 1
+        }
+    }
+    // return longest length
+    return longestLength
 };
 
-console.log(lengthOfLongestSubstring("abcabcbb"));
-console.log(lengthOfLongestSubstring("bbbbb"));
-console.log(lengthOfLongestSubstring("pwwkew"));
+console.log(lengthOfLongestSubstring("abcabcbb")); //3
+console.log(lengthOfLongestSubstring("bbbbb")); //1
+console.log(lengthOfLongestSubstring("pwwkew")); //3
