@@ -18,8 +18,31 @@
 
 
 var characterReplacement = function(s: string, k: number) {
-    
+    let windowStart = 0;
+    let maxLength = 0;
+    let mostCommon = 0;
+    let hash = {};
+
+    for ( let windowEnd = 0; windowEnd < s.length; windowEnd++) {
+        if (!hash[s[windowEnd]]) { //If we have never seen that element before
+            hash[s[windowEnd]] = 0; // we will set it to zero
+        } hash[s[windowEnd]]++; //but if we have we will increment the value of that letter in the hash
+
+        mostCommon = Math.max(mostCommon,hash[s[windowEnd]]);
+
+        //temp length = windowEnd - windowStart + 1
+
+        if (windowEnd - windowStart + 1 - mostCommon > k) {
+            hash[s[windowStart]]--;
+            windowStart++
+        }
+        maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
+    }
+    return maxLength
 };
 
-console.log(characterReplacement("ABAB", 2))
-console.log(characterReplacement("AABABBA", 1))
+console.log(characterReplacement("ABAB", 2)) //4
+console.log(characterReplacement("AABABBA", 1)) //4
+
+//Time: O(n) Linear
+//Space: O(n) Linear
