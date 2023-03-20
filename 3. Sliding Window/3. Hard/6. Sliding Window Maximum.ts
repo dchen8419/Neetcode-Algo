@@ -21,8 +21,26 @@
 
 // Input: nums = [1], k = 1
 // Output: [1]
-var maxSlidingWindow = function(nums, k) {
-    
+var maxSlidingWindow = function(nums: number[], k: number) {
+    const queue: number[] = []; //only every be max the length of k
+    const answerArray: number[] = []; //hold all our outputs
+    for (let i = 0; i < nums.length; i ++) {
+        // pops numbers off the queue if nums if grater than the last number
+        // flush
+        while (nums[i] > queue[queue.length - 1]) {
+            queue.pop();
+        }
+        queue.push(nums[i])
+
+        if (i >= k - 1) {
+            answerArray.push(queue[0]);
+            // remove maximum value when it's moving outside of the window
+            if (nums[i - k + 1] === queue[0]) {
+                queue.shift();
+            }
+        }
+    }
+    return answerArray;
 };
 
 
