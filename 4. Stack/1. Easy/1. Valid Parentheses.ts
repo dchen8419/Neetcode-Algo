@@ -20,7 +20,34 @@
 // Output: false
 
 var isValid = function(s: string) {
-    
+    const obj = {
+        ")": "(",
+        "]": "[",
+        "}": "{"  
+    }
+
+    const stack: string[] = [];
+    for (let char of s) {
+        //if the char is a left parens (, [, { ... we want to push it into our stack
+        if (char === '(' || char === "[" || char === "{") {
+            stack.push(char)
+        } else {
+            //check to see if the expected correspoing left parentehes is at the top of our stack
+            const topElementFromStack = stack[stack.length - 1]
+            if (obj[char] === topElementFromStack) {
+                // if it is, we pop it off
+                stack.pop()
+            } else {
+                // if it isnt, return false
+                return false
+            }
+        }
+    }
+    if (stack.length > 0) {
+        return false
+    } else {
+        return true;
+    }
 };
 
 console.log(isValid("()")) //true
