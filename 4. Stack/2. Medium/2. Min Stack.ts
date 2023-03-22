@@ -10,7 +10,8 @@
 // You must implement a solution with O(1) time complexity for each function.
 
 var MinStack = function() {
-    
+    this.stack = [];
+    this.MinStack = [];
 };
 
 /** 
@@ -18,28 +19,32 @@ var MinStack = function() {
  * @return {void}
  */
 MinStack.prototype.push = function(val) {
-    
+    this.stack.push(val)
+    this.MinStack.push(Math.min(val, this.getMin() ?? val))
+    // this.maxStack.push(Math.max(val, this.getMax() ?? val))
 };
 
 /**
  * @return {void}
  */
 MinStack.prototype.pop = function() {
-    
+    this.stack.pop();
+    this.MinStack.pop();
+    //this.maxStack.pop();
 };
 
 /**
  * @return {number}
  */
 MinStack.prototype.top = function() {
-    
+    return this.stack[this.stack.length - 1]
 };
 
 /**
  * @return {number}
  */
 MinStack.prototype.getMin = function() {
-    
+    return this.minStack?.[this.minStack.length - 1]
 };
 
 /** 
