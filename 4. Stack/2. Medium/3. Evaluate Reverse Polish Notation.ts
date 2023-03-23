@@ -34,7 +34,29 @@
 // = 22
 
 var evalRPN = function(tokens: string []) {
-    
+    //we need a stack
+const stack: number[] = [];
+//make object that holds functionality with our operators
+const operators = {
+    '+' : (num1,num2) => num1 + num2, 
+    '-' : (num1,num2) => num1 - num2,
+    '*' : (num1,num2) => num1 * num2,
+    "/" : (num1,num2) => Math.trunc(num1 / num2)
+}
+//loop through the parameters
+for (let token of tokens) {
+    //find the operator that is needed
+    if(operators[token]) {
+        let num2 = stack.pop();
+        let num1 = stack.pop();
+        stack.push(operators[token](num1,num2))
+    } else {
+        //turn the strings into numbers
+        stack.push(parseInt(token))
+    }
+}
+    //return the stack
+    return stack[stack.length-1]
 };
 
 console.log(evalRPN(["2","1","+","3","*"])) // 9
