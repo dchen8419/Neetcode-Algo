@@ -28,8 +28,9 @@ var dailyTemperatures = function(temperatures: number[]) {
             // Get the index at the top of the stack
             const idx: number | undefined = stack.pop();
             // Set the result at the index to the number of days until the next warmer temperature
-            if (idx !== undefined) 
-            result[idx] = i - idx;
+            if (idx !== undefined) {
+                result[idx] = i - idx;
+            }
         }
         
         // Push the current index onto the stack
