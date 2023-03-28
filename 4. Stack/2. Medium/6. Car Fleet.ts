@@ -36,9 +36,28 @@
 
 
 var carFleet = function(target: number, position: number[], speed: number[]) {
-    
+    let tuples = position.map((pos,idx) => { 
+        return [pos, (target-pos)/speed[idx]] 
+    })
+
+    tuples.sort((a, b) => a[0] - b[0])
+    let stack: number[] = []
+	
+    const peek = () =>{
+        return stack[stack.length - 1][1]
+    }
+
+    tuples.forEach(t => {
+        while(stack.length && peek() <= t[1]){
+            stack.pop()
+    }
+
+    stack.push(t)
+    })
+
+    return stack.length
 };
 
-console.log(carFleet(12, [10,8,0,5,3],[2,4,1,1,3]))
-console.log(carFleet(10, [3], [3]))
-console.log(carFleet(100, [0,2,4], [4,2,1]))
+console.log(carFleet(12, [10,8,0,5,3],[2,4,1,1,3])) //3
+console.log(carFleet(10, [3], [3])) //1
+console.log(carFleet(100, [0,2,4], [4,2,1])) //1
