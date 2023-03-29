@@ -16,7 +16,27 @@
 // Output: 4
 
 var largestRectangleArea = function(heights: number[]) {
-    
+    let stack: number[] = [];
+    stack.push(-1);
+    stack.push(0);
+    let maxarea = heights[0];
+    for(let i = 1; i< heights.length; i++){
+        if(heights[i]>=heights[stack[stack.length-1]])
+            stack.push(i);
+        else {
+            while(stack[stack.length-1] >= 0 && heights[i] <= heights[stack[stack.length-1]]){
+                let ind: number | undefined = stack.pop();
+                maxarea = Math.max(maxarea, (i - stack[stack.length-1] -1)*heights[ind ?? 0]);
+            }
+            stack.push(i)
+        }
+    }
+
+    while(stack[stack.length-1] >= 0){
+        let ind: number | undefined = stack.pop();
+        maxarea = Math.max(maxarea, (heights.length - stack[stack.length-1] -1)*heights[ind ?? 0]);
+    }
+    return maxarea;
 };
 
 console.log(largestRectangleArea([2,1,5,6,2,3])) //10
