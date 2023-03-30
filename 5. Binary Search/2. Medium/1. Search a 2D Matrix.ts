@@ -7,7 +7,6 @@
 // You must write a solution in O(log(m * n)) time complexity.
 
 
-
 // Example 1:
 
 
@@ -20,7 +19,7 @@
 // Output: false
 
 
-var searchMatrix = function(matrix:any, target:any) {
+var searchMatrix = function(matrix:number[][], target:number) {
     
 };
 
