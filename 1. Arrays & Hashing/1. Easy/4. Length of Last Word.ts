@@ -21,18 +21,12 @@
 
 function lengthOfLastWord(s: string) {
     let newS: string = s.toLowerCase()
-    // console.log(newS.length-1) //10
-    // console.log(newS[newS.length-1]) //d
-    let count = 0;
+    let count: number = 0;
     for ( let i = newS.length; i >= 0; i--) {
-        // if (newS[i] === ' ') {
-        //     return count-1
-        // } else {
-        //     count+=1
-        // }
-
         if (newS[i] === ' ') {
-            
+            return count-1
+        } else {
+            count+=1
         }
     }
 }
