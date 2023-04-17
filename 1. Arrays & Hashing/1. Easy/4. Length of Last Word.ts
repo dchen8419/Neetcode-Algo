@@ -19,6 +19,18 @@
 // Output: 6
 // Explanation: The last word is "joyboy" with length 6.
 
-function lengthOfLastWord() {
-    
+function lengthOfLastWord(s: string) {
+    let newS: string = s.toLowerCase()
+    let count: number = 0;
+    for ( let i = newS.length; i >= 0; i--) {
+        if (newS[i] === ' ') {
+            return count-1
+        } else {
+            count+=1
+        }
+    }
 }
+
+console.log(lengthOfLastWord("Hello World")) //5
+console.log(lengthOfLastWord("   fly me   to   the moon  ")) //4
+console.log(lengthOfLastWord("luffy is still joyboy")) //6
