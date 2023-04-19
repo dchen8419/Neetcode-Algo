@@ -27,8 +27,20 @@
 // Input: candies = [12,1,12], extraCandies = 10
 // Output: [true,false,true]
 
-var kidsWithCandies = function(candies: number [], extraCandies: number) {
-    
+var kidsWithCandies = function(candies: number[], extraCandies: number) {
+    const maxCandies = Math.max(...candies);
+  
+  const result: string[] = [];
+  
+  for (let i = 0; i < candies.length; i++) {
+    if (candies[i] + extraCandies >= maxCandies) {
+      result.push('true');
+    } else {
+      result.push('false');
+    }
+  }
+  
+  return result;
 };
 
 console.log(kidsWithCandies([2,3,5,1,3], 3)) // [true,true,true,false,true]
