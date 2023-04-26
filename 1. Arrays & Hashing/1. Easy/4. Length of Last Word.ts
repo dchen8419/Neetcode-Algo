@@ -20,7 +20,7 @@
 // Explanation: The last word is "joyboy" with length 6.
 
 function lengthOfLastWord(s: string) {
-    let newS: string = s.toLowerCase()
+    let newS: string = s.toLowerCase().trim()
     let count: number = 0;
     for ( let i = newS.length; i >= 0; i--) {
         if (newS[i] === ' ') {

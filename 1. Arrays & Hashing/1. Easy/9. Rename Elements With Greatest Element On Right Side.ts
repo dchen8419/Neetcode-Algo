@@ -14,7 +14,7 @@
 // - index 3 --> the greatest element to the right of index 3 is index 4 (6).
 // - index 4 --> the greatest element to the right of index 4 is index 5 (1).
 // - index 5 --> there are no elements to the right of index 5, so we put -1.
-// Example 2:
+// Example 2: 
 
 // Input: arr = [400]
 // Output: [-1]
