@@ -15,9 +15,15 @@
 // Output: false
 
 var isSubsequence = function(s:string, t:string) {
-    
+
+    for( let i: number = 0; i < t.length; i ++ ) {
+        let count = 0
+        if (t[i] === s[count]) {
+            count++
+        }
+    }
 };
 
 
 console.log(isSubsequence("abc","ahbgdc")) //true
-console.log(isSubsequence("axc","ahbgdc")) //false
+// console.log(isSubsequence("axc","ahbgdc")) //false
