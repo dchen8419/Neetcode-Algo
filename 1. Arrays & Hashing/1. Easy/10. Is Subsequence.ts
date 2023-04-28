@@ -15,15 +15,26 @@
 // Output: false
 
 var isSubsequence = function(s:string, t:string) {
+    let newS: string [] = s.split('')
+    let newT: string [] = t.split('')
+    let newStack: string[] = []
+    let count: number = 0
+    for( let i: number = 0; i < newT.length; i ++ ) {
 
-    for( let i: number = 0; i < t.length; i ++ ) {
-        let count = 0
-        if (t[i] === s[count]) {
-            count++
-        }
+        if (newT[i] === newS[count]) {
+            newStack.push(newT[i])
+            count = count + 1
+        } else if (newS[count] !== newT[i]) {
+            continue
+        } 
+    }
+    if (newStack.toString() == newS.toString()) {
+        return true
+    } else {
+        return false
     }
 };
 
 
 console.log(isSubsequence("abc","ahbgdc")) //true
-// console.log(isSubsequence("axc","ahbgdc")) //false
+console.log(isSubsequence("axc","ahbgdc")) //false
