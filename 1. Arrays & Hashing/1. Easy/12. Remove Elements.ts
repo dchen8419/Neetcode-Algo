@@ -38,7 +38,14 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeElement = function(nums: number[], val: number) {
-    
+    let zeroStartIdx: number = 0;
+    for ( let i: number = 0; i < nums.length; i ++ ) {
+        if (nums[i] !== val) {
+            nums[zeroStartIdx] = nums[i];
+            zeroStartIdx++
+        }
+    }
+    return zeroStartIdx
 };
 
 console.log(removeElement([3,2,2,3],3))
