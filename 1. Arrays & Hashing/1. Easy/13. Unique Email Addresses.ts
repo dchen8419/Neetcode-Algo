@@ -26,12 +26,11 @@
 
 
 var numUniqueEmails = function(emails: string[]) {
-    let emailSet = new Set<string>();
+    const emailSet = new Set<string>();
     for ( let i = 0; i < emails.length; i ++ ) {
-        let local: string | string[] = emails[i].split("@")[0];
-        let domain: string = emails[i].split("@")[1]
-        local = local.replace(/\./g,"").split("+");
-        let uniqueEmail: string = local[0]+"@"+domain;
+        const [local, domain] = emails[i].split("@");
+        const newLocal = local.replace(/\./g,"").split("+");
+        const uniqueEmail = newLocal[0]+"@"+domain;
         emailSet.add(uniqueEmail);
     }
     return emailSet.size;
@@ -49,4 +48,4 @@ var numUniqueEmails = function(emails: string[]) {
  * 3. Return the size of the set
  */
 console.log(numUniqueEmails(["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"])) //2
-console.log(numUniqueEmails(["a@leetcode.com","b@leetcode.com","c@leetcode.com"])) //3
+// console.log(numUniqueEmails(["a@leetcode.com","b@leetcode.com","c@leetcode.com"])) //3
