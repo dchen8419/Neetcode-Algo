@@ -15,7 +15,20 @@
 // Output: false
 
 var canPlaceFlowers = function(flowerbed: number[], n: number) {
-    
+    let current = 0; 
+    const size = flowerbed.length;
+	for(var i = 0; i <= size; i++) {
+		if (i < size && flowerbed[i] == 0) {
+			current++;
+			if (i == 0) current++;
+			if (i == size - 1) current++;
+		} else {
+			n -= Math.trunc((current - 1) / 2);
+			if (n <= 0) return true;
+			current = 0;
+		}
+	}
+	return false;
 };
 
 console.log(canPlaceFlowers([1,0,0,0,1], 1)) // true
