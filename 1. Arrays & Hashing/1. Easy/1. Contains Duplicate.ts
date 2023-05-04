@@ -29,6 +29,7 @@ const containsDuplicate = (nums: number[]) => {
             return true
         }
     }
+    console.log(hash)
     //if everything is looped throug then return false
     return false
 }
