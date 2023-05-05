@@ -24,7 +24,18 @@
 // - 4 is underlined in nums2 = [1,2,3,4]. There is no next greater element, so the answer is -1.
 
 var nextGreaterElement = function(nums1: number[], nums2: number[]) {
-    
+    const map = new Map(); // map for next greater element
+    const stack: number[] = [];
+    for (let num of nums2) {
+        while (stack.length && stack[stack.length - 1] < num) { // Pop elements from stack and update map with next greater element
+            map.set(stack.pop(), num);
+        }
+        stack.push(num); // Push current element onto stack
+    }
+    for (let i = 0; i < nums1.length; i++) { // Check if each element in nums1 has a next greater element in map
+        nums1[i] = map.has(nums1[i]) ? map.get(nums1[i]) : -1; // Update element in nums1 with next greater element or -1
+    }
+    return nums1;
 };
 
 console.log(nextGreaterElement([4,1,2],[1,3,4,2])) //[-1,3,-1]
