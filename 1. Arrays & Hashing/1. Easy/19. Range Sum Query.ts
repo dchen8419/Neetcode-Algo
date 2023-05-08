@@ -22,9 +22,14 @@
 // numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 
 var NumArray = function(nums) {
-
+    this.sums = [];
+    var sum = 0;
+    for (var i = 0; i < nums.length; i++) {
+        sum += nums[i];
+        this.sums.push(sum);
+    }
 };
 
 NumArray.prototype.sumRange = function(i, j) {
-    
+    return this.sums[j] - (i > 0 ? this.sums[i - 1] : 0);
 };
