@@ -18,8 +18,23 @@
 // Output: 0
 
 var maxNumberOfBalloons = function(text: string) {
-    //split all letters then put into a hashmap then compare with balloon and see how many times balloon appears
-    
+     //create a map of balloon
+    const map = {
+        'b': 0,
+        'a': 0,
+        'l': 0,
+        'o': 0,
+        'n': 0,
+    }
+    //loop through text: string and increment values of map
+    for ( const l of text ) {
+        map[l]++
+    }
+    //find the minimum number of the values
+    //l and o repeat so we need to divide by 2
+    //if a letter value is 0, it will return a 0
+    // will return the mininum number
+    return Math.floor(Math.min(map.b, map.a, map.l / 2, map.o/ 2,map.n))
 };
 
 
