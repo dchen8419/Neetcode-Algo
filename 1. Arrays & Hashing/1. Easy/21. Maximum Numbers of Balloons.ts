@@ -10,8 +10,6 @@
 // Output: 1
 // Example 2:
 
-
-
 // Input: text = "loonbalxballpoon"
 // Output: 2
 // Example 3:
