@@ -30,8 +30,17 @@
 // Output: 0
 // Explanation: The string is already balanced.
 
-var minSwaps = function(s) {
-    
+var minSwaps = function(s: string) {
+    let stk: string[] = []
+    let c: string
+    for( c of s){
+        if(stk && c == ']') {
+            stk.pop()
+        } else if(c == '[') { 
+            stk.push(c)
+        }
+    }
+    return Math.ceil((stk.length) / 2)
 };
 
 console.log(minSwaps("][][")) //1
