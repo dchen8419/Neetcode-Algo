@@ -11,7 +11,7 @@
 // Input: rectangles = [[4,8],[3,6],[10,20],[15,30]]
 // Output: 6
 // Explanation: The following are the interchangeable pairs of rectangles by index (0-indexed):
-// - Rectangle 0 with rectangle 1: 4/8 == 3/6.
+// - Rectangle 0 with rectangle 1: 4/8 == 3/6. 
 // - Rectangle 0 with rectangle 2: 4/8 == 10/20.
 // - Rectangle 0 with rectangle 3: 4/8 == 15/30.
 // - Rectangle 1 with rectangle 2: 3/6 == 10/20.
@@ -24,8 +24,16 @@
 // Explanation: There are no interchangeable pairs of rectangles.
 
 var interchangeableRectangles = function(rectangles: number[][]) {
-    
-};
+    let ratio = {} // w/h : count ===> The key of the object will be the width / height and the value will the number of times a rectangle has the key ratio of width and height
+    let result = 0; // placeholder and will return
+
+    //create a for loop that will iterate over rectangle array of array numbers
+    for ( let i = 0; i < rectangles.length; i ++ ) {
+
+    }
+    //return result
+    return result
+}; 
 
 console.log(interchangeableRectangles([[4,8],[3,6],[10,20],[15,30]])) //6
 console.log(interchangeableRectangles([[4,5],[7,8]])) //0
