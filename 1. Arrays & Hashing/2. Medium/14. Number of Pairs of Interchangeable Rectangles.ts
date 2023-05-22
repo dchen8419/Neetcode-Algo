@@ -29,7 +29,10 @@ var interchangeableRectangles = function(rectangles: number[][]) {
 
     //create a for loop that will iterate over rectangle array of array numbers
     for ( let i = 0; i < rectangles.length; i ++ ) {
-
+        //create a const for each element of array numbers
+        const rectangle = rectangles[i]
+        //create the ratios 
+        let r = rectangle[0] / rectangle[1]
     }
     //return result
     return result
