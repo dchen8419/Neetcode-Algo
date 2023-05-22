@@ -41,7 +41,25 @@ const isPalin = (str: string) => {
 
 
 var maxProduct = function(s: string) {
-    
+    //create a callback function
+    function cb(letterIndex: number, word1: string, word2: string) {
+        //isPalin only returns boolean values so if both isPalin(wordi) are true then we will return the word1 and word2 length but if not then we return zero
+        if (letterIndex > s.length) {
+            return isPalin(word1) && isPalin(word2) ? word1.length * word2.length : 0;
+        }
+        // we create a constant character for the letterIndex where it starts with 0 
+        const char = s[letterIndex];
+        // we then create another constant where the letterIndex is renamed to newIndex with an inremented number
+        const newIndex = letterIndex + 1;
+        //returns a number value from cb where it takes the max numbers of the three parameters
+        return Math.max(
+            cb(newIndex, word1, word2),
+            cb(newIndex, `${word1}${char}`, word2),
+            cb(newIndex, word1, `${word2}${char}`)
+        );
+    }
+    //will return a number from cb of Math.max
+    return cb(0, '', '');
 };
 
 console.log(maxProduct("leetcodecom")) //9
