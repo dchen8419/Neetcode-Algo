@@ -25,6 +25,10 @@
 // Explanation: An optimal solution is to choose "accca" for the 1st subsequence and "xxcxx" for the 2nd subsequence.
 // The product of their lengths is: 5 * 5 = 25.
 
-var maxProduct = function(s) {
+var maxProduct = function(s: string) {
     
 };
+
+console.log(maxProduct("leetcodecom")) //9
+console.log(maxProduct("bb")) //1
+console.log(maxProduct("accbcaxxcxx")) //25
