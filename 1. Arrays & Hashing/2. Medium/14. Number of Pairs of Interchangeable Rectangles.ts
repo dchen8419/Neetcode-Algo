@@ -38,6 +38,11 @@ var interchangeableRectangles = function(rectangles: number[][]) {
         if (!ratio[r]) {
             ratio[r] = 0
         }
+
+    //adding to result counter with current value and will double the result per iteration
+    result = result + ratio[r] 
+    //increment result pair
+    ratio[r]++
     }
     //return result
     return result
