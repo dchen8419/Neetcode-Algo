@@ -33,6 +33,11 @@ var interchangeableRectangles = function(rectangles: number[][]) {
         const rectangle = rectangles[i]
         //create the ratios 
         let r = rectangle[0] / rectangle[1]
+
+        //if the ratio is not there we will create it and set it to 0
+        if (!ratio[r]) {
+            ratio[r] = 0
+        }
     }
     //return result
     return result
