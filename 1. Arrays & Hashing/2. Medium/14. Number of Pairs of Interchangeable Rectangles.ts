@@ -23,7 +23,9 @@
 // Output: 0
 // Explanation: There are no interchangeable pairs of rectangles.
 
-var interchangeableRectangles = function(rectangles) {
+var interchangeableRectangles = function(rectangles: number[][]) {
     
 };
 
+console.log(interchangeableRectangles([[4,8],[3,6],[10,20],[15,30]])) //6
+console.log(interchangeableRectangles([[4,5],[7,8]])) //0
