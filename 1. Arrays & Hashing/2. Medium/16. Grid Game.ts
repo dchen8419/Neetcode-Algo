@@ -34,7 +34,15 @@
 // The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 
 var gridGame = function(grid: number[][]) {
-    
+    let one = grid[0].reduce((a,b)=>a+b) - grid[0][0];
+    let two = 0;
+    let res = one;
+    for(let i = 1; i < grid[0].length; i++){
+        one-=grid[0][i];
+        two+=grid[1][i-1];
+        res = Math.min(res, Math.max(one,two));
+    }
+    return res;
 };
 
 console.log(gridGame([[2,5,4],[1,5,1]])) //4
