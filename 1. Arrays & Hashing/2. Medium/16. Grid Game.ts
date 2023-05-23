@@ -33,6 +33,10 @@
 // The cells visited by the first robot are set to 0.
 // The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 
-var gridGame = function(grid) {
+var gridGame = function(grid: number[][]) {
     
 };
+
+console.log(gridGame([[2,5,4],[1,5,1]])) //4
+console.log(gridGame([[3,3,1],[8,5,2]])) //4
+console.log(gridGame([[1,3,1,15],[1,3,3,1]])) //7
