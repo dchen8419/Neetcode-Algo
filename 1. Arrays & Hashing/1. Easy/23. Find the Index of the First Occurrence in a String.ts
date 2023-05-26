@@ -14,7 +14,10 @@
 // Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 var strStr = function(haystack: string, needle: string) {
-    
+    //if needle is an empty string or needle is the same as haystack then return 0
+    if (needle === '' || needle === haystack) return 0;
+    //if the haystack length is less than needle length then return -1 
+    if (haystack.length < needle.length) return -1;
 };
 
 console.log(strStr( "sadbutsad","sad")) //0
