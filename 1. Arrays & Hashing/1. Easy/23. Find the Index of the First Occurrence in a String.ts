@@ -12,3 +12,10 @@
 // Input: haystack = "leetcode", needle = "leeto"
 // Output: -1
 // Explanation: "leeto" did not occur in "leetcode", so we return -1.
+
+var strStr = function(haystack: string, needle: string) {
+    
+};
+
+console.log(strStr( "sadbutsad","sad")) //0
+console.log(strStr("leetcode", "leeto")) //-1
