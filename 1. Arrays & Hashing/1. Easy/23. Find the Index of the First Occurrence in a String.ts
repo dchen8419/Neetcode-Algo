@@ -30,10 +30,17 @@ var strStr = function(haystack: string, needle: string) {
                 if (needle[j] !== haystack[i+j]) {
                     //break out of the loop and return to looping through haystack
                     break;
+                } 
+                // otherwise, if we looped through the entire needle and all of the characters matched
+                else if ( j ===needle.length -1) {
+                    //return the index of the first character of haystack with wich we started the loop
+                    return i
                 }
             }
         }
     }
+    // return -1 if there wasn't a match
+    return -1
 };
 
 console.log(strStr( "sadbutsad","sad")) //0
