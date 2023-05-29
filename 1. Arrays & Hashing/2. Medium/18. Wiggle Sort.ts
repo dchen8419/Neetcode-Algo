@@ -17,3 +17,6 @@
 var wiggleSort = function(nums: number[]) {
     
 };
+
+console.log(wiggleSort([3,5,2,1,6,4])) // [3,5,1,6,2,4]
+console.log(wiggleSort([6,6,5,6,3,8])) // [6,6,5,6,3,8]
