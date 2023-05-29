@@ -13,3 +13,7 @@
 
 // Input: nums = [6,6,5,6,3,8]
 // Output: [6,6,5,6,3,8]
+
+var wiggleSort = function(nums: number[]) {
+    
+};
