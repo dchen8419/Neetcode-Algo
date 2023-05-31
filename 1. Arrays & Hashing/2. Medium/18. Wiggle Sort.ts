@@ -39,6 +39,7 @@ var wiggleSort = function(nums: number[]) {
         [nums[i], nums[i+1]] = [nums[i+1], nums[i]];
     }
     }
+    return nums
 };
 
 console.log(wiggleSort([3,5,2,1,6,4])) // [3,5,1,6,2,4]
