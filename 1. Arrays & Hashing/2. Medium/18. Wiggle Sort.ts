@@ -31,6 +31,12 @@ var wiggleSort = function(nums: number[]) {
     ) {
         [nums[i], nums[i+1]] = [nums[i+1], nums[i]];
         
+    } // when it is a trough..
+    else if (
+        i%2 === 1 &&
+        nums[i] < nums[i+1]
+    ) {
+        [nums[i], nums[i+1]] = [nums[i+1], nums[i]];
     }
     }
 };
