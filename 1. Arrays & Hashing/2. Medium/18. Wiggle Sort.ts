@@ -19,7 +19,12 @@ var wiggleSort = function(nums: number[]) {
     if(!nums.length || nums.length < 2) {
         return nums;
     }
-
+    // the idea of having a less than instead of <= in the for loop is because , we will encounter cases like "nums[i] > nums[i+1]", this condition will fail and give inconsistent results, Hence we make sure, we follow a strict less than.
+	
+	// the idea basically is to sort your array in a wave format. (Crest should have the higher value and trough should have the lower value. crests are the even indices and troughs are the odd ones. All we need to make sure, is we will make a swap if the value of trough is greater than the value of crest.
+	
+    for(let i = 0; i < nums.length-1; i++) {
+    }
 };
 
 console.log(wiggleSort([3,5,2,1,6,4])) // [3,5,1,6,2,4]
