@@ -15,7 +15,11 @@
 // Output: [6,6,5,6,3,8]
 
 var wiggleSort = function(nums: number[]) {
-    
+    // if num array is of length 0 or of length 2 
+    if(!nums.length || nums.length < 2) {
+        return nums;
+    }
+
 };
 
 console.log(wiggleSort([3,5,2,1,6,4])) // [3,5,1,6,2,4]
