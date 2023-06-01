@@ -20,6 +20,10 @@ var largestNumber = function(nums: number[]) {
     }
 
     nums.sort((a ,b) => `${b}${a}` - `${a}${b}`);
+    //check if the first number in the array is 0 and if it is 0 then we will return 0
+    if (nums[0] === 0) {
+        return '0'
+    }
 };
 
 console.log(largestNumber([10,2])) //'210'
