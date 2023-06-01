@@ -14,7 +14,9 @@
 // Output: "9534330"
 
 var largestNumber = function(nums: number[]) {
-    
+    return nums.sort((a,b) => {
+        return ()
+    })
 };
 
 console.log(largestNumber([10,2])) //'210'
