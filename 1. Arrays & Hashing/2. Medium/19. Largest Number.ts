@@ -18,8 +18,14 @@ var largestNumber = function(nums: number[]) {
     if (!nums || nums.length === 0) {
         return '0'
     }
-
-    nums.sort((a ,b) => `${b}${a}` - `${a}${b}`);
+    //sort array from largest to smallest 
+    nums.sort((a,b) => `${b}${a}` - `${a}${b}`);
+    //check if the first number in the array is 0 and if it is 0 then we will return 0
+    if (nums[0] === 0) {
+        return '0'
+    }
+    //join all the numbers in the array into a string and return it
+    return nums.join('')
 };
 
 console.log(largestNumber([10,2])) //'210'
