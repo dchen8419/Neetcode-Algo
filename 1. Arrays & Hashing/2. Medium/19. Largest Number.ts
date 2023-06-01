@@ -14,9 +14,12 @@
 // Output: "9534330"
 
 var largestNumber = function(nums: number[]) {
+    // check if nums contains numbers and if not then return string 0
     if (!nums || nums.length === 0) {
         return '0'
     }
+
+    nums.sort((a ,b) => `${b}${a}` - `${a}${b}`);
 };
 
 console.log(largestNumber([10,2])) //'210'
