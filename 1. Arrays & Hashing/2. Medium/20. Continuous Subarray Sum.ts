@@ -24,3 +24,7 @@
 
 // Input: nums = [23,2,6,4,7], k = 13
 // Output: false
+
+var checkSubarraySum = function(nums: number[], k: number) {
+    
+};
