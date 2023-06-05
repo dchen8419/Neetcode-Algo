@@ -37,7 +37,13 @@ var checkSubarraySum = function(nums: number[], k: number): boolean {
     for ( let i = 0; i < nums.length; i ++) {
         sum += nums[i];
         let r = sum % k;
+        if (!remaindersMap.has(r)) {
+            remaindersMap.set( r, i);
+        } else if ( i - remaindersMap.get(r) > 1){
+            return true;
+        }
     }
+    return false
 };
 
 console.log(checkSubarraySum([23,2,4,6,7], 6)) // true
