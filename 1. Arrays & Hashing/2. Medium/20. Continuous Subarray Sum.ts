@@ -25,8 +25,15 @@
 // Input: nums = [23,2,6,4,7], k = 13
 // Output: false
 
-var checkSubarraySum = function(nums: number[], k: number) {
-    
+var checkSubarraySum = function(nums: number[], k: number): boolean {
+    let sum = 0;
+    let remaindersMap = new Map();
+    remaindersMap.set(0, -1);
+    // to cover cases where the first element is a multible as we
+    // want a sub array of two elements , 
+    // try this test case nums = [23,2,4,6,6] , k = 7 
+    // ==> without that line we won't be able to detect subarrays 
+    // that start from the beginning.
 };
 
 console.log(checkSubarraySum([23,2,4,6,7], 6)) // true
