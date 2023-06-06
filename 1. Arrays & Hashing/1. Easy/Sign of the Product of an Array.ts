@@ -20,3 +20,11 @@
 // Input: nums = [-1,1,-1,1,-1]
 // Output: -1
 // Explanation: The product of all values in the array is -1, and signFunc(-1) = -1
+
+var arraySign = function(nums: number[]) {
+    
+};
+
+console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
+console.log(arraySign([1,5,0,2,-3])) //0
+console.log(arraySign([-1,1,-1,1,-1])) //-1
