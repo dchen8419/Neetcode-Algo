@@ -24,6 +24,8 @@
 var arraySign = function(nums: number[]) {
     // turn all elements in array into string then split into individual items
     let newNums = nums.toString().split('')
+    // create counter to keep up with negative numbers
+    let counter = 0
 
 
 };
