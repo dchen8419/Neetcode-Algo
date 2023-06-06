@@ -22,8 +22,12 @@
 // Explanation: The product of all values in the array is -1, and signFunc(-1) = -1
 
 var arraySign = function(nums: number[]) {
-    
+    // turn all elements in array into string then split into individual items
+    let newNums = nums.toString().split('')
+
+
 };
+
 
 console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
 console.log(arraySign([1,5,0,2,-3])) //0
