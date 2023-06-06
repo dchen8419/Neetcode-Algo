@@ -28,7 +28,10 @@ var arraySign = function(nums: number[]) {
     let counter = 0
     //create for loop
     for ( let i = 0; i < newNums.length; i ++ ) {
-
+        //look for negative signs
+        if (newNums[i] === '-') {
+            counter++
+        }
     }
 
 };
