@@ -26,7 +26,10 @@ var arraySign = function(nums: number[]) {
     let newNums = nums.toString().split('')
     // create counter to keep up with negative numbers
     let counter = 0
+    //create for loop
+    for ( let i = 0; i < newNums.length; i ++ ) {
 
+    }
 
 };
 
