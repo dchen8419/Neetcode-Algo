@@ -31,9 +31,19 @@ var arraySign = function(nums: number[]) {
         //look for negative signs
         if (newNums[i] === '-') {
             counter++
+        //check for zero in array and will return zero if there is a zero
+        } else if (newNums[i] === '0') {
+            return 0
         }
+    }   
+    //check if counter is even or not
+    //if counter is an even number we return 1
+    if ( counter %2 === 0) {
+        return 1
+    //if counter is odd we return  -1
+    } else {
+        return -1
     }
-
 };
 
 
