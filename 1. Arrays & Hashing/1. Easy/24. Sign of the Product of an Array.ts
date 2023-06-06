@@ -22,6 +22,12 @@
 // Explanation: The product of all values in the array is -1, and signFunc(-1) = -1
 
 var arraySign = function(nums: number[]) {
+    //check for zeros in nums array
+    for ( let i = 0; i < nums.length; i ++ ) {
+        if (nums[i] === 0) {
+            return 0
+        }
+    }
     // turn all elements in array into string then split into individual items
     let newNums = nums.toString().split('')
     // create counter to keep up with negative numbers
@@ -31,10 +37,7 @@ var arraySign = function(nums: number[]) {
         //look for negative signs
         if (newNums[i] === '-') {
             counter++
-        //check for zero in array and will return zero if there is a zero
-        } else if (newNums[i] === '0') {
-            return 0
-        }
+        } 
     }   
     //check if counter is even or not
     //if counter is an even number we return 1
@@ -47,6 +50,7 @@ var arraySign = function(nums: number[]) {
 };
 
 
-console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
-console.log(arraySign([1,5,0,2,-3])) //0
-console.log(arraySign([-1,1,-1,1,-1])) //-1
+// console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
+// console.log(arraySign([1,5,0,2,-3])) //0
+// console.log(arraySign([-1,1,-1,1,-1])) //-1
+console.log(arraySign([9,72,34,29,-49,-22,-77,-17,-66,-75,-44,-30,-24])) //-1
