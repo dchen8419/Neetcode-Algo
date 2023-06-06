@@ -31,6 +31,8 @@ var arraySign = function(nums: number[]) {
         //look for negative signs
         if (newNums[i] === '-') {
             counter++
+        } else if (newNums[i] === '0') {
+            return 0
         }
     }
 
