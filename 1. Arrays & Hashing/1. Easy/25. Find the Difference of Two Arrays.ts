@@ -25,17 +25,29 @@ var findDifference = function(nums1: number[], nums2: number[]) {
     let difNums1: number[] = [];
     let difNums2: number[] = [];
 
-    for ( let i = 0; i < nums1.length; i ++ ) {
-        for ( let j = 0; j < nums2.length; j ++ ) {
-            if (nums1[i] !== nums2[j]) {
-                difNums1.push(nums1[i])
+    // for ( let i = 0; i < nums1.length; i ++ ) {
+    //     for ( let j = 0; j < nums2.length; j ++ ) {
+    //         if (nums1[i] !== nums2[j]) {
+    //             difNums1.push(nums1[i])
+    //         } else {
+    //             break
+    //         }
+    //     }
+    // };
+
+    for ( let i = 0; i < nums2.length; i ++) {
+        for ( let j = 0; j < nums1.length; j ++ ) {
+            if (nums2[i] !== nums1[j]) {
+                difNums2.push(nums2[i])
             } else {
                 break
             }
         }
     }
 
+    console.log(difNums2)
 
+    return [[...new Set(difNums1)], [...new Set(difNums2)]];
 
 
 };
