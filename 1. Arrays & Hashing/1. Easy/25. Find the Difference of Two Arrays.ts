@@ -29,7 +29,9 @@ var findDifference = function(nums1: number[], nums2: number[]) {
         for ( let j = 0; j < nums2.length; j ++ ) {
             if (nums1[i] !== nums2[j]) {
                 difNums1.push(nums1[i])
-            } 
+            } else {
+                break
+            }
         }
     }
 
