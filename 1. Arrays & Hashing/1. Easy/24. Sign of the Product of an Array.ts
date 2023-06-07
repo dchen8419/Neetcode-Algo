@@ -50,7 +50,7 @@ var arraySign = function(nums: number[]) {
 };
 
 
-// console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
-// console.log(arraySign([1,5,0,2,-3])) //0
-// console.log(arraySign([-1,1,-1,1,-1])) //-1
+console.log(arraySign([-1,-2,-3,-4,3,2,1])) //1
+console.log(arraySign([1,5,0,2,-3])) //0
+console.log(arraySign([-1,1,-1,1,-1])) //-1
 console.log(arraySign([9,72,34,29,-49,-22,-77,-17,-66,-75,-44,-30,-24])) //-1
