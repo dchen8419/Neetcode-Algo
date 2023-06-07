@@ -25,6 +25,9 @@ var findDifference = function(nums1: number[], nums2: number[]) {
     let difNums1: number[] = [];
     let difNums2: number[] = [];
 
+    for ( let i = 0; i < nums1.length; i ++ ) {
+
+    }
 
 
 
