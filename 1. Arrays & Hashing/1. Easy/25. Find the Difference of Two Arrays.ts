@@ -35,7 +35,7 @@ var findDifference = function(nums1: number[], nums2: number[]) {
         }
     }
 
-
+    return [[...new Set(difNums1)], [...new Set(difNums2)]]
 
 
 };
