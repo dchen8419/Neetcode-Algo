@@ -22,5 +22,8 @@
 // Every integer in nums2 is present in nums1. Therefore, answer[1] = [].
 
 var findDifference = function(nums1: number[], nums2: number[]) {
-    
+
 };
+
+console.log(findDifference([1,2,3],[2,4,6])) //[[1,3],[4,6]] first array will only return what is different of the first array, second array will return what is different of that array
+console.log(findDifference([1,2,3,3],[1,1,2,2])) //[[3],[]]
