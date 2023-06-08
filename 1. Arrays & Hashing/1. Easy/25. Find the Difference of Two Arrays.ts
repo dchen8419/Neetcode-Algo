@@ -27,7 +27,8 @@ var findDifference = function(nums1: number[], nums2: number[]) {
     let newNums2 = new Set (nums2)
     //use a forEach to loop through the sets and delete what is common on each
     newNums1.forEach(i => newNums2.delete(i) && newNums1.delete(i))
-    
+    //return the new sets of numbers in array form
+    return [[...newNums1], [...newNums2]]
 };
 
 console.log(findDifference([1,2,3],[2,4,6])) //[[1,3],[4,6]] first array will only return what is different of the first array, second array will return what is different of that array
