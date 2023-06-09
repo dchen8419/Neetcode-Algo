@@ -14,3 +14,8 @@
 
 // Input: s = "AAAAAAAAAAAAA"
 // Output: ["AAAAAAAAAA"]
+
+var findRepeatedDnaSequences = function(s: string) {
+    
+};
+
