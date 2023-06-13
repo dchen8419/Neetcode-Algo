@@ -13,3 +13,6 @@
 // Output: false
 // Explanation: You cannot get a non-decreasing array by modifying at most one element.
 
+var checkPossibility = function(nums: number[]) {
+    
+};
