@@ -16,6 +16,11 @@
 // Output: ["AAAAAAAAAA"]
 
 var findRepeatedDnaSequences = function(s: string) {
-    
+    let curr = s.slice(0, 10);
+    const seen = new Set([curr]);
+    const res = new Set();
 };
+
+console.log(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")) // ["AAAAACCCCC","CCCCCAAAAA"]
+console.log(findRepeatedDnaSequences( "AAAAAAAAAAAAA")) // ["AAAAAAAAAA"]
 
