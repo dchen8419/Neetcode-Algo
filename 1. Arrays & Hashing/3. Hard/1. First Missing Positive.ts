@@ -19,6 +19,10 @@
 // Explanation: The smallest positive integer 1 is missing.
 
 var firstMissingPositive = function(nums: number[]) {
+    let curr = nums.slice(0, 10);
+    const seen = new Set([curr]);
+    const res = new Set();
+
     
 };
 
