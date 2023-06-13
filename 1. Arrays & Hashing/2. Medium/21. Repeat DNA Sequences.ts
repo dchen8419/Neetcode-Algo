@@ -21,6 +21,8 @@ var findRepeatedDnaSequences = function(s: string) {
     const res = new Set();
 };
 
-console.log(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")) // ["AAAAACCCCC","CCCCCAAAAA"]
-console.log(findRepeatedDnaSequences( "AAAAAAAAAAAAA")) // ["AAAAAAAAAA"]
+
+console.log(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")) //["AAAAACCCCC","CCCCCAAAAA"]
+console.log(findRepeatedDnaSequences( "AAAAAAAAAAAAA")) //["AAAAAAAAAA"]
+
 
