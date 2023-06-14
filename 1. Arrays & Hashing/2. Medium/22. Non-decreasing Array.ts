@@ -14,5 +14,25 @@
 // Explanation: You cannot get a non-decreasing array by modifying at most one element.
 
 var checkPossibility = function(nums: number[]) {
-    
+    let changed = false;
+
+    for ( let i = 0; i < nums.length; i ++ ) {
+        if (nums[i] <= nums[i+1]) {
+            continue
+        }
+        if (changed) {
+            return false
+        }
+        //we want to decrease the left element
+        if (i === 0 || nums[i + 1] >= nums[i - 1]) {
+            nums[i] = nums[i + 1]
+        } else {
+            nums[i + 1] = nums[i]
+            changed = true
+        }
+        return true
+    }
 };
+
+console.log(checkPossibility([4,2,3])) //true
+console.log(checkPossibility([4,2,1])) //false
