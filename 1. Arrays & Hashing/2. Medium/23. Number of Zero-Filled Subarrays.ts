@@ -28,3 +28,9 @@
 var zeroFilledSubarray = function(nums: number[]) {
     
 };
+
+console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
+console.log(zeroFilledSubarray([0,0,0,2,0,0])) // 9
+console.log(zeroFilledSubarray([2,10,2019])) // 0
+
+
