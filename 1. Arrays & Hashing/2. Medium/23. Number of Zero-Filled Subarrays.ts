@@ -35,8 +35,12 @@ var zeroFilledSubarray = function(nums: number[]) {
 
 
     // create two variables where one is count and the other is the length
-
+    let count = 0;
+    let length = 0;
     //Create a for loop
+    for ( let i = 0; i < nums.length; i ++ ) {
+        
+    }
 };
 
 console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
