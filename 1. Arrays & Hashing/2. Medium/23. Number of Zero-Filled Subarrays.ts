@@ -26,7 +26,17 @@
 // Explanation: There is no subarray filled with 0. Therefore, we return 0.
 
 var zeroFilledSubarray = function(nums: number[]) {
-    
+    //Intuition
+    //The contribution of a single zero to the total sum is directly proportional to its index in teh subsequences of zeros
+    //Approach
+    //For every num if it's equal to zero we need to increase the length of the current subsequence of zero by 1
+    // and add this length to each iteration of the final sum.
+    //Otherwise, set the length of the current subsequnce to 0
+
+
+    // create two variables where one is count and the other is the length
+
+    //Create a for loop
 };
 
 console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
