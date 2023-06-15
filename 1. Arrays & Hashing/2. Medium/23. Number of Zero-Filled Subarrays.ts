@@ -45,11 +45,15 @@ var zeroFilledSubarray = function(nums: number[]) {
         if ( nums[i] === 0 ) {
             //increaes length by 1 
             length++
+            //adding the count with length gives you the summation
             count += length
         } else {
-            
+            //once we hit a nonzero element we restart the length to zero
+            length = 0
         }
     }
+    //return the total count
+    return count
 };
 
 console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
