@@ -46,7 +46,9 @@ var zeroFilledSubarray = function(nums: number[]) {
             //increaes length by 1 
             length++
             count += length
-        } 
+        } else {
+            
+        }
     }
 };
 
