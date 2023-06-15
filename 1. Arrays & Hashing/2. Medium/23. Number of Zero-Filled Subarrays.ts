@@ -39,7 +39,10 @@ var zeroFilledSubarray = function(nums: number[]) {
     let length = 0;
     //Create a for loop
     for ( let i = 0; i < nums.length; i ++ ) {
-        
+        //if the element is zero
+        if ( nums[i] === 0) {
+            
+        }
     }
 };
 
