@@ -32,6 +32,8 @@ var zeroFilledSubarray = function(nums: number[]) {
     //For every num if it's equal to zero we need to increase the length of the current subsequence of zero by 1
     // and add this length to each iteration of the final sum.
     //Otherwise, set the length of the current subsequnce to 0
+    //Use Gauss Summation
+    // n(n+1)/2
 
 
     // create two variables where one is count and the other is the length
@@ -40,9 +42,11 @@ var zeroFilledSubarray = function(nums: number[]) {
     //Create a for loop
     for ( let i = 0; i < nums.length; i ++ ) {
         //if the element is zero
-        if ( nums[i] === 0) {
-            
-        }
+        if ( nums[i] === 0 ) {
+            //increaes length by 1 
+            length++
+            count += length
+        } 
     }
 };
 
