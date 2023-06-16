@@ -14,3 +14,7 @@
 // Input: s = "abc"
 // Output: false
 
+var validPalindrome = function(s: string) {
+    
+};
+
