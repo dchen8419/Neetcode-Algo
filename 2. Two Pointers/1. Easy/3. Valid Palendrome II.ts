@@ -22,7 +22,26 @@
 // or s[low...right-1] is a palindrome. If one of them is a palindrome, we know that we can form a palindrome with one deletion and return true. Else, we require more than one deletion, and hence we return false.
 
 var validPalindrome = function(s: string) {
-    
+    let low = 0, high = s.length-1;
+    while (low < high) {
+        if (s[low] !== s[high]) {
+            return isPalendrome(s, low+1, high) || isPalendrome(s, low, high-1);
+        }
+        low++,high--;
+    }
+    return true;
 };
+
+function isPalendrome(str: string, low:number, high:number) {
+    while (low < high) {
+        if (str[low] !== str[high]) return false;
+        low++, high--;
+    }
+    return true;
+}
+
+console.log(validPalindrome("aba")) //true
+console.log(validPalindrome("abca")) //true
+console.log(validPalindrome("abc")) //false
 
 
