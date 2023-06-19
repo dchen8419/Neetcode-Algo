@@ -25,39 +25,66 @@
 // Output: 0
 // Explanation: There is no subarray filled with 0. Therefore, we return 0.
 
-var zeroFilledSubarray = function(nums: number[]) {
-    //Intuition
-    //The contribution of a single zero to the total sum is directly proportional to its index in teh subsequences of zeros
-    //Approach
-    //For every num if it's equal to zero we need to increase the length of the current subsequence of zero by 1
-    // and add this length to each iteration of the final sum.
-    //Otherwise, set the length of the current subsequnce to 0
-    //Use Gauss Summation
-    // n(n+1)/2
+// var zeroFilledSubarray = function(nums: number[]) {
+//     //Intuition
+//     //The contribution of a single zero to the total sum is directly proportional to its index in teh subsequences of zeros
+//     //Approach
+//     //For every num if it's equal to zero we need to increase the length of the current subsequence of zero by 1
+//     // and add this length to each iteration of the final sum.
+//     //Otherwise, set the length of the current subsequnce to 0
+//     //Use Gauss Summation
+//     // n(n+1)/2
 
 
-    // create two variables where one is count and the other is the length
-    let count = 0;
-    let length = 0;
-    //Create a for loop
+//     // create two variables where one is count and the other is the length
+//     let count = 0;
+//     let length = 0;
+//     //Create a for loop
+//     for ( let i = 0; i < nums.length; i ++ ) {
+//         //if the element is zero
+//         if ( nums[i] === 0 ) {
+//             //increaes length by 1 
+//             length++
+//             //adding the count with length gives you the summation
+//             count += length
+//         } else {
+//             //once we hit a nonzero element we restart the length to zero
+//             length = 0
+//         }
+//     }
+//     //return the total count
+//     return count
+// };
+
+
+function zeroFilledSubarray(nums: number[]) {
+    let lengthArr: number[] = []
+    let length = 0
+    let count = 0
+
     for ( let i = 0; i < nums.length; i ++ ) {
-        //if the element is zero
-        if ( nums[i] === 0 ) {
-            //increaes length by 1 
+        if ( nums[i] === 0) {
             length++
-            //adding the count with length gives you the summation
-            count += length
         } else {
-            //once we hit a nonzero element we restart the length to zero
+            if (length !== 0) {
+            lengthArr.push(length)
+            }
             length = 0
         }
     }
-    //return the total count
-    return count
-};
 
-console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
+    for ( let i = 0; i < lengthArr.length; i ++ ) {
+        let n = lengthArr[i]
+        let gauss = (n*(n+1))/2
+        count += gauss
+    }
+    console.log(lengthArr)
+
+    return count
+}
+
+// console.log(zeroFilledSubarray([1,3,0,0,2,0,0,4])) // 6
 console.log(zeroFilledSubarray([0,0,0,2,0,0])) // 9
-console.log(zeroFilledSubarray([2,10,2019])) // 0
+// console.log(zeroFilledSubarray([2,10,2019])) // 0
 
 
