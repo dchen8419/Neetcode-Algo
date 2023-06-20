@@ -23,3 +23,7 @@
 // - [9,4,1,7]. The difference between the highest and lowest score is 7 - 4 = 3.
 // - [9,4,1,7]. The difference between the highest and lowest score is 7 - 1 = 6.
 // The minimum possible difference is 2.
+
+var minimumDifference = function(nums: number[], k: number) {
+    
+};
