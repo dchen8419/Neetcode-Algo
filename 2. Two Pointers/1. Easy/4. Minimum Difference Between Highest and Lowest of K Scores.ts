@@ -27,3 +27,6 @@
 var minimumDifference = function(nums: number[], k: number) {
     
 };
+
+console.log(minimumDifference([90], 1)) //0
+console.log(minimumDifference([9,4,1,7], 2)) // 2
