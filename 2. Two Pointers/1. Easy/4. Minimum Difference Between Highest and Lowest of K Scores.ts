@@ -38,13 +38,10 @@ var minimumDifference = function(nums: number[], k: number) {
     //for loop through the length but subtract the k number and increment by 1
     for ( let i = 0; i <= n - k; i ++ ) {
         //reassign res to the mininum of the res and nums of nums[i + k -1] - nums[i]
-        
+        res = Math.min(res, nums[i+k-1] - nums[i])
     }
-
-
     // return the res
-
-
+    return res
 };
 
 console.log(minimumDifference([90], 1)) //0
