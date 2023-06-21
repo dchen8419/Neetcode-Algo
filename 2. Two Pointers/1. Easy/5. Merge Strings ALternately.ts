@@ -27,3 +27,8 @@
 // word1:  a   b   c   d
 // word2:    p   q 
 // merged: a p b q c   d
+
+var mergeAlternately = function(word1: string, word2: string) {
+    
+};
+
