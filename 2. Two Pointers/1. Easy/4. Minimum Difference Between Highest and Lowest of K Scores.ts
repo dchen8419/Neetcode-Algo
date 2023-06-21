@@ -25,14 +25,21 @@
 // The minimum possible difference is 2.
 
 var minimumDifference = function(nums: number[], k: number) {
-    //first sort the array from smallest to largest
-
+    //first sort the array from smallest to largest and this will modify original array
+    nums.sort((a,b) => a-b);
     //this is an edge case where if the k value is equal to 1 we will always return 0
-
-
+    if ( k === 1) {
+        return 0;
+    }
     //declare a variable that will hold the length of the array
+    let n = nums.length;
     //declare a variable for infinity
+    let res = Infinity;
     //for loop through the length but subtract the k number and increment by 1
+    for ( let i = 0; i <= n - k; i ++ ) {
+        //reassign res to the mininum of the res and nums of nums[i + k -1] - nums[i]
+        
+    }
 
 
     // return the res
