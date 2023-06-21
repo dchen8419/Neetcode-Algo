@@ -25,7 +25,19 @@
 // The minimum possible difference is 2.
 
 var minimumDifference = function(nums: number[], k: number) {
-    
+    //first sort the array from smallest to largest
+
+    //this is an edge case where if the k value is equal to 1 we will always return 0
+
+
+    //declare a variable that will hold the length of the array
+    //declare a variable for infinity
+    //for loop through the length but subtract the k number and increment by 1
+
+
+    // return the res
+
+
 };
 
 console.log(minimumDifference([90], 1)) //0
