@@ -17,6 +17,7 @@ var reverseString = function(s: string[]) {
     //loop through s backwards
     for ( let i = s.length-1; i >= 0; i -- ) {
         //push the letters from the end first
+        result.push(s[i])
     }
     //return the varaible holding the empty string array
 };
