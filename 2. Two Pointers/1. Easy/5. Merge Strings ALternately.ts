@@ -38,6 +38,7 @@ var mergeAlternately = function(word1: string, word2: string) {
     //loop through the string using the variable that's holding the longest string
     for ( let i = 0; i < maxLength; i ++ ) {
         //adding to result using nullish coalescing operator (??) that returns right hand side operand when it's left hand side is null or undefined
+        result += (word1[i] ?? '') + (word2[i] ?? '')
     }
     //return the varaible holding the string
 };
