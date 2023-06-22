@@ -13,6 +13,7 @@
 
 var reverseString = function(s: string[]) {
     //create an new varaible that's an empty string array type
+    let result: string[] = []
     //loop through s backwards
         //push the letters from the end first
     //return the varaible holding the empty string array
