@@ -28,8 +28,14 @@
 // word2:    p   q 
 // merged: a p b q c   d
 
+
+
 var mergeAlternately = function(word1: string, word2: string) {
-    
+    //create a variable that will hold which param has the longest string
+    //create a variable to hold the string
+    //loop through the string using the variable that's holding the longest string
+        //adding to result using nullish coalescing operator (??) that returns right hand side operand when it's left hand side is null or undefined
+    //return the varaible holding the string
 };
 
 console.log(mergeAlternately('abc', 'pqr')) //"apbqcr"
