@@ -32,11 +32,13 @@
 
 var mergeAlternately = function(word1: string, word2: string) {
     //create a variable that will hold which param has the longest string
-    let maxLenth = Math.max(word1.length, word2.length);
+    let maxLength = Math.max(word1.length, word2.length);
     //create a variable to hold the string
     let result = '';
     //loop through the string using the variable that's holding the longest string
+    for ( let i = 0; i < maxLength; i ++ ) {
         //adding to result using nullish coalescing operator (??) that returns right hand side operand when it's left hand side is null or undefined
+    }
     //return the varaible holding the string
 };
 
