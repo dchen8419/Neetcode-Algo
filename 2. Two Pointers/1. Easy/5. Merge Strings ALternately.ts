@@ -41,6 +41,7 @@ var mergeAlternately = function(word1: string, word2: string) {
         result += (word1[i] ?? '') + (word2[i] ?? '')
     }
     //return the varaible holding the string
+    return result
 };
 
 console.log(mergeAlternately('abc', 'pqr')) //"apbqcr"
