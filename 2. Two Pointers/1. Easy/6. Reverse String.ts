@@ -20,6 +20,7 @@ var reverseString = function(s: string[]) {
         result.push(s[i])
     }
     //return the varaible holding the empty string array
+    return result
 };
 
 console.log(reverseString(["h","e","l","l","o"])) //["o","l","l","e","h"]
