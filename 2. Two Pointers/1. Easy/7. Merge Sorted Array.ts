@@ -28,6 +28,9 @@
 // Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 
 var merge = function(nums1: number[], m: number, nums2: number[], n: number) {
+    //create edge case for either nums1 or nums2 for empty array and return [1]
+    //create a variable that will hold the longest aray length
+    //creat a for loop going through the longest array
     
 };
 
