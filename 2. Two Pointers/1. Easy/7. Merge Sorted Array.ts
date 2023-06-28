@@ -35,7 +35,7 @@ var merge = function(nums1: number[], m: number, nums2: number[], n: number) {
 
     if ( nums1.length === 1 || nums2.length === 1) {
         if (nums1[0]  > nums2[0] || nums1[0]  < nums2[0]) {
-            return [Math.max(nums1[0], nums2[0])]
+            return [Math.max(nums1[0], nums2[0])].sort()
         }
     }
 
