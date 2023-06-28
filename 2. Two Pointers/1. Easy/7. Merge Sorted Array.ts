@@ -33,6 +33,13 @@ var merge = function(nums1: number[], m: number, nums2: number[], n: number) {
         return [1]
     } 
 
+    if ( nums1.length === 1 || nums2.length === 1) {
+        if (nums1[0]  > nums2[0] || nums1[0]  < nums2[0]) {
+            return [Math.max(nums1[0], nums2[0])]
+        }
+    }
+
+    
     
     //create a variable that will hold the longest aray length
     //creat a for loop going through the longest array
