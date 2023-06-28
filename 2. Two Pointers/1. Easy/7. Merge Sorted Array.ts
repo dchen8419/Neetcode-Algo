@@ -28,16 +28,27 @@
 // Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 
 var merge = function(nums1: number[], m: number, nums2: number[], n: number) {
-    //create edge case for either nums1 or nums2 for empty array and return [1]
-    if ( nums1.length === 0 || nums2.length === 0 ) {
-        return [1]
-    } 
-
-    if ( nums1.length === 1 || nums2.length === 1) {
-        if (nums1[0]  > nums2[0] || nums1[0]  < nums2[0]) {
-            return [Math.max(nums1[0], nums2[0])]
+    //create a two new arrays that will hold the new values where zeros are not in the array
+    let newNums1: number[] = [];
+    let newNums2: number[] = [];
+    //loop through both arrays to find and remove zeros
+    for ( let i = 0; i < nums1.length; i ++ ) {
+        if (nums1[i] !== 0) {
+            newNums1.push(nums1[i])
         }
     }
+
+
+    for ( let i = 0; i < nums2.length; i ++ ) {
+        if (nums2[i] !== 0) {
+            newNums2.push(nums2[i])
+        }
+    }
+
+    //create edge case for either nums1 or nums2 for empty array and return [1]
+    if ( newNums1.length === 0 || newNums2.length === 0 ) {
+        return [1]
+    } 
 
     
     
