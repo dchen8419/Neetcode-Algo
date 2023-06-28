@@ -29,34 +29,38 @@
 
 var merge = function(nums1: number[], m: number, nums2: number[], n: number) {
     //create a two new arrays that will hold the new values where zeros are not in the array
-    let newNums1: number[] = [];
-    let newNums2: number[] = [];
-    //loop through both arrays to find and remove zeros
-    for ( let i = 0; i < nums1.length; i ++ ) {
-        if (nums1[i] !== 0) {
-            newNums1.push(nums1[i])
-        }
-    }
+    // let newNums1: number[] = [];
+    // let newNums2: number[] = [];
+    // //loop through both arrays to find and remove zeros
+    // for ( let i = 0; i < nums1.length; i ++ ) {
+    //     if (nums1[i] !== 0) {
+    //         newNums1.push(nums1[i])
+    //     }
+    // }
 
 
-    for ( let i = 0; i < nums2.length; i ++ ) {
-        if (nums2[i] !== 0) {
-            newNums2.push(nums2[i])
-        }
-    }
+    // for ( let i = 0; i < nums2.length; i ++ ) {
+    //     if (nums2[i] !== 0) {
+    //         newNums2.push(nums2[i])
+    //     }
+    // }
 
-    //create edge case for either nums1 or nums2 for empty array and return [1]
-    if ( newNums1.length === 0 || newNums2.length === 0 ) {
-        return [1]
-    } 
-
-    
-    
+    // //create edge case for either nums1 or nums2 for empty array and return [1]
+    // if ( newNums1.length === 0 || newNums2.length === 0 ) {
+    //     return [1]
+    // } 
     //create a variable that will hold the longest aray length
     //creat a for loop going through the longest array
 
+
+    //new approach:
+    //concat both arrays then sort
+    let newArray = [...nums1, ...nums2].sort()
+    console.log(newArray)
+    //remove the zeros
+
 };
 
-// console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3)) //[1,2,2,3,5,6]
-console.log(merge([1],1,[],0)) //[1]
-console.log(merge([0], 0, [1], 1)) //[1]
+console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3)) //[1,2,2,3,5,6]
+// console.log(merge([1],1,[],0)) //[1]
+// console.log(merge([0], 0, [1], 1)) //[1]
