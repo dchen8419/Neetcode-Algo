@@ -10,3 +10,8 @@
 
 // Input: nums = [0]
 // Output: [0]
+
+var moveZeroes = function(nums: number[]) {
+    
+};
+
