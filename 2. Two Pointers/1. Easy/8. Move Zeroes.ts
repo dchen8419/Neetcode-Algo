@@ -12,7 +12,11 @@
 // Output: [0]
 
 var moveZeroes = function(nums: number[]) {
-    
+    //create a new variable that can hold whole numbers and a new varabile to hold zeros
+    //loop through array
+        //check if nums[i] is a number
+        //check if nums[i] is a zero
+    //return concatted of both arrays
 };
 
 console.log(moveZeroes([0,1,0,3,12])) //[1,3,12,0,0]
