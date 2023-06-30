@@ -16,8 +16,11 @@ var moveZeroes = function(nums: number[]) {
     let wholeNum: number[] = [];
     let zeroNum: number[] = [];
     //loop through array
+    for ( let i = 0; i < nums.length; i ++ ) {
         //check if nums[i] is a number
         //check if nums[i] is a zero
+    }
+
     //return concatted of both arrays
 };
 
