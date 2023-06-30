@@ -13,6 +13,8 @@
 
 var moveZeroes = function(nums: number[]) {
     //create a new variable that can hold whole numbers and a new varabile to hold zeros
+    let wholeNum: number[] = [];
+    let zeroNum: number[] = [];
     //loop through array
         //check if nums[i] is a number
         //check if nums[i] is a zero
