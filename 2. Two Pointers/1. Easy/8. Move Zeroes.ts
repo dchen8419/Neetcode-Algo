@@ -26,8 +26,8 @@ var moveZeroes = function(nums: number[]) {
             wholeNum.push(nums[i])
         }
     }
-
     //return concatted of both arrays
+    return [...wholeNum, ... zeroNum]
 };
 
 console.log(moveZeroes([0,1,0,3,12])) //[1,3,12,0,0]
