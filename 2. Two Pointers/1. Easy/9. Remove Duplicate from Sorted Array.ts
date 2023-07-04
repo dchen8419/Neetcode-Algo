@@ -33,7 +33,10 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeDuplicates = function(nums: number[]) {
-    
+    //two pointers at the beginning of the loop
+    //compare then move up one index
+    //get the length of the whole array
+    //fill in the rest with _ 
 };
 
 console.log(removeDuplicates([1,1,2])) //2, [1,2,_]
