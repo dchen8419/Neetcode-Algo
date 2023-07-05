@@ -40,7 +40,7 @@ var removeDuplicates = function(nums: number[]) {
         let mPointer = nums[i+1]
         let rPointer = nums[i+2]
         if ( lPointer === mPointer || mPointer === rPointer) {
-            nums.splice(mPointer, 1)
+            nums.splice(lPointer, 1)
         }
     }
     console.log(nums)
