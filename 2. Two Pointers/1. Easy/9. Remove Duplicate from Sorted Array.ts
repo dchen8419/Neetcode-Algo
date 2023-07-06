@@ -34,7 +34,7 @@
 
 var removeDuplicates = function(nums: number[]) {
     //create a for loop
-    for ( let i = 0; i < nums.length; i ++ ) {
+    for ( let i = 0; i <= nums.length; i ++ ) {
         //create two pointers at the beginning of the loop
         let lPointer = nums[i]
         let mPointer = nums[i+1]
@@ -43,11 +43,7 @@ var removeDuplicates = function(nums: number[]) {
             nums.splice(lPointer, 1)
         }
     }
-    console.log(nums)
     return nums.length
-    //compare then move up one index
-    //get the length of the whole array
-    //fill in the rest with _ 
 };
 
 console.log(removeDuplicates([1,1,2])) //2, [1,2,_]
