@@ -38,3 +38,5 @@ var removeDuplicatesII = function(nums: number[]) {
     
 };
 
+console.log(removeDuplicatesII([1,1,1,2,2,3])) //5
+console.log(removeDuplicatesII([0,0,1,1,1,1,2,3,3])) //7
