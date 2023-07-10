@@ -13,3 +13,7 @@
 
 // Input: nums = [2,2,2,2,2], target = 8
 // Output: [[2,2,2,2]]
+
+var fourSum = function(nums: number[], target: number) {
+    
+};
