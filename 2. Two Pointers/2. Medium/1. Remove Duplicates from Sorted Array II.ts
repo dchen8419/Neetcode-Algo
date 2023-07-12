@@ -35,7 +35,11 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeDuplicatesII = function(nums: number[]) {
-    
+    // create a hash that holds the number of repeats
+    // loop through the number array
+    // the most repeats it can have are 2
+    // once it hits the 2 count, we will add that many to the new array
+    // return the number of items in the array
 };
 
 console.log(removeDuplicatesII([1,1,1,2,2,3])) //5
