@@ -15,7 +15,9 @@
 // Output: [[2,2,2,2]]
 
 var fourSum = function(nums: number[], target: number) {
-    
+    //numbers that will add up to the target but without repeating a number.
+    //use a while loop to add the number in then see if it adds up to the target.
+    //if it doesn't add up then remove the number
 };
 
 console.log(fourSum([1,0,-1,0,-2,2], 0)) //[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
