@@ -40,6 +40,13 @@ var removeDuplicatesII = function(nums: number[]) {
     // the most repeats it can have are 2
     // once it hits the 2 count, we will add that many to the new array
     // return the number of items in the array
+    
+
+    //would need to remove more than two duplicates
+    //maybe have a tracking system here the next number is the same we keep but once it reaches the limit we remove
+    //how would you make such a code?
+    //how to only push the same numbers in once or twice
+    //two is the limit
 };
 
 console.log(removeDuplicatesII([1,1,1,2,2,3])) //5
