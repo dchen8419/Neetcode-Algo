@@ -36,7 +36,9 @@
 
 var removeDuplicatesII = function(nums: number[]) {
     //edge case
-
+    if(nums.length <= 2) {
+        return nums.length;
+    }
     //Initialize an interger k that updates the kth index of an array...
     //only when the current elelemtn does not match either of the previous indexes...
 
