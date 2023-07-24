@@ -35,18 +35,19 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeDuplicatesII = function(nums: number[]) {
-    // create a hash that holds the number of repeats
-    // loop through the number array
-    // the most repeats it can have are 2
-    // once it hits the 2 count, we will add that many to the new array
-    // return the number of items in the array
-    
+    //edge case
 
-    //would need to remove more than two duplicates
-    //maybe have a tracking system here the next number is the same we keep but once it reaches the limit we remove
-    //how would you make such a code?
-    //how to only push the same numbers in once or twice
-    //two is the limit
+    //Initialize an interger k that updates the kth index of an array...
+    //only when the current elelemtn does not match either of the previous indexes...
+
+    //Traverse elements through loop...
+
+        //If the index does not match the (k-1)th and (k-2)the elements, count that element...
+
+        //If the index matches the (k-1)th and (k-2)th elements, we skip it...
+
+        //Return k after placing the final result in the first k slots of nums...
+
 };
 
 console.log(removeDuplicatesII([1,1,1,2,2,3])) //5
