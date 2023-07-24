@@ -49,10 +49,10 @@ var removeDuplicatesII = function(nums: number[]) {
             nums[k] = nums[i];
             k++;
         //If the index matches the (k-1)th and (k-2)th elements, we skip it...
+        }
     }
-
         //Return k after placing the final result in the first k slots of nums...
-
+    return k;
 };
 
 console.log(removeDuplicatesII([1,1,1,2,2,3])) //5
