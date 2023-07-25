@@ -30,7 +30,9 @@ var fourSum = function(nums: number[], target: number) {
     //sort nums
     nums.sort((a, b) => a-b);
     //create varaible to hold nums.length
+    const n = nums.length;
     //loop through nums but end three items before and increment by 1
+    
          
 };
 
