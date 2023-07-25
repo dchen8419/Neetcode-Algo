@@ -33,7 +33,10 @@ var fourSum = function(nums: number[], target: number) {
     const n = nums.length;
     //loop through nums but end three items before and increment by 1
     for ( let i = 0; i < n - 3; i ++) {
-        //conditional to check if i is less than zero and if the numbers are equal
+        //conditional to check if i is less than zero and if the numbers are equal to continue
+        if ( i > 0 && nums[i] === nums[i - 1]) {
+            continue;
+        }
     }
          
 };
