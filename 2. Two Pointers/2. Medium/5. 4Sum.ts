@@ -27,7 +27,10 @@
 // 10. Skip duplicate values of left and right pointers to avoid duplicate quadruplets.
 // 11. Return the result.
 var fourSum = function(nums: number[], target: number) {
-
+    //sort nums
+    //create varaible to hold nums.length
+    //loop through nums but end three items before and increment by 1
+         
 };
 
 console.log(fourSum([1,0,-1,0,-2,2], 0)) //[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
