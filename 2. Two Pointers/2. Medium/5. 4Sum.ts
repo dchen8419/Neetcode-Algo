@@ -43,6 +43,8 @@ var fourSum = function(nums: number[], target: number) {
             if ( j > i + 1 && nums[j] === nums[j - 1]) {
                 continue;
             }
+            //create right pointer
+            //create left pointer
         }
     }
          
