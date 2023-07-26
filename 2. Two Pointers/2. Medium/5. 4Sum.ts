@@ -37,6 +37,9 @@ var fourSum = function(nums: number[], target: number) {
         if ( i > 0 && nums[i] === nums[i - 1]) {
             continue;
         }
+        //create another for loop that will start at i + 1 and when i + 1 is less than the length - 2 but increment by 1
+
+            //create a condition where i + 1 is less than j and if num[j] is equal to the previous number then continue
     }
          
 };
