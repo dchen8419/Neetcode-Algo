@@ -29,6 +29,7 @@
 var fourSum = function(nums: number[], target: number) {
     //sort nums
     nums.sort((a, b) => a-b);
+    //create a variable that will hold a numbers array
     //create varaible to hold nums.length
     const n = nums.length;
     //loop through nums but end three items before and increment by 1
@@ -54,12 +55,15 @@ var fourSum = function(nums: number[], target: number) {
                 //creat a conditional where if the sum is less than the target we will increase the left by 1
                 if ( sum < target ) {
                     left++;
+                    //create a conditoinal if sum is greater than target we move right pointer down
                 }
+                    //everything else we're going to push the numbers into a holding array and loop through to move left pointer up and another while loop for right pointer down
+                    //if it doesn't match we will increment left by 1 and decrement right by 1
             }
                 
         }
     }
-         
+         //return the numbers array
 };
 
 console.log(fourSum([1,0,-1,0,-2,2], 0)) //[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
