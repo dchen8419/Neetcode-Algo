@@ -38,8 +38,10 @@ var fourSum = function(nums: number[], target: number) {
             continue;
         }
         //create another for loop that will start at i + 1 and when i + 1 is less than the length - 2 but increment by 1
-
+        for ( let j = i + 1; j < n - 2; j ++ ) {
             //create a condition where i + 1 is less than j and if num[j] is equal to the previous number then continue
+            
+        }
     }
          
 };
