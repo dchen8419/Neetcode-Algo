@@ -48,8 +48,15 @@ var fourSum = function(nums: number[], target: number) {
             //create right pointer
             let right = n - 1;
             //creat a while loop with conditoinals of left being less than right
+            while ( left < right) {
                 //create a sum variable that adds all the numbers of nums[i] nums[j] nums[left] nums[right]
+                const sum = BigInt(nums[i]) + BigInt(nums[j]) + BigInt(nums[left]) + BigInt(nums[right])
                 //creat a conditional where if the sum is less than the target we will increase the left by 1
+                if ( sum < target ) {
+                    left++;
+                }
+            }
+                
         }
     }
          
