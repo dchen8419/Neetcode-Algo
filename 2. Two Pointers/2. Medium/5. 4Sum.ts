@@ -60,10 +60,13 @@ var fourSum = function(nums: number[], target: number) {
                 } else if (sum > target) {
                     right--
                     //everything else we're going to push the numbers into a holding array and loop through to move left pointer up and another while loop for right pointer down
-                    //if it doesn't match we will increment left by 1 and decrement right by 1
                 } else {
                     quadruplets.push([nums[i], nums[j], nums[left], nums[right]]);
-                }
+                    //if it doesn't match we will increment left by 1 and decrement right by 1 using a while loop
+                    while (left < right && nums[left] === nums[left + 1]) {
+                        left++;
+                      }
+                }   
                     
             }
                 
