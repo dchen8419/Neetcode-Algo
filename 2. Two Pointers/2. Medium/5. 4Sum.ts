@@ -69,13 +69,14 @@ var fourSum = function(nums: number[], target: number) {
                     while (left < right && nums[right] === nums[right - 1]) {
                         right--;
                       }
+                    left++ ;
+                    right-- ;
                 }   
-                    
             }
-                
         }
     }
          //return the numbers array
+         return quadruplets
 };
 
 console.log(fourSum([1,0,-1,0,-2,2], 0)) //[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
