@@ -30,6 +30,7 @@ var fourSum = function(nums: number[], target: number) {
     //sort nums
     nums.sort((a, b) => a-b);
     //create a variable that will hold a numbers array
+    const quadruplets: number[][] = [];
     //create varaible to hold nums.length
     const n = nums.length;
     //loop through nums but end three items before and increment by 1
@@ -56,9 +57,17 @@ var fourSum = function(nums: number[], target: number) {
                 if ( sum < target ) {
                     left++;
                     //create a conditoinal if sum is greater than target we move right pointer down
-                }
+                } else if (sum > target) {
+                    right--
                     //everything else we're going to push the numbers into a holding array and loop through to move left pointer up and another while loop for right pointer down
-                    //if it doesn't match we will increment left by 1 and decrement right by 1
+                } else {
+                    quadruplets.push([nums[i], nums[j], nums[left], nums[right]]);
+                    //if it doesn't match we will increment left by 1 and decrement right by 1 using a while loop
+                    while (left < right && nums[left] === nums[left + 1]) {
+                        left++;
+                      }
+                }   
+                    
             }
                 
         }
