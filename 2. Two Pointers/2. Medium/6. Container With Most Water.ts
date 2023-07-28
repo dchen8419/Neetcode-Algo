@@ -38,12 +38,14 @@ var maxArea = function(height: number[]) {
     //create max_area variable with initial value of 0
     let max_area = 0;
     //create while loop where left is less than right
+        while (left < right) {
         //create a variable that has the min area using Math.min
         //update max_area to Math.max where the previous max_area is comapred to the area variable
         //create a conditional if the height of the left is < height on right we increase left by 1
         //everything else we decrease right by 1
-
+        }
     //return max_area
+    return max_area;
 };
 
 console.log(maxArea([1,8,6,2,5,4,8,3,7])) //49
