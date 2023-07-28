@@ -30,10 +30,15 @@
 
 var maxArea = function(height: number[]) {
     //create a varaible that will hold the number of items in the array using .length method
+    let n = height.length ;
     //create left pointer starting at 0
+    let left = 0;
     //create right pointer starting at n - 1
+    let right = n - 1;
     //create max_area variable with initial value of 0
+    let max_area = 0;
     //create while loop 
+    
     //return max_area
 };
 
