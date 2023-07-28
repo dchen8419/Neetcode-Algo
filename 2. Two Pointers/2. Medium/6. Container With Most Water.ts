@@ -14,3 +14,7 @@
 
 // Input: height = [1,1]
 // Output: 1
+
+var maxArea = function(height: number[]) {
+    
+};
