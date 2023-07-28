@@ -15,6 +15,19 @@
 // Input: height = [1,1]
 // Output: 1
 
+// Intuition:
+// The problem requires us to find the maximum area between two lines on the x-axis given the height of the lines as an array. Since the area of a rectangle is determined by the minimum of the heights of the two lines and the distance between them, we can use a two-pointer approach to optimize the solution. We can initialize the left and right pointers to the beginning and end of the array, respectively, and then move the pointer with the smaller height towards the center while updating the maximum area.
+
+// Approach:
+// 1. Initialize the left and right pointers to the beginning and end of the array, respectively.
+// 2. Initialize the max_area variable to 0.
+//     While left < right:
+//     a. Calculate the area between the lines at height[left] and height[right] using min(height[left], height[right]) * (right - left).
+//     b. Update the max_area variable with the maximum of max_area and area.
+//     c. If height[left] < height[right], increment the left pointer.
+// 3. Otherwise, decrement the right pointer.
+// 4. Return the max_area variable.
+
 var maxArea = function(height: number[]) {
     
 };
