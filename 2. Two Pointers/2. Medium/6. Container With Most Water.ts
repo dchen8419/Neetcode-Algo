@@ -44,7 +44,11 @@ var maxArea = function(height: number[]) {
         //update max_area to Math.max where the previous max_area is comapred to the area variable
         max_area = Math.max(max_area, area);
         //create a conditional if the height of the left is < height on right we increase left by 1
-        //everything else we decrease right by 1
+        if (height[left] < height[right]) {
+            left++;
+            //everything else we decrease right by 1
+        }
+
         }
     //return max_area
     return max_area;
