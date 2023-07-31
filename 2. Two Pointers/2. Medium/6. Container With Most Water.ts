@@ -47,9 +47,10 @@ var maxArea = function(height: number[]) {
         if (height[left] < height[right]) {
             left++;
             //everything else we decrease right by 1
+        } else {
+            right--;
         }
-
-        }
+    }
     //return max_area
     return max_area;
 };
