@@ -27,7 +27,17 @@ Since the answer may be too large, return it modulo 109 + 7.
 // Explanation: There are 63 non-empty subsequences, two of them do not satisfy the condition ([6,7], [7]).
 // Number of valid subsequences (63 - 2 = 61).
 
+/* 
+Intuition:
+*/
+
+
 var numSubseq = function(nums: number[], target: number) {
+    //create an empty array that will hold numbers
+    //push in number 1 to start but always keep the original array empty
+    //sort the nums param array
+    //create a const mod 1e9+7
+    //for loop thought nums and push into the empty array with the lenth -1 * 2 % mod
     
 };
 
