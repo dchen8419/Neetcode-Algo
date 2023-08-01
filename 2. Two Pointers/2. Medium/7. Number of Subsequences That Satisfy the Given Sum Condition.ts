@@ -31,3 +31,6 @@ var numSubseq = function(nums: number[], target: number) {
     
 };
 
+console.log(numSubseq([3,5,6,7], 9)) //4
+console.log(numSubseq([3,3,6,8], 10)) //6
+console.log(numSubseq([2,3,3,4,6,7], 12)) //61
