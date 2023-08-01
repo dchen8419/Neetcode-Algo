@@ -34,11 +34,12 @@ Intuition:
 
 var numSubseq = function(nums: number[], target: number) {
     //create an empty array that will hold numbers
+    let pow: number[] = [];
     //push in number 1 to start but always keep the original array empty
     //sort the nums param array
     //create a const mod 1e9+7
     //for loop thought nums and push into the empty array with the lenth -1 * 2 % mod
-    
+
 };
 
 console.log(numSubseq([3,5,6,7], 9)) //4
