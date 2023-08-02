@@ -36,10 +36,19 @@ var numSubseq = function(nums: number[], target: number) {
     //create an empty array that will hold numbers
     let pow: number[] = [];
     //push in number 1 to start but always keep the original array empty
+    pow.push(1);
     //sort the nums param array
+    nums.sort((a,b) => {return a-b});
     //create a const mod 1e9+7
-    //for loop thought nums and push into the empty array with the lenth -1 * 2 % mod
-
+    const mod = 1e9+7;
+    //for loop thought nums
+    for ( let i = 1; i < nums.length; i ++ ) {
+        //push into the empty array with the lenth -1 * 2 % mod
+    }
+    //create a varaible for i that will equal 0
+    //create a varaible for j that will be the length of nums - 1
+    //create res that will equal to 0
+    //return res
 };
 
 console.log(numSubseq([3,5,6,7], 9)) //4
