@@ -51,6 +51,7 @@ var numSubseq = function(nums: number[], target: number) {
     //create a varaible for j that will be the length of nums - 1
     let j = nums.length-1;
     //create res that will equal to 0
+    let res = 0
     //return res
 };
 
