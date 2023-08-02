@@ -47,6 +47,7 @@ var numSubseq = function(nums: number[], target: number) {
         pow.push((pow[pow.length-1]*2) % mod);
     };
     //create a varaible for i that will equal 0
+    let i = 0;
     //create a varaible for j that will be the length of nums - 1
     //create res that will equal to 0
     //return res
