@@ -44,7 +44,8 @@ var numSubseq = function(nums: number[], target: number) {
     //for loop thought nums
     for ( let i = 1; i < nums.length; i ++ ) {
         //push into the empty array with the lenth -1 * 2 % mod
-    }
+        pow.push((pow[pow.length-1]*2) % mod);
+    };
     //create a varaible for i that will equal 0
     //create a varaible for j that will be the length of nums - 1
     //create res that will equal to 0
