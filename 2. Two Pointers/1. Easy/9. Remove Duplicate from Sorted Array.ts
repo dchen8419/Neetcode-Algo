@@ -33,17 +33,9 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeDuplicates = function(nums: number[]) {
-    //create a for loop
-    for ( let i = 0; i <= nums.length; i ++ ) {
-        //create two pointers at the beginning of the loop
-        let lPointer = nums[i]
-        let mPointer = nums[i+1]
-        let rPointer = nums[i+2]
-        if ( lPointer === mPointer || mPointer === rPointer) {
-            nums.splice(lPointer, 1)
-        }
-    }
-    return nums.length
+    //create a varaible for i
+    //create a for loop that will start with j 
+    //return ++i;
 };
 
 console.log(removeDuplicates([1,1,2])) //2, [1,2,_]
