@@ -37,7 +37,7 @@ var removeDuplicates = function(nums: number[]) {
     let i = 0;
     //create a for loop that will start with j 
     for ( let j = 0; j < nums.length; j++ ) {
-
+        //conditional if the nums at j or i does not equal each other then we will increase i by 1
     }
     //return ++i;
 };
