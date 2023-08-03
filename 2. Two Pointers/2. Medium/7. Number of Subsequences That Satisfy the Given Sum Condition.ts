@@ -57,6 +57,8 @@ var numSubseq = function(nums: number[], target: number) {
         //condition if the nums of either i or j is greater than the target we decrease j by 1
         if (nums[i]+nums[j] > target) {
             j--
+        } else {
+            res = (res+pow[j-i++]) % mod;
         }
         //everything else we will reassign res
     }
