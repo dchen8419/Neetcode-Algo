@@ -64,6 +64,7 @@ var numSubseq = function(nums: number[], target: number) {
     }
 
     //return res
+    return res;
 };
 
 console.log(numSubseq([3,5,6,7], 9)) //4
