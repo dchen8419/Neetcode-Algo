@@ -34,7 +34,11 @@
 
 var removeDuplicates = function(nums: number[]) {
     //create a varaible for i
+    let i = 0;
     //create a for loop that will start with j 
+    for ( let j = 0; j < nums.length; j++ ) {
+
+    }
     //return ++i;
 };
 
