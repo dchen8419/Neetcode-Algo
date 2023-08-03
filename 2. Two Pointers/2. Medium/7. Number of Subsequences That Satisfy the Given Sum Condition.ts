@@ -55,6 +55,9 @@ var numSubseq = function(nums: number[], target: number) {
     //create while loop where i is less than or qual to j condition of while loop
     while (i <= j) {
         //condition if the nums of either i or j is greater than the target we decrease j by 1
+        if (nums[i]+nums[j] > target) {
+            j--
+        }
         //everything else we will reassign res
     }
 
