@@ -17,8 +17,11 @@
 // rotate 2 steps to the right: [3,99,-1,-100]
 
 var rotate = function(nums: number[], k: number) {
-    
+    //create an array that will hold the new return array
+    //create a for loop that will start at the k index and push into new array
+    //create a second for loop that will push the rest into the array
+    //return the new array of the modified old array
 };
 
-console.log(rotate([1,2,3,4,5,6,7], 3)) //[5,6,7,1,2,3,4]
+// console.log(rotate([1,2,3,4,5,6,7], 3)) //[5,6,7,1,2,3,4]
 console.log(rotate([-1,-100,3,99], 2)) //[3,99,-1,-100]
