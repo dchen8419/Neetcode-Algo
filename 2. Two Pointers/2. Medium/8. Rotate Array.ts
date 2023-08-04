@@ -20,6 +20,9 @@ var rotate = function(nums: number[], k: number) {
     //create an array that will hold the new return array
     let newNums: number[] = [];
     //create a for loop that will start at the k index and push into new array
+    for ( let i = k; i < nums.length; i ++ ) {
+        
+    }
     //create a second for loop that will push the rest into the array
     //return the new array of the modified old array
 };
