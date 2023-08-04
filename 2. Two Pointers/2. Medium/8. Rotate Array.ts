@@ -25,6 +25,9 @@ var rotate = function(nums: number[], k: number) {
         newNums.push(nums[i])
     }
     //create a second for loop that will push the rest into the array
+    for ( let i = 0; i < nums.length-k; i ++ ) {
+
+    }
     //return the new array of the modified old array
 };
 
