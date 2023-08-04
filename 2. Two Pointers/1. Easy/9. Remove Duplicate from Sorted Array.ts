@@ -39,10 +39,11 @@ var removeDuplicates = function(nums: number[]) {
     for ( let j = 0; j < nums.length; j++ ) {
         //conditional if the nums at j or i does not equal each other then we will set the i + 1 to the current nums[j]
         if (nums[j] != nums[i]) {
-            nums[i++] = nums[j];
+            nums[++i] = nums[j];
         }
     }
     //return ++i;
+    return ++i;
 };
 
 console.log(removeDuplicates([1,1,2])) //2, [1,2,_]
