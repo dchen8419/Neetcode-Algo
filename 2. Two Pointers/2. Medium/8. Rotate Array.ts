@@ -20,7 +20,7 @@ var rotate = function(nums: number[], k: number) {
     //create an array that will hold the new return array
     let newNums: number[] = [];
     //create a for loop that will start at the k index and push into new array
-    for ( let i = k; i < nums.length; i ++ ) {
+    for ( let i = nums.length-k; i < nums.length; i ++ ) {
         //push the numbers starting at nums[k] into newNums
         newNums.push(nums[i])
     }
@@ -29,7 +29,8 @@ var rotate = function(nums: number[], k: number) {
         newNums.push(nums[i])
     }
     //return the new array of the modified old array
+    return newNums
 };
 
-// console.log(rotate([1,2,3,4,5,6,7], 3)) //[5,6,7,1,2,3,4]
+console.log(rotate([1,2,3,4,5,6,7], 3)) //[5,6,7,1,2,3,4]
 console.log(rotate([-1,-100,3,99], 2)) //[3,99,-1,-100]
