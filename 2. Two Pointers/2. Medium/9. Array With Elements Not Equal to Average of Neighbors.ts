@@ -21,6 +21,17 @@
 // When i=2, nums[i] = 6, and the average of its neighbors is (7+2) / 2 = 4.5.
 // When i=3, nums[i] = 2, and the average of its neighbors is (6+0) / 2 = 3.
 
+/*
+    Intuition:
+    The idea behind this solution is to use a combination of small-big-small and big-small-big to ensure the middle number can never be the average of its neighbours.
+    Think: In (a, b, c) tuple, 'b' can be average of 'a' and 'c' only if 'b' lies in-between 'a' and 'c' in the number line.
+
+    We sort the array in ascending order. We take 2 pointers left and right and alternately insert numbers from left end and right end of the sorted array to create our output array.
+
+    Our output array will have the form of : small, big, small, big, small, big, small, big, small...
+    So that upon selecting any 3 consecutive numbers, the middle can never be the average of other 2.
+*/
+
 var rearrangeArray = function(nums: number[]) {
     
 };
