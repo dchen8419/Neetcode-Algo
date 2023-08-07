@@ -33,7 +33,13 @@
 */
 
 var rearrangeArray = function(nums: number[]) {
-    
+    //sort array in ascending order
+    //create an empty array to hold values for return
+    //create left pointer at 0
+    //create right poitner at the end of array
+    //create a while loop where the left is less than right
+    //incase the array length is odd we only need to insert the middle element once
+    //return result array
 };
 
 console.log(rearrangeArray([1,2,3,4,5])) //[1,2,4,5,3]
