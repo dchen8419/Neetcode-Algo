@@ -51,6 +51,7 @@ var rearrangeArray = function(nums: number[]) {
     //incase the array length is odd we only need to insert the middle element once
     if ( left == right) {
         // in case array length is odd we only need to insert the middle element once
+        result.push(nums[left])
     }
     //return result array
 };
