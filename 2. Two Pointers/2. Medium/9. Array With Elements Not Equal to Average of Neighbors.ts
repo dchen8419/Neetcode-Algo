@@ -42,6 +42,9 @@ var rearrangeArray = function(nums: number[]) {
     //create right poitner at the end of array
     let right = nums.length-1;
     //create a while loop where the left is less than right
+    while ( left < right) {
+        
+    }
     //incase the array length is odd we only need to insert the middle element once
     //return result array
 };
