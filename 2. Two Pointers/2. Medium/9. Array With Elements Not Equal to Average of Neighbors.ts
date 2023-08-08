@@ -40,6 +40,7 @@ var rearrangeArray = function(nums: number[]) {
     //create left pointer at 0
     let left = 0;
     //create right poitner at the end of array
+    let right = nums.length-1;
     //create a while loop where the left is less than right
     //incase the array length is odd we only need to insert the middle element once
     //return result array
