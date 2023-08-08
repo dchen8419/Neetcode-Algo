@@ -34,6 +34,7 @@
 
 var rearrangeArray = function(nums: number[]) {
     //sort array in ascending order
+    nums.sort((a,b) => a-b);
     //create an empty array to hold values for return
     //create left pointer at 0
     //create right poitner at the end of array
