@@ -46,6 +46,7 @@ var rearrangeArray = function(nums: number[]) {
         //push left element into array then
         result.push(nums[left++]);
         //push right element into array and slowly move down
+        result.push(nums[right--]);
     }
     //incase the array length is odd we only need to insert the middle element once
     //return result array
