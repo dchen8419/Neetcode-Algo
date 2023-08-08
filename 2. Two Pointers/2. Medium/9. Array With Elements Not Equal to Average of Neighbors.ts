@@ -43,7 +43,8 @@ var rearrangeArray = function(nums: number[]) {
     let right = nums.length-1;
     //create a while loop where the left is less than right
     while ( left < right) {
-        
+        //push left element into array then
+        //push right element into array and slowly move down
     }
     //incase the array length is odd we only need to insert the middle element once
     //return result array
