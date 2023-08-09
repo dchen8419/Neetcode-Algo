@@ -17,3 +17,7 @@
 // Input: people = [3,5,3,4], limit = 5
 // Output: 4
 // Explanation: 4 boats (3), (3), (4), (5)
+
+var numRescueBoats = function(people: number[], limit: number) {
+    
+};
