@@ -39,7 +39,12 @@ d. Increment the boats counter by 1.
 */
 
 var numRescueBoats = function(people: number[], limit: number) {
-    
+    //sort people param from small to large
+    //create left variable starting at 0
+    //create right varaible starting at the end of number array
+    //create a varable boats that will hold a number starting at 0
+    //create a while loop
+    //return boats
 };
 
 console.log(numRescueBoats([1,2], 3)) //1
