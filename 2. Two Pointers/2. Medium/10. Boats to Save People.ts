@@ -42,6 +42,7 @@ var numRescueBoats = function(people: number[], limit: number) {
     //sort people param from small to large
     people.sort((a,b) => a -b);
     //create left variable starting at 0
+    let left = 0;
     //create right varaible starting at the end of number array
     //create a varable boats that will hold a number starting at 0
     //create a while loop
