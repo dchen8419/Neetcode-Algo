@@ -49,7 +49,9 @@ var numRescueBoats = function(people: number[], limit: number) {
     let boats = 0;
     //create a while loop where left is less than or equal to right
     while ( left <= right ) {
-        
+        // if people at left index  and people at right index is less than or equal to the limit we will increase left by 1
+        //other than that we will always decrease right by one
+        //and increase boats by 1
     }
     //return boats
 };
