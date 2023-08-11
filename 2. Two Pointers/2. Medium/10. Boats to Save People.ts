@@ -52,8 +52,9 @@ var numRescueBoats = function(people: number[], limit: number) {
         // if people at left index  and people at right index is less than or equal to the limit we will increase left by 1
         if (people[left] + people[right] <= limit) {
             left++
-        }
+        };
         //other than that we will always decrease right by one
+        right--;
         //and increase boats by 1
     }
     //return boats
