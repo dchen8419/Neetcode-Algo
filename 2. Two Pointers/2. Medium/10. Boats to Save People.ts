@@ -59,6 +59,7 @@ var numRescueBoats = function(people: number[], limit: number) {
         boats++;
     }
     //return boats
+    return boats;
 };
 
 console.log(numRescueBoats([1,2], 3)) //1
