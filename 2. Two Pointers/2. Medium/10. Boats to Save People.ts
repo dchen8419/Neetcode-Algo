@@ -48,7 +48,9 @@ var numRescueBoats = function(people: number[], limit: number) {
     //create a varable boats that will hold a number starting at 0
     let boats = 0;
     //create a while loop where left is less than or equal to right
-    
+    while ( left <= right ) {
+        
+    }
     //return boats
 };
 
