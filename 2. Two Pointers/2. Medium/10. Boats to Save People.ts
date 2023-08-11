@@ -46,6 +46,7 @@ var numRescueBoats = function(people: number[], limit: number) {
     //create right varaible starting at the end of number array
     let right = people.length-1;
     //create a varable boats that will hold a number starting at 0
+    let boats = 0;
     //create a while loop
     //return boats
 };
