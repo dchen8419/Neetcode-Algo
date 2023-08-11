@@ -56,6 +56,7 @@ var numRescueBoats = function(people: number[], limit: number) {
         //other than that we will always decrease right by one
         right--;
         //and increase boats by 1
+        boats++;
     }
     //return boats
 };
