@@ -20,3 +20,7 @@ such that nums[i] == nums[j] and abs(i - j) <= k.
 var containsNearbyDuplicate = function(nums: number[], k: number) {
     
 };
+
+console.log(containsNearbyDuplicate([1,2,3,1],3)) //true
+console.log(containsNearbyDuplicate([1,0,1,1], 1)) //true
+console.log(containsNearbyDuplicate([1,2,3,1,2,3],2 )) //false
