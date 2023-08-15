@@ -18,7 +18,8 @@ such that nums[i] == nums[j] and abs(i - j) <= k.
 // Output: false
 
 var containsNearbyDuplicate = function(nums: number[], k: number) {
-    
+    //check to seee if length is odd or even and return false if even
+    //
 };
 
 console.log(containsNearbyDuplicate([1,2,3,1],3)) //true
