@@ -18,8 +18,8 @@ such that nums[i] == nums[j] and abs(i - j) <= k.
 // Output: false
 
 var containsNearbyDuplicate = function(nums: number[], k: number) {
-    //check to seee if length is odd or even and return false if even
     //create a hasmap with the new keyword
+    let hashmap = new Map();
     //create a for loop that loops through nums at each index
     //return false
 };
