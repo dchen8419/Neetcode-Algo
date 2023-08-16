@@ -23,6 +23,9 @@ var containsNearbyDuplicate = function(nums: number[], k: number) {
     //create a for loop that loops through nums at each index
     for ( let i = 0; i < nums.length; i ++ ) {
         //create an if condition that if the index minus the hashmap at the nums index is less than or equal to k we will return true
+        if ( i - hashmap.get(nums[i] <= k) ) {
+            
+        }
         //for each loop we will setup the Map object as key being nums[i] and the value as i
     }
     //return false
