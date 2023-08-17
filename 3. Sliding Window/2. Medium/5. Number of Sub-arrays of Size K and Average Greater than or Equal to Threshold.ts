@@ -14,3 +14,8 @@ average greater than or equal to threshold.
 // Input: arr = [11,13,17,23,29,31,7,5,2,3], k = 3, threshold = 5
 // Output: 6
 // Explanation: The first 6 sub-arrays of size 3 have averages greater than 5. Note that averages are not integers.
+
+var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
+    
+};
+
