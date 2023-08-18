@@ -16,7 +16,7 @@ average greater than or equal to threshold.
 // Explanation: The first 6 sub-arrays of size 3 have averages greater than 5. Note that averages are not integers.
 
 var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
-    
+    //create a variable for count
 };
 
 console.log(numOfSubarrays([2,2,2,2,5,5,5,8], 3, 4)) //3
