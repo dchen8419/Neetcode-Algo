@@ -20,6 +20,7 @@ var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
     //create variable for windowSize;
     //create variable for windowSum;
     //create a for loop starting at 0 and increment one at a time from the nums.length;
+    //return count variable;
     
 };
 
