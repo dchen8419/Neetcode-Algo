@@ -30,6 +30,7 @@ var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
         //then we will increase windowSize++
     }
     //return count variable;
+    return count;
 };
 
 console.log(numOfSubarrays([2,2,2,2,5,5,5,8], 3, 4)) //3
