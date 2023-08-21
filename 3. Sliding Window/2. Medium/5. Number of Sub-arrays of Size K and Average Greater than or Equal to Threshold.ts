@@ -17,6 +17,7 @@ average greater than or equal to threshold.
 
 var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
     //create a variable for count;
+    let count = 0;
     //create variable for windowSize;
     //create variable for windowSum;
     //create a for loop starting at 0 and increment one at a time from the nums.length;
