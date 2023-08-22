@@ -33,6 +33,7 @@ var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
                 //windowSum minus equal to arr[i - k]
                 windowSum -= arr[i - k];
                 //windowSize decrement --
+                windowSize--
             }
         //other than that we will incremnet windowSum += to nums[i]
         //then we will increase windowSize++
