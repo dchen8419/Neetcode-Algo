@@ -38,8 +38,8 @@ var numOfSubarrays = function(arr: number[], k: number, threshold: number) {
         //other than that we will incremnet windowSum += to nums[i]
         windowSum += arr[i]
         //then we will increase windowSize++
+        windowSize++
         }
-
     }
     //return count variable;
     return count;
