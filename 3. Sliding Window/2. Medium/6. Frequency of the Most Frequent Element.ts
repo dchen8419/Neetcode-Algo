@@ -24,3 +24,7 @@ Return the maximum possible frequency of an element after performing at most k o
 
 // Input: nums = [3,9,6], k = 2
 // Output: 1
+
+var maxFrequency = function(nums: number[], k: number) {
+    
+};
