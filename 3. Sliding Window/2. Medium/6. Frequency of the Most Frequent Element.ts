@@ -42,7 +42,7 @@ but if it's not we will increment the left poitner by 1 to shorten the window le
 */
 
 var maxFrequency = function(nums: number[], k: number) {
-    
+    //sort array
 };
 
 console.log(maxFrequency([1,2,4], 5)) //3
