@@ -25,6 +25,22 @@ Return the maximum possible frequency of an element after performing at most k o
 // Input: nums = [3,9,6], k = 2
 // Output: 1
 
+/*
+Approach:
+    Sort input array then use sliding window
+Look at left values after sorting to find the values closes to the largest will be incremented first
+We will have two pointers with left and right
+The right value is going to be the most "frequent" element which all other numbers will need to match for the amount repeated
+We will keep expanding our window to the right while our "budget", aka k, will allow for us to grow
+
+How it works:
+Left and right pointer will start the frist value
+Total will be a varaible that holds the sum of all the numbers in the sliding window
+The equation that is needed will be (num[right]*windowLength <= total + K) becuaes it helps us if we need to expand the window or not
+If the condition is true above we continue and increase right
+but if it's not we will increment the left poitner by 1 to shorten the window length
+*/
+
 var maxFrequency = function(nums: number[], k: number) {
     
 };
