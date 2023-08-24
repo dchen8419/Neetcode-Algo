@@ -46,6 +46,7 @@ var maxFrequency = function(nums: number[], k: number) {
     //create left pointer varaible starting at 0
     //create right pointer variable starting at 0
     //create result variable starting at 0
+    //create result variable starting at 0
 };
 
 console.log(maxFrequency([1,2,4], 5)) //3
