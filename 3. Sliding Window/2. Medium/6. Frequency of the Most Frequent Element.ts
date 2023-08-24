@@ -29,6 +29,6 @@ var maxFrequency = function(nums: number[], k: number) {
     
 };
 
-console.log(maxFrequency([1,2,4], 5))
-console.log(maxFrequency([1,4,8,13], 5))
-console.log(maxFrequency([3,9,6], 2))
+console.log(maxFrequency([1,2,4], 5)) //3
+console.log(maxFrequency([1,4,8,13], 5)) //2
+console.log(maxFrequency([3,9,6], 2)) //1
