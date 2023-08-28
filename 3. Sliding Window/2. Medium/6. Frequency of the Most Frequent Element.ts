@@ -47,6 +47,7 @@ var maxFrequency = function(nums: number[], k: number) {
     //create left pointer varaible starting at 0
     let left = 0;
     //create right pointer variable starting at 0
+    let right = 0;
     //create result variable starting at 0
     //create total variable starting at 0
     //create a while loop where the condition is right is less than the length of the array we will continue to iterate through
