@@ -45,6 +45,7 @@ var maxFrequency = function(nums: number[], k: number) {
     //sort array
     nums.sort((a,b) => a-b);
     //create left pointer varaible starting at 0
+    let left = 0;
     //create right pointer variable starting at 0
     //create result variable starting at 0
     //create total variable starting at 0
