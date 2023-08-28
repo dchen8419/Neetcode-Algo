@@ -51,6 +51,7 @@ var maxFrequency = function(nums: number[], k: number) {
     //create result variable starting at 0
     let result = 0;
     //create total variable starting at 0
+    let total = 0;
     //create a while loop where the condition is right is less than the length of the array we will continue to iterate through
         //set total variable to the nums[right]
 };
