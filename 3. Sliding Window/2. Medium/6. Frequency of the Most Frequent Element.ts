@@ -56,6 +56,9 @@ var maxFrequency = function(nums: number[], k: number) {
     while ( right < nums.length ) {
         //set total variable to the nums[right] adding to the total variable
         total += nums[right]
+        //create another while loop that has condtions of nums[right]*(right - left + 1) > total+k
+            //under these conditions we subtract the total from nums[left]
+            //add 1 to left variable
     }
 
     //return result variable
