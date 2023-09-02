@@ -63,6 +63,7 @@ var maxFrequency = function(nums: number[], k: number) {
         }
     }
     //return result variable
+    return result
 };
 
 console.log(maxFrequency([1,2,4], 5)) //3
