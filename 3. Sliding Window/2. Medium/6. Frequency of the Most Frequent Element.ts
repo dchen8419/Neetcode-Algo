@@ -63,7 +63,8 @@ var maxFrequency = function(nums: number[], k: number) {
             //add 1 to left variable
             left+=1
         }
-        //reassign res to math.max to find the max of res and right-left+1
+        //reassign result to math.max to find the max of res and right-left+1
+        result = Math.max(result, right-left+1)
         //add one to right
     }
     //return result variable
