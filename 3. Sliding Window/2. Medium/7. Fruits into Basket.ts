@@ -27,6 +27,7 @@
 
 var totalFruit = function(fruits: number[]) {
     //create a new map
+    //create a variable that will hold the ans which will be a number
 };
 
 console.log(totalFruit([1,2,1])) //3
