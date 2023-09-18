@@ -26,7 +26,7 @@
 // If we had started at the first tree, we would only pick from trees [1,2].
 
 var totalFruit = function(fruits: number[]) {
-    
+    //create a new map
 };
 
 console.log(totalFruit([1,2,1])) //3
