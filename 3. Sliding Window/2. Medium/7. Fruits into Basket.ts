@@ -29,7 +29,7 @@ var totalFruit = function(fruits: number[]) {
     //create a new map
     const map = new Map();
     //create a variable that will hold the ans which will be a number
-    const ans = 0;
+    let ans = 0;
     //add variable function add that will map over a set get the param or 0 then add to the set
     const add = (e: number) => {
         map.set(e, (map.get(e) || 0) + 1);
@@ -40,7 +40,9 @@ var totalFruit = function(fruits: number[]) {
         else map.set(e, map.get(e) - 1);
     }
     //create a varaible r that will equal 0
+    let r = 0;
     //create a variable l that will equal 0
+    let l = 0;
     //create a while loop where the condition is r is less than the fruits array length
     //return ans varaible
 };
