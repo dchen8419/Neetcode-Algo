@@ -28,6 +28,9 @@
 var totalFruit = function(fruits: number[]) {
     //create a new map
     //create a variable that will hold the ans which will be a number
+    //add variable function add that will map over a set get the param or 0 then add to the set
+    //add a varaible function remove that will remove the number in the set
+    //create a varaible r that will equal 0
 };
 
 console.log(totalFruit([1,2,1])) //3
