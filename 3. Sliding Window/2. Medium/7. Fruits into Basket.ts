@@ -32,6 +32,8 @@ var totalFruit = function(fruits: number[]) {
     //add a varaible function remove that will remove the number in the set
     //create a varaible r that will equal 0
     //create a variable l that will equal 0
+    //create a while loop where the condition is r is less than the fruits array length
+    
 };
 
 console.log(totalFruit([1,2,1])) //3
