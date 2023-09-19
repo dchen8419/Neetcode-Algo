@@ -27,6 +27,7 @@
 
 var totalFruit = function(fruits: number[]) {
     //create a new map
+    const map = new Map()
     //create a variable that will hold the ans which will be a number
     //add variable function add that will map over a set get the param or 0 then add to the set
     //add a varaible function remove that will remove the number in the set
