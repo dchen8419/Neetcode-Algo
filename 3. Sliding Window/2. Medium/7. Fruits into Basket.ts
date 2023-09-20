@@ -44,6 +44,10 @@ var totalFruit = function(fruits: number[]) {
     //create a variable l that will equal 0
     let l = 0;
     //create a while loop where the condition is r is less than the fruits array length
+    while ( r < fruits.length ) {
+        
+    }
+    
     //return ans varaible
 };
 
