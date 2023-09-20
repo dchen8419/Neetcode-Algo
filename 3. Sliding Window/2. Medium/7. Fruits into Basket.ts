@@ -56,7 +56,7 @@ var totalFruit = function(fruits: number[]) {
             remove(fruits[l])
             l++
         }
-        
+        //we will reassign ans to math max between the current ans and the r - l
     };
     //return ans varaible
     return ans;
