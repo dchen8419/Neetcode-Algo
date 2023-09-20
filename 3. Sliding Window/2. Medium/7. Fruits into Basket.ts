@@ -53,8 +53,10 @@ var totalFruit = function(fruits: number[]) {
         //everything else we will 
         } else {
             // remove the fruits[l] and then increment the l
+            remove(fruits[l])
+            l++
         }
-
+        
     };
     //return ans varaible
     return ans;
