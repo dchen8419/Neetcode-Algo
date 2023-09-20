@@ -50,7 +50,9 @@ var totalFruit = function(fruits: number[]) {
             //then we can add the fruit[r] and r++
             add(fruits[r]);
             r++
-        //everything else we will remove the fruits[l] and then increment the l
+        //everything else we will 
+        } else {
+            // remove the fruits[l] and then increment the l
         }
 
     };
