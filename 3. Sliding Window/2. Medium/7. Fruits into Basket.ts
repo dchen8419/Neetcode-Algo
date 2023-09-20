@@ -47,10 +47,12 @@ var totalFruit = function(fruits: number[]) {
     while ( r < fruits.length ) {
         //first condition is if the map size is less than or equal to 1 or the map size is equal to 2 and the map have the fruits at [r] 
         if (map.size <=1 || (map.size === 2 && map.has(fruits[r]))) {
-                    //then we can add the fruit[r and r ++]
+            //then we can add the fruit[r] and r++
+            add(fruits[r]);
+            r++
+        //everything else we will remove the fruits[l] and then increment the l
         }
 
-        //everything else we will remove the fruits[l] and then increment the l
     };
     //return ans varaible
     return ans;
