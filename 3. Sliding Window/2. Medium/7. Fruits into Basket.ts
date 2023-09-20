@@ -35,7 +35,7 @@ var totalFruit = function(fruits: number[]) {
         map.set(e, (map.get(e) || 0) + 1);
     }
     //add a varaible function remove that will remove the number in the set
-    const remove = (e) => {
+    const remove = (e: number) => {
         if (map.get(e) == 1) map.delete(e);
         else map.set(e, map.get(e) - 1);
     }
@@ -45,10 +45,10 @@ var totalFruit = function(fruits: number[]) {
     let l = 0;
     //create a while loop where the condition is r is less than the fruits array length
     while ( r < fruits.length ) {
-        
-    }
-    
+
+    };
     //return ans varaible
+    return ans;
 };
 
 console.log(totalFruit([1,2,1])) //3
