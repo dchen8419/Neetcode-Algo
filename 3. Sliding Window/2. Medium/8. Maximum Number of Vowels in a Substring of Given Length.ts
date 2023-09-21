@@ -16,3 +16,7 @@
 // Input: s = "leetcode", k = 3
 // Output: 2
 // Explanation: "lee", "eet" and "ode" contain 2 vowels.
+
+var maxVowels = function(s: string, k: number) {
+    
+};
