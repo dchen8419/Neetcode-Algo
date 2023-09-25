@@ -43,6 +43,8 @@ var maxVowels = function(s: string, k: number) {
         //if the vowel has s[i-1] we will decrement current by 1
         //if the vowel has s[i + k - 1] we will increment current by 1
         
+        //if the current is equal to k then we will return the current
+
 };
 
 console.log(maxVowels("abciiidef", 3)) //3
