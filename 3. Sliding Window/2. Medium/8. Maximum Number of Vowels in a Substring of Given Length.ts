@@ -44,6 +44,7 @@ var maxVowels = function(s: string, k: number) {
         //if the vowel has s[i + k - 1] we will increment current by 1
         
         //if the current is equal to k then we will return the current
+        //if the current is greater than max we will set max to current
 
 };
 
