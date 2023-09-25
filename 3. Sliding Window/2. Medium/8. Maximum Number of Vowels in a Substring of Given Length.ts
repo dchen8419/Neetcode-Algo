@@ -40,7 +40,9 @@ var maxVowels = function(s: string, k: number) {
     //if the previous condition was not fired we will set the current to max
     //this is where we use the sliding window technique
     //we create a for loop going through s.length but minus the k
-        //first condition is if the vowel has s[i-1] we will decrement current by 1
+        //if the vowel has s[i-1] we will decrement current by 1
+        //if the vowel has s[i + k - 1] we will increment current by 1
+        
 };
 
 console.log(maxVowels("abciiidef", 3)) //3
