@@ -34,6 +34,10 @@ var maxVowels = function(s: string, k: number) {
     //create a set for vowels
     //create a max vaariable
     //create current variable
+    //create a for loop that will iterate thru i < k starting at i = 0 and incrementing one at a time
+        //the condition is if the s[i] contains the vowels then we will increment max by 1
+    //once the for loop is done we hit another condition outside of the for loop in the function global where if max is the same as k we will return the max that's when we know that k is the max we can go
+    
 };
 
 console.log(maxVowels("abciiidef", 3)) //3
