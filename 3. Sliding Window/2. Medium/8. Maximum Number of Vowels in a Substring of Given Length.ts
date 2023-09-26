@@ -38,12 +38,14 @@ var maxVowels = function(s: string, k: number) {
     //create current variable
     let current = 0; //Number of vowels in the current window
     //create a for loop that will iterate thru i < k starting at i = 0 and incrementing one at a time
+    //Count the total number of vowels from the frist window
     for (let i = 0; i < k; i++) {
         //the condition is if the s[i] contains the vowels then we will increment max by 1
         if (vowels.has(s[i])) max++
     } 
     //once the for loop is done we hit another condition outside of the for loop in the function global where if max is the same as k we will return the max that's when we know that k is the max we can go
     //if the previous condition was not fired we will set the current to max
+    if (max === k) return max //Return if 'k' is hit
     //this is where we use the sliding window technique
     //we create a for loop going through s.length but minus the k
         //if the vowel has s[i-1] we will decrement current by 1
