@@ -31,7 +31,8 @@ We attempt to return at multiple points in the code if max or current have hit t
 */
 
 var maxVowels = function(s: string, k: number) {
-    //create a set for vowels
+    //create a set for vowels using const
+    const vowels = new Set(['a','e','i','o','u','y'])
     //create a max vaariable
     //create current variable
     //create a for loop that will iterate thru i < k starting at i = 0 and incrementing one at a time
@@ -45,7 +46,7 @@ var maxVowels = function(s: string, k: number) {
         
         //if the current is equal to k then we will return the current
         //if the current is greater than max we will set max to current
-
+    //return max
 };
 
 console.log(maxVowels("abciiidef", 3)) //3
