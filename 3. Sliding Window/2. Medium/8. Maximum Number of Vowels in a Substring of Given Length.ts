@@ -58,6 +58,7 @@ var maxVowels = function(s: string, k: number) {
         //if the current is equal to k then we will return the current
         if (current === k) return current // Return if the 'k' is hit
         //if the current is greater than max we will set max to current
+        if (current > max) max = current //Set 'max' to the 'current' value, if greater
     }
     //return max
 };
