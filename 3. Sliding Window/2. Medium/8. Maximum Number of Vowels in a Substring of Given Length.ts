@@ -61,6 +61,7 @@ var maxVowels = function(s: string, k: number) {
         if (current > max) max = current //Set 'max' to the 'current' value, if greater
     }
     //return max
+    return max
 };
 
 console.log(maxVowels("abciiidef", 3)) //3
