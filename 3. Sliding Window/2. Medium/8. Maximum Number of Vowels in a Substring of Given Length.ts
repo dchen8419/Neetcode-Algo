@@ -44,8 +44,9 @@ var maxVowels = function(s: string, k: number) {
         if (vowels.has(s[i])) max++
     } 
     //once the for loop is done we hit another condition outside of the for loop in the function global where if max is the same as k we will return the max that's when we know that k is the max we can go
-    //if the previous condition was not fired we will set the current to max
     if (max === k) return max //Return if 'k' is hit
+    //if the previous condition was not fired we will set the current to max
+    current = max
     //this is where we use the sliding window technique
     //we create a for loop going through s.length but minus the k
         //if the vowel has s[i-1] we will decrement current by 1
