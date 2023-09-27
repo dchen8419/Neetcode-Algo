@@ -56,6 +56,7 @@ var maxVowels = function(s: string, k: number) {
         if (vowels.has(s[i + k -1])) current++ //Add the right-most vowel
         
         //if the current is equal to k then we will return the current
+        if (current === k) return current // Return if the 'k' is hit
         //if the current is greater than max we will set max to current
     }
     //return max
