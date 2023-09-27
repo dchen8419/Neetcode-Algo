@@ -51,6 +51,7 @@ var maxVowels = function(s: string, k: number) {
     //we create a for loop going through s.length but minus the k
     for ( let i = 1; i <=s.length - k; i++) {
         //if the vowel has s[i-1] we will decrement current by 1
+        if (vowels.has(s[i-1])) current-- //Remove the left most vowel
         //if the vowel has s[i + k - 1] we will increment current by 1
         
         //if the current is equal to k then we will return the current
