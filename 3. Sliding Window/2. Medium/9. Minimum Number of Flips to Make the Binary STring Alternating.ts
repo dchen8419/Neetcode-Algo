@@ -28,3 +28,7 @@
 var minFlips = function(s:string) {
     
 };
+
+console.log(minFlips("111000")) //2
+console.log(minFlips("010")) //0
+console.log(minFlips("1110")) //1
