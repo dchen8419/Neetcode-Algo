@@ -24,3 +24,7 @@
 // Input: s = "1110"
 // Output: 1
 // Explanation: Use the second operation on the second element to make s = "1010".
+
+var minFlips = function(s:string) {
+    
+};
