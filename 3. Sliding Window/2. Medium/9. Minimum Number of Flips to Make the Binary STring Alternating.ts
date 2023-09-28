@@ -7,3 +7,20 @@
 // The string is called alternating if no two adjacent characters are equal.
 
 // For example, the strings "010" and "1010" are alternating, while the string "0100" is not.
+
+// Example 1:
+
+// Input: s = "111000"
+// Output: 2
+// Explanation: Use the first operation two times to make s = "100011".
+// Then, use the second operation on the third and sixth elements to make s = "101010".
+// Example 2:
+
+// Input: s = "010"
+// Output: 0
+// Explanation: The string is already alternating.
+// Example 3:
+
+// Input: s = "1110"
+// Output: 1
+// Explanation: Use the second operation on the second element to make s = "1010".
