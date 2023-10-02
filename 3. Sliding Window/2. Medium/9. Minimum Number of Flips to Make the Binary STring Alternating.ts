@@ -103,6 +103,7 @@ var minFlips = function(s:string) {
     //create evenCmp variable set to 0
     //create oddCmp set to 0
     //create minFlips and set to Infinity
+    //create end and set to 0
 };
 
 console.log(minFlips("111000")) //2
