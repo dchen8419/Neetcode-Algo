@@ -98,12 +98,15 @@ O(1)
 
 var minFlips = function(s:string) {
     //edge case if there is no 's' or the s.length is less than 1 we will return 0
+    
     //create a const where initalLen is equal to the initial s.length
     //create a condition if the initialLen is % 2 then we will make a copy of s and then attach it ot the end
+
     //create evenCmp variable set to 0
     //create oddCmp set to 0
     //create minFlips and set to Infinity
     //create end and set to 0
+    //create start and set to 0
 };
 
 console.log(minFlips("111000")) //2
