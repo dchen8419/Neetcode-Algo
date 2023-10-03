@@ -121,6 +121,8 @@ var minFlips = function(s:string) {
             //we will reassign miniFlips to Math.min of evenCmp, oddCmp or minFlips
         
         //increment end++
+    
+    // we will return minFlips at the end
 };  
 
 console.log(minFlips("111000")) //2
