@@ -119,7 +119,8 @@ var minFlips = function(s:string) {
     
         //if the end is greater than or equal to initialLen - 1
             //we will reassign miniFlips to Math.min of evenCmp, oddCmp or minFlips
-            
+        
+        //increment end++
 };  
 
 console.log(minFlips("111000")) //2
