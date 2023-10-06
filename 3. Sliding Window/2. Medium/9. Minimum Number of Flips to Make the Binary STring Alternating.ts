@@ -103,6 +103,7 @@ var minFlips = function(s:string) {
     //create a const where initalLen is equal to the initial s.length
     const initialLen = s.length;
     //create a condition if the initialLen is % 2 then we will make a copy of s and then attach it ot the end
+    if (initialLen % 2 === 1) s += s;
 
     //create evenCmp variable set to 0
     //create oddCmp set to 0
