@@ -114,6 +114,7 @@ var minFlips = function(s:string) {
     //create end and set to 0
     let end = 0;
     //create start and set to 0
+    let start = 0;
 
     //create a while loop where end is less than s.length
         //if the end is not even and is equal to Number(s[end]) we will increment evenCmp++
