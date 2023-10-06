@@ -106,6 +106,7 @@ var minFlips = function(s:string) {
     if (initialLen % 2 === 1) s += s;
 
     //create evenCmp variable set to 0
+    let evenCmp = 0;
     //create oddCmp set to 0
     //create minFlips and set to Infinity
     //create end and set to 0
