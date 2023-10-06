@@ -110,6 +110,7 @@ var minFlips = function(s:string) {
     //create oddCmp set to 0
     let oddCmp = 0;
     //create minFlips and set to Infinity
+    let minFlips = Infinity;
     //create end and set to 0
     //create start and set to 0
 
