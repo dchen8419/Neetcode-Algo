@@ -98,6 +98,7 @@ O(1)
 
 var minFlips = function(s:string) {
     //edge case if there is no 's' or the s.length is less than 1 we will return 0
+    if (!s || s.length < 1) return 0;
 
     //create a const where initalLen is equal to the initial s.length
     //create a condition if the initialLen is % 2 then we will make a copy of s and then attach it ot the end
