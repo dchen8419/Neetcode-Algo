@@ -112,6 +112,7 @@ var minFlips = function(s:string) {
     //create minFlips and set to Infinity
     let minFlips = Infinity;
     //create end and set to 0
+    let end = 0;
     //create start and set to 0
 
     //create a while loop where end is less than s.length
