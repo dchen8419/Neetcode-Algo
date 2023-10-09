@@ -130,6 +130,7 @@ var minFlips = function(s:string) {
             //if the start is even ^ 1 and does not equal to Number(s[end]) we will decrement oddCmp--
             if ((start % 2 ^ 1) !== Number(s[start])) oddCmp--;
             //we will increment start++
+            start++;
         }
     
         //if the end is greater than or equal to initialLen - 1
