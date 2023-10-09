@@ -117,7 +117,8 @@ var minFlips = function(s:string) {
     let start = 0;
 
     //create a while loop where end is less than s.length
-        //if the end is not even and is equal to Number(s[end]) we will increment evenCmp++
+    while (end < s.length) {
+                //if the end is not even and is equal to Number(s[end]) we will increment evenCmp++
         //if ((end is even ^ 1)) and it does not equal Number(s[end]) we will increment oddCmp++
 
         //if end is greater than or equal to the initalLen then we will have inner conditions
@@ -129,7 +130,7 @@ var minFlips = function(s:string) {
             //we will reassign miniFlips to Math.min of evenCmp, oddCmp or minFlips
         
         //increment end++
-    
+    }
     // we will return minFlips at the end
 };  
 
