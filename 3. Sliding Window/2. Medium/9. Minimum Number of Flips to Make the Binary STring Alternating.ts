@@ -139,8 +139,11 @@ var minFlips = function(s:string) {
             minFlips = Math.min(evenCmp, oddCmp, minFlips);
         }
         //increment end++
+        end++;
+        
     }
     // we will return minFlips at the end
+
 };  
 
 console.log(minFlips("111000")) //2
