@@ -140,10 +140,9 @@ var minFlips = function(s:string) {
         }
         //increment end++
         end++;
-        
     }
     // we will return minFlips at the end
-
+    return minFlips
 };  
 
 console.log(minFlips("111000")) //2
