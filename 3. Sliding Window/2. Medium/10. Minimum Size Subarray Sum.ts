@@ -27,8 +27,19 @@ Sliding window approach best suits the scenario, as we just need to find the min
 Why specifically window sliding technique?
 Naive Approach => (Brute Force Approach)
 
-We start with the first index and sum till the kth element where the condition is satisfied. Need to be done for all possible consecutive blocks or groups of k elements. 
-This method requires a inner loop, the outer loop starts with the starting element of the block of k elements, and the inner or the nested will add up till the kth element
+Window Sliding Technique =>
+
+It is a computational technique that aims to reduce the use of nested loops and replace it with a single loop, thereby reducing the time complexity.
+
+This approach can be done in a very specific scenario, where the 'size of the window' for computation merely depends on the target, so it is fixed on the target value, which results in a subarray of arbitrary length.
+
+How to use a sliding window technique in general?
+(1) Find the size of the window required (depends on target value)
+
+(2) Compute the result for 1st window, from the start of the data structure
+
+(3) Then use a loop to slide the window by 1, and keep computing the result window by window
+
 */
 
 var minSubArrayLen = function(target: number, nums: number[]) {
