@@ -16,6 +16,21 @@
 // Input: target = 11, nums = [1,1,1,1,1,1,1,1]
 // Output: 0
 
+/*
+Explanation
+From the problem we need to acheive.,
+to find : " a subarray length from the given nums must be as minimum as possible "
+condition : " sum of the elements of subarray is greater than or equal to given target "
+
+Sliding window approach best suits the scenario, as we just need to find the minimal arbitrary length of a subarray that satisfies the given condition.
+
+Why specifically window sliding technique?
+Naive Approach => (Brute Force Approach)
+
+We start with the first index and sum till the kth element where the condition is satisfied. Need to be done for all possible consecutive blocks or groups of k elements. 
+This method requires a inner loop, the outer loop starts with the starting element of the block of k elements, and the inner or the nested will add up till the kth element
+*/
+
 var minSubArrayLen = function(target: number, nums: number[]) {
     
 };
