@@ -44,9 +44,11 @@ How to use a sliding window technique in general?
 
 var minSubArrayLen = function(target: number, nums: number[]) {
     // initialize the start and end of the window from starting point
-    
+
     // consider the minValue to be infinity,
     // just to define the variable 
+
+    // sum of subarray initialized to initial array value
 };
 
 console.log(minSubArrayLen(7, [2,3,1,2,4,3])) //2
