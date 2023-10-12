@@ -52,8 +52,13 @@ var minSubArrayLen = function(target: number, nums: number[]) {
 
     // slide the window upto array length
     // start of the window always be less than or may be equal to end
-    
+
         // if sum satisfies the condition
+
+        // extract the minimum subarray length
+        // end-start+1 => end >= start (always greater or equal)
+        // when end === start, then end - start === 0
+        // but window stays atleast on one element (+1) of array 
 };
 
 console.log(minSubArrayLen(7, [2,3,1,2,4,3])) //2
