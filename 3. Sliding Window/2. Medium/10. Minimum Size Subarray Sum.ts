@@ -20,3 +20,4 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     
 };
 
+console.log(minSubArrayLen(7, [2,3,1,2,4,3]))
