@@ -62,6 +62,9 @@ var minSubArrayLen = function(target: number, nums: number[]) {
 
         // move the start of window by one element
         // and remove last start element from sub array sum
+
+    // if sum didn't satisfies the condition, drag the window end
+    // till the sum >= target
 };
 
 console.log(minSubArrayLen(7, [2,3,1,2,4,3])) //2
