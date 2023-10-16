@@ -56,7 +56,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     // start of the window always be less than or may be equal to end
     while (start <= end && end < nums.length) {
         // if sum satisfies the condition
-
+        if (subarraySum >= target) {
         // extract the minimum subarray length
         // end-start+1 => end >= start (always greater or equal)
         // when end === start, then end - start === 0
@@ -64,7 +64,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
 
         // move the start of window by one element
         // and remove last start element from sub array sum
-
+        }
     // if sum didn't satisfies the condition, drag the window end
     // till the sum >= target
     }
