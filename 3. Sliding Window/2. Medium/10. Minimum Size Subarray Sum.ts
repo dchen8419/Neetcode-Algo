@@ -74,6 +74,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
         }
     }
     // return 0, as no subarray satisfies the given condition
+    return minValue === Infinity ? 0 : minValue
 };
 
 console.log(minSubArrayLen(7, [2,3,1,2,4,3])) //2
