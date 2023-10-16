@@ -65,10 +65,11 @@ var minSubArrayLen = function(target: number, nums: number[]) {
         // move the start of window by one element
         // and remove last start element from sub array sum
             subarraySum -= nums[start]
-
-        }
+            start++;
+        } else {
     // if sum didn't satisfies the condition, drag the window end
     // till the sum >= target
+        }
     }
     // return 0, as no subarray satisfies the given condition
 };
