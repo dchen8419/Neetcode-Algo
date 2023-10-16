@@ -48,9 +48,9 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     let end = 0;
     // consider the minValue to be infinity,
     // just to define the variable 
-
+    let minValue = Infinity;
     // sum of subarray initialized to initial array value
-
+    
     // slide the window upto array length
     // start of the window always be less than or may be equal to end
 
