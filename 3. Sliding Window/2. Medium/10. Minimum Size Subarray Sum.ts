@@ -45,7 +45,7 @@ How to use a sliding window technique in general?
 var minSubArrayLen = function(target: number, nums: number[]) {
     // initialize the start and end of the window from starting point
     let start = 0;
-
+    let end = 0;
     // consider the minValue to be infinity,
     // just to define the variable 
 
