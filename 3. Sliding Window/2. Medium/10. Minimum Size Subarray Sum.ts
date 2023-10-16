@@ -70,7 +70,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     // if sum didn't satisfies the condition, drag the window end
     // till the sum >= target
             end++;
-            
+            subarraySum += nums[end];
         }
     }
     // return 0, as no subarray satisfies the given condition
