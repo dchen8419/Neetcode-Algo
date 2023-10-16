@@ -51,9 +51,10 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     let minValue = Infinity;
     // sum of subarray initialized to initial array value
     let subarraySum = nums[0];
+
     // slide the window upto array length
     // start of the window always be less than or may be equal to end
-
+    while (start <= end && end < nums.length) {
         // if sum satisfies the condition
 
         // extract the minimum subarray length
@@ -66,7 +67,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
 
     // if sum didn't satisfies the condition, drag the window end
     // till the sum >= target
-
+    }
     // return 0, as no subarray satisfies the given condition
 };
 
