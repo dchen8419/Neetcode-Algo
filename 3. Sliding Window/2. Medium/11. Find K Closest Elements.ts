@@ -16,6 +16,8 @@
 // Output: [1,2,3,4]
 
 var findClosestElements = function(arr: number[], k: number, x: number) {
+    //sort the arr and create two varaibles where a1 is the abs of a-x and b1 is the abs of b-x
+    //the return should be if a1 === b1 then we return a-b but if it's false we return a1-b1
     
 };
 
