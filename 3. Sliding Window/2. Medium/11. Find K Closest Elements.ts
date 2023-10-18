@@ -14,3 +14,7 @@
 
 // Input: arr = [1,2,3,4,5], k = 4, x = -1
 // Output: [1,2,3,4]
+
+var findClosestElements = function(arr: number[], k: number, x: number) {
+    
+};
