@@ -23,8 +23,9 @@ var findClosestElements = function(arr: number[], k: number, x: number) {
         return a1 == b1 ? a-b : a1-b1;
     });
     //we then create a varaible ans to be the sorted arr but slice at 0, k
-    const ans = arr.slice(0,k)
+    const ans = arr.slice(0,k);
     //we then sort it again from a - b
+    ans.sort((a,b) => a-b);
     //finally we return the ans
 };
 
