@@ -30,5 +30,5 @@ var findClosestElements = function(arr: number[], k: number, x: number) {
     return ans;
 };
 
-console.log(findClosestElements([1,2,3,4,5], 4, 3))
-console.log(findClosestElements([1,2,3,4,5], 4, -1))
+console.log(findClosestElements([1,2,3,4,5], 4, 3)) //[1,2,3,4]
+console.log(findClosestElements([1,2,3,4,5], 4, -1)) //[1,2,3,4]
