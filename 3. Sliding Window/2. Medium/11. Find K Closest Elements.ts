@@ -27,6 +27,7 @@ var findClosestElements = function(arr: number[], k: number, x: number) {
     //we then sort it again from a - b
     ans.sort((a,b) => a-b);
     //finally we return the ans
+    return ans;
 };
 
 console.log(findClosestElements([1,2,3,4,5], 4, 3))
