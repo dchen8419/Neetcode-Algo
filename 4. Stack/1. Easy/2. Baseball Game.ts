@@ -51,3 +51,7 @@
 var calPoints = function(operations: string[]) {
     
 };
+
+console.log(calPoints(["5","2","C","D","+"])) //30
+console.log(calPoints(["5","-2","4","C","D","9","+","+"])) //27
+console.log(calPoints(["1","C"])) //0
