@@ -57,6 +57,8 @@ var calPoints = function(operations: string[]) {
         //second condition is for the "D"
         //third condition is for the "C"
         //fourth is everything else where we push into the stack array
+
+    //return the sum of the stack array
 };
 
 console.log(calPoints(["5","2","C","D","+"])) //30
