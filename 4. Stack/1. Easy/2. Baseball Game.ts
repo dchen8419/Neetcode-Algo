@@ -50,13 +50,29 @@
 
 var calPoints = function(operations: string[]) {
     //create an variable that will hold the stack array
-let stack = [];
+let stack: number[] = [];
+
     //loop through the operations array
+    for ( let i = 0; i < operations.length; i ++ ) {
         //we will set up 4 conditions
         //first condition is for the "+"
+        if (operations[i] === "+") {
+
+        }
         //second condition is for the "D"
+        else if ( operations[i] === "D") {
+
+        }
         //third condition is for the "C"
+        else if (operations[i] === "C") {
+
+        }
         //fourth is everything else where we push into the stack array
+        else {
+            stack.push(parseInt(operations[i]))
+        }
+    }
+
 
     //return the sum of the stack array
 };
