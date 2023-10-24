@@ -49,7 +49,14 @@
 // Since the record is empty, the total sum is 0.
 
 var calPoints = function(operations: string[]) {
-    
+    //create an variable that will hold the stack array
+
+    //loop through the operations array
+        //we will set up 4 conditions
+        //first condition is for the "+"
+        //second condition is for the "D"
+        //third condition is for the "C"
+        //fourth is everything else where we push into the stack array
 };
 
 console.log(calPoints(["5","2","C","D","+"])) //30
