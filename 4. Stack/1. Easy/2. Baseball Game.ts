@@ -57,7 +57,8 @@ let stack: number[] = [];
         //we will set up 4 conditions
         //first condition is for the "+"
         if (operations[i] === "+") {
-
+            //we will push the i into the stack and then add the previous two scores
+            stack.push(stack[stack.length-1] + stack[stack.length-2])
         }
         //second condition is for the "D"
         else if ( operations[i] === "D") {
