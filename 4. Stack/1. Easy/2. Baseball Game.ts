@@ -47,3 +47,7 @@
 // "1" - Add 1 to the record, record is now [1].
 // "C" - Invalidate and remove the previous score, record is now [].
 // Since the record is empty, the total sum is 0.
+
+var calPoints = function(operations: string[]) {
+    
+};
