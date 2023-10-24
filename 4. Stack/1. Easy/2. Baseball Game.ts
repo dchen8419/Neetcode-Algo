@@ -75,6 +75,7 @@ let stack: number[] = [];
 
 
     //return the sum of the stack array
+    return stack.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 };
 
 console.log(calPoints(["5","2","C","D","+"])) //30
