@@ -50,7 +50,7 @@
 
 var calPoints = function(operations: string[]) {
     //create an variable that will hold the stack array
-
+let stack = [];
     //loop through the operations array
         //we will set up 4 conditions
         //first condition is for the "+"
