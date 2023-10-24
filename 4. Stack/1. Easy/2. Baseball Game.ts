@@ -67,7 +67,8 @@ let stack: number[] = [];
         }
         //third condition is for the "C"
         else if (operations[i] === "C") {
-
+            //will remove the last item in the stack
+            stack.pop()
         }
         //fourth is everything else where we push into the stack array
         else {
