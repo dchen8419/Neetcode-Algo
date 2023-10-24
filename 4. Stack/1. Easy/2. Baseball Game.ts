@@ -62,7 +62,8 @@ let stack: number[] = [];
         }
         //second condition is for the "D"
         else if ( operations[i] === "D") {
-
+            //Where we push a new score but it's double of the previous score
+            stack.push(2*stack[stack.length-1])
         }
         //third condition is for the "C"
         else if (operations[i] === "C") {
