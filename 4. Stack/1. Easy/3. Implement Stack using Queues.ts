@@ -33,7 +33,7 @@ let MyStack = function() {
 };
 
 MyStack.prototype.push = function(x: number) {
-    //push the arg into the stack
+    //push the arg to the top of the stack
     this.stack.push(x);
 };
 
