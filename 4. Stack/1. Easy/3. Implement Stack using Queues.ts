@@ -28,11 +28,11 @@
 // myStack.empty(); // return False
 
 let MyStack = function() {
-
+    //create a new stack with am empty array and using this keyword
 }
 
 MyStack.prototype.push = function(x: number) {
-
+    //push the arg into the stack
 }
 
 MyStack.prototype.pop = function() {
