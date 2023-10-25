@@ -46,7 +46,7 @@ MyStack.prototype.pop = function() {
 };
 
 MyStack.prototype.top = function() {
-    //return the first element added to the stack but we need to check if there are any elements in the stack
+    //this will return the element on the top of the stack but not remove it
     if (this.stack.length === 0) {
         return null;
     }
