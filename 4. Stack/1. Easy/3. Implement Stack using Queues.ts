@@ -47,6 +47,10 @@ MyStack.prototype.pop = function() {
 
 MyStack.prototype.top = function() {
     //return the first element added to the stack but we need to check if there are any elements in the stack
+    if (this.stack.length === 0) {
+        return null;
+    }
+    return this.stack[this.stack.length-1];
 };
 
 MyStack.prototype.empty = function() {
