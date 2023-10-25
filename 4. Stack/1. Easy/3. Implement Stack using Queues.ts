@@ -29,10 +29,12 @@
 
 let MyStack = function() {
     //create a new stack with am empty array and using this keyword
+    this.stack = []
 }
 
 MyStack.prototype.push = function(x: number) {
     //push the arg into the stack
+    this.stack.push(x)
 }
 
 MyStack.prototype.pop = function() {
