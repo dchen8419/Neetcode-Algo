@@ -29,13 +29,13 @@
 
 let MyStack = function() {
     //create a new stack with am empty array and using this keyword
-    this.stack = []
-}
+    this.stack = [];
+};
 
 MyStack.prototype.push = function(x: number) {
     //push the arg into the stack
-    this.stack.push(x)
-}
+    this.stack.push(x);
+};
 
 MyStack.prototype.pop = function() {
     //pop off the last element in the stack which is using pop method but we need to check if the stack contains any elements
@@ -47,6 +47,7 @@ MyStack.prototype.top = function() {
 
 MyStack.prototype.empty = function() {
     //return the stack if the stack is empty 
+    return this.stack.length === 0;
 };
 
 /** 
