@@ -38,7 +38,7 @@ MyStack.prototype.push = function(x: number) {
 };
 
 MyStack.prototype.pop = function() {
-    //pop off the last element in the stack which is using pop method but we need to check if the stack contains any elements
+    //remove the element on the top of the stack which pop method will do that but we need to check if the stack contains any elements
     if (this.stack.length === 0) {
         return null; //we can also throw an error because popping from an empty stack is undefined behavior
     }
