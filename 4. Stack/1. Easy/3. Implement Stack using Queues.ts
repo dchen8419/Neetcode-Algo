@@ -36,7 +36,7 @@ MyStack.prototype.push = function(x: number) {
 }
 
 MyStack.prototype.pop = function() {
-    
+    //pop off the last element in the stack which is using pop method but we need to check if the stack contains any elements
 };
 
 MyStack.prototype.top = function() {
@@ -44,7 +44,7 @@ MyStack.prototype.top = function() {
 };
 
 MyStack.prototype.empty = function() {
-    
+    //return the stack if the stack is empty 
 };
 
 /** 
