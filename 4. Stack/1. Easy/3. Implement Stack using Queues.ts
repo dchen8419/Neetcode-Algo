@@ -54,7 +54,7 @@ MyStack.prototype.top = function() {
 };
 
 MyStack.prototype.empty = function() {
-    //return the stack if the stack is empty 
+    //returns a boolean if true if the stack is empty or false otherwise 
     return this.stack.length === 0;
 };
 
