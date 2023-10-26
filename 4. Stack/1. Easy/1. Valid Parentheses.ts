@@ -29,6 +29,10 @@ The idea is that if they're all matching the stack will be empty at the end and 
 var isValid = function(s: string) {
     //we create a stack to hold our elements
     //we create a hashmap to hold our references
+
+    //use a loop to go through string
+
+    //return true if the stack is empty and false if the stack still have elements after loop
 }
 
 console.log(isValid("()")) //true
