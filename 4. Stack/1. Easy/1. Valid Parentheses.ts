@@ -30,6 +30,11 @@ var isValid = function(s: string) {
     //we create a stack to hold our elements
     let stack: string[] = []
     //we create a hashmap to hold our references
+    const hashMap = { 
+        ')' : '(',
+        ']': '[', 
+        '}' : '{'
+    }
 
     //use a loop to go through string
         //if the element matches the opening we will push it to the stack
