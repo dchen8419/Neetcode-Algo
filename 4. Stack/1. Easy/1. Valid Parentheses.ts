@@ -28,9 +28,12 @@ The idea is that if they're all matching the stack will be empty at the end and 
 
 var isValid = function(s: string) {
     //we create a stack to hold our elements
+    let stack: string[] = []
     //we create a hashmap to hold our references
 
     //use a loop to go through string
+        //if the element matches the opening we will push it to the stack
+        //else if the element is a closing and it matches the hashmap we will pop it off
 
     //return true if the stack is empty and false if the stack still have elements after loop
 }
