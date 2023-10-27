@@ -41,7 +41,10 @@ var isValid = function(s: string) {
         //if the element matches the opening we will push it to the stack
         if ( char === '(' || char === '[' || char === '{') {
             stack.push(char)
-        }        //else if the element is a closing and it does not match we return false
+        } 
+        //else if the element is a closing and it does not match we return false
+        else if (hashMap[char] === stack[stack.length-1]) {
+            stack.pop()
             //but if it's true we can pop off the matching bracket
     }
 
