@@ -39,14 +39,15 @@ var isValid = function(s: string) {
     //use a loop to go through string
     for ( let char of s ) {
         //if the element matches the opening we will push it to the stack
-        //else if the element is a closing and it does not match we return false
+        if ( char === '(' || char === '[' || char === '{') {
+            stack.push(char)
+        }        //else if the element is a closing and it does not match we return false
             //but if it's true we can pop off the matching bracket
     }
-
 
     //return true if the stack is empty and false if the stack still have elements after loop
 }
 
 console.log(isValid("()")) //true
-console.log(isValid("()[]{}")) //true
-console.log(isValid("(]")) //false
+// console.log(isValid("()[]{}")) //true
+// console.log(isValid("(]")) //false
