@@ -32,7 +32,7 @@ var isValid = function(s: string) {
     //we create a hashmap to hold our references
     const hashMap = { 
         ')' : '(',
-        ']': '[', 
+        ']' : '[', 
         '}' : '{'
     }
 
@@ -43,11 +43,16 @@ var isValid = function(s: string) {
             stack.push(char)
         } 
         //else if the element is a closing and it does not match we return false
-        else if (hashMap[char] === stack[stack.length-1]) {
-            stack.pop()
+        else {
+            if (hashMap[char] === stack[stack.length-1]) {
+                stack.pop()
+            } 
+            else {
+                return false
+            }
             //but if it's true we can pop off the matching bracket
+        }
     }
-
     //return true if the stack is empty and false if the stack still have elements after loop
 }
 

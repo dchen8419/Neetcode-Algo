@@ -61,6 +61,11 @@ var minSubArrayLen = function(target: number, nums: number[]) {
         // end-start+1 => end >= start (always greater or equal)
         // when end === start, then end - start === 0
         // but window stays atleast on one element (+1) of array 
+<<<<<<< HEAD
+
+        // move the start of window by one element
+        // and remove last start element from sub array sum
+=======
             minValue = Math.min(minValue, end-start+1);
         // move the start of window by one element
         // and remove last start element from sub array sum
@@ -75,6 +80,7 @@ var minSubArrayLen = function(target: number, nums: number[]) {
     }
     // return 0, as no subarray satisfies the given condition
     return minValue === Infinity ? 0 : minValue
+>>>>>>> 085c619175f5f7106e0a48ff3f9ec824d406fdb7
 };
 
 console.log(minSubArrayLen(7, [2,3,1,2,4,3])) //2
