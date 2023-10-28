@@ -54,8 +54,13 @@ var isValid = function(s: string) {
         }
     }
     //return true if the stack is empty and false if the stack still have elements after loop
+    if (stack.length === 0) {
+        return true
+    } else {
+        return false
+    }
 }
 
-console.log(isValid("()")) //true
+// console.log(isValid("()")) //true
 // console.log(isValid("()[]{}")) //true
 // console.log(isValid("(]")) //false
