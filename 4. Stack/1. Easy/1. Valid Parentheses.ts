@@ -19,37 +19,43 @@
 // Input: s = "(]"
 // Output: false
 
+/*
+Approach: 
+We will use a stack and a hashmap to hold and compare the elements.
+Utilizing a for loop we can loop through the string and break up each element to compare if it's either closing or opening.
+The idea is that if they're all matching the stack will be empty at the end and we can return true but if it's still holding an item we will return false.
+*/
+
 var isValid = function(s: string) {
-    const obj = {
-        ")": "(",
-        "]": "[",
-        "}": "{"  
+    //we create a stack to hold our elements
+    let stack: string[] = []
+    //we create a hashmap to hold our references
+    const hashMap = { 
+        ')' : '(',
+        ']' : '[', 
+        '}' : '{'
     }
 
-    const stack: string[] = [];
-    for (let char of s) {
-        //if the char is a left parens (, [, { ... we want to push it into our stack
-        if (char === '(' || char === "[" || char === "{") {
+    //use a loop to go through string
+    for ( let char of s ) {
+        //if the element matches the opening we will push it to the stack
+        if ( char === '(' || char === '[' || char === '{') {
             stack.push(char)
-        } else {
-            //check to see if the expected correspoing left parentehes is at the top of our stack
-            const topElementFromStack = stack[stack.length - 1]
-            if (obj[char] === topElementFromStack) {
-                // if it is, we pop it off
+        } 
+        //else if the element is a closing and it does not match we return false
+        else {
+            if (hashMap[char] === stack[stack.length-1]) {
                 stack.pop()
-            } else {
-                // if it isnt, return false
+            } 
+            else {
                 return false
             }
+            //but if it's true we can pop off the matching bracket
         }
     }
-    if (stack.length > 0) {
-        return false
-    } else {
-        return true;
-    }
-};
+    //return true if the stack is empty and false if the stack still have elements after loop
+}
 
 console.log(isValid("()")) //true
-console.log(isValid("()[]{}")) //true
-console.log(isValid("(]")) //false
+// console.log(isValid("()[]{}")) //true
+// console.log(isValid("(]")) //false
