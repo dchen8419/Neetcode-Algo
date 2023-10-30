@@ -14,44 +14,51 @@
 // Output: false
 
 const isAnagram = (s:string, t:string) => {
-    //Check if length is the same
-    if (s.length !== t.length) {
-        return false
-    }
-    //create hashing
-    const sSeen = {}
-    const tSeen = {}
+    
 
-    for (let i = 0; i < s.length; i++) {
-        const char = s[i]
-        if (sSeen[char]) {
-            sSeen[char] += 1
-        } else {
-            sSeen[char] = 1
-        }
-    }
-
-    for (let i = 0; i < t.length; i++) {
-        const char = t[i]
-        if (tSeen[char]) {
-            tSeen[char] += 1
-        } else {
-            tSeen[char] = 1
-        }
-    }
-    console.log(sSeen)
-
-    const sUniqueLetters = Object.keys(sSeen)
-
-    for (let i = 0; i < sUniqueLetters.length; i++) {
-        const char = sUniqueLetters[i]
-        if (sSeen[char] !== tSeen[char]) {
-            return false
-        }
-    }
-
-    return true
 }
+
+
+
+// const isAnagram = (s:string, t:string) => {
+//     //Check if length is the same
+//     if (s.length !== t.length) {
+//         return false
+//     }
+//     //create hashing
+//     const sSeen = {}
+//     const tSeen = {}
+
+//     for (let i = 0; i < s.length; i++) {
+//         const char = s[i]
+//         if (sSeen[char]) {
+//             sSeen[char] += 1
+//         } else {
+//             sSeen[char] = 1
+//         }
+//     }
+
+//     for (let i = 0; i < t.length; i++) {
+//         const char = t[i]
+//         if (tSeen[char]) {
+//             tSeen[char] += 1
+//         } else {
+//             tSeen[char] = 1
+//         }
+//     }
+//     console.log(sSeen)
+
+//     const sUniqueLetters = Object.keys(sSeen)
+
+//     for (let i = 0; i < sUniqueLetters.length; i++) {
+//         const char = sUniqueLetters[i]
+//         if (sSeen[char] !== tSeen[char]) {
+//             return false
+//         }
+//     }
+
+//     return true
+// }
 
 console.log(isAnagram("anagram","nagaram")) //true
 console.log(isAnagram("rat","car")) //false
