@@ -18,14 +18,18 @@
 APPROACH:
 We will create a hash table that will keep up with the numbers in the array
 A hash table or hash map is an object with key value pairs that we can use to look things up or keep track of for a quick look up
-
+WE will use a for loop and loop through the nums array pairing it with a value of 1
+If the key already exists in the hash map we will return true
+but if we loop though the whole array and we finish the loop we will return false because there wouldn't be a repeat becuase every value is paired with the number 1
 
 */
 
 const containsDuplicate = (nums: number[]) => {
-
-
-
+    //create a hash map
+    //for loop through the nums array
+        //if the number does not exsist in the array we will create it
+        //else we will return true because it already exsist in the hash map
+    //if we loop through and whole thing and exit out of the for loop we will return false because every number is only placed in the hash map once
 }
 
 // const containsDuplicate = (nums: number[]) => {
