@@ -26,16 +26,14 @@ but if we loop though the whole array and we finish the loop we will return fals
 
 const containsDuplicate = (nums: number[]) => {
     //create an empty hash map
-    let hashMap = {
-
-    }
+    let hashMap = {}
     //for loop through the nums array
     for ( let i = 0; i < nums.length; i ++ ) {
-        //if the number does not exsist in the array we will create it
+        //if the number does not exsist in the array we will create it and set it to 1 as the value
         if (hashMap[nums[i]] === undefined) {
             hashMap[nums[i]] = 1
         }
-        //else we will return true because it already exsist in the hash map
+        //else we will return true because it caught a duplicate with instant look up time
         else {
             return true
         }
@@ -43,20 +41,6 @@ const containsDuplicate = (nums: number[]) => {
     //if we loop through and whole thing and exit out of the for loop we will return false because every number is only placed in the hash map once
     return false
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const containsDuplicate = (nums: number[]) => {
 //     //create hash
@@ -81,11 +65,11 @@ console.log(containsDuplicate([1,1,1,3,3,4,3,2,4,2])) //true
 
 
 
-const containsDuplicateTwo = (nums: number[]) => {
-        let mySet = new Set(nums)
-    return (nums.length !== mySet.size)
-}
+// const containsDuplicateTwo = (nums: number[]) => {
+//         let mySet = new Set(nums)
+//     return (nums.length !== mySet.size)
+// }
 
-console.log(containsDuplicateTwo([1,2,3,1]))
-console.log(containsDuplicateTwo([1,2,3,4]))
-console.log(containsDuplicateTwo([1,1,1,3,3,4,3,2,4,2]))
+// console.log(containsDuplicateTwo([1,2,3,1]))
+// console.log(containsDuplicateTwo([1,2,3,4]))
+// console.log(containsDuplicateTwo([1,1,1,3,3,4,3,2,4,2]))
