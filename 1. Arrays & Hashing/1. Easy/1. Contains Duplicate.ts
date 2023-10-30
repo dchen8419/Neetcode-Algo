@@ -30,8 +30,12 @@ const containsDuplicate = (nums: number[]) => {
 
     }
     //for loop through the nums array
+    for ( let i = 0; i < nums.length; i ++ ) {
         //if the number does not exsist in the array we will create it
+        
         //else we will return true because it already exsist in the hash map
+    }
+        
     //if we loop through and whole thing and exit out of the for loop we will return false because every number is only placed in the hash map once
 }
 
