@@ -25,12 +25,29 @@ but if we loop though the whole array and we finish the loop we will return fals
 */
 
 const containsDuplicate = (nums: number[]) => {
-    //create a hash map
+    //create an empty hash map
+    let hashMap = {
+
+    }
     //for loop through the nums array
         //if the number does not exsist in the array we will create it
         //else we will return true because it already exsist in the hash map
     //if we loop through and whole thing and exit out of the for loop we will return false because every number is only placed in the hash map once
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const containsDuplicate = (nums: number[]) => {
 //     //create hash
