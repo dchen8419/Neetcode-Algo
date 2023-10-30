@@ -14,25 +14,36 @@
 // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+/*
+APPROACH:
+We will create a hash table that will keep up with the numbers in the array
+A hash table or hash map is an object with key value pairs that we can use to look things up or keep track of for a quick look up
 
+
+*/
 
 const containsDuplicate = (nums: number[]) => {
-    //create hash
-    let hash = {}
-    //for loop through the nums array
-    for( let i = 0; i < nums.length; i ++ ) {
-        //if the hash at that key is undefined then we set it equal to 1 
-        if (hash[nums[i]] === undefined) {
-            hash[nums[i]] = 1
-            //if the hash already contains the key then return true
-        } else {
-            return true
-        }
-    }
-    console.log(hash)
-    //if everything is looped throug then return false
-    return false
+
+
+
 }
+
+// const containsDuplicate = (nums: number[]) => {
+//     //create hash
+//     let hash = {}
+//     //for loop through the nums array
+//     for( let i = 0; i < nums.length; i ++ ) {
+//         //if the hash at that key is undefined then we set it equal to 1 
+//         if (hash[nums[i]] === undefined) {
+//             hash[nums[i]] = 1
+//             //if the hash already contains the key then return true
+//         } else {
+//             return true
+//         }
+//     }
+//     //if everything is looped throug then return false
+//     return false
+// }
 
 console.log(containsDuplicate([1,2,3,1])) //true
 console.log(containsDuplicate([1,2,3,4])) //false
