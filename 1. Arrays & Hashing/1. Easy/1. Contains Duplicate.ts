@@ -36,8 +36,10 @@ const containsDuplicate = (nums: number[]) => {
             hashMap[nums[i]] = 1
         }
         //else we will return true because it already exsist in the hash map
+        else {
+            return true
+        }
     }
-        
     //if we loop through and whole thing and exit out of the for loop we will return false because every number is only placed in the hash map once
 }
 
