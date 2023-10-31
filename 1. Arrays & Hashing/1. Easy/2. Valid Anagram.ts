@@ -31,10 +31,18 @@ const isAnagram = (s:string, t:string) => {
         countS[s[i]] = countS[s[i]] ? countS[s[i]] +=1 : 1
         countT[t[i]] = countT[t[i]] ? countT[t[i]] +=1 : 1
     }
-    console.log(countS)
-    console.log(countT)
+
+    const sLetters = Object.keys(countS)
+    console.log(sLetters)
     //iterate throug the hashmap to make sure count are the same
+    for ( let i = 0; i < sLetters.length; i ++ ) {
         //if the counts are not the same we can return false
+        console.log(sLetters[i])
+        if (countS[sLetters[i]] !== countT[sLetters[i]]) {
+            return false
+        }
+    }
+        
         
     //return true if all else fails because they are anagrams
 
@@ -82,5 +90,5 @@ const isAnagram = (s:string, t:string) => {
 //     return true
 // }
 
-// console.log(isAnagram("anagram","nagaram")) //true
+console.log(isAnagram("anagram","nagaram")) //true
 console.log(isAnagram("rat","car")) //false
