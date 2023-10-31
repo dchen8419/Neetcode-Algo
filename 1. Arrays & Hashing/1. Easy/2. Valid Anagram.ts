@@ -13,9 +13,17 @@
 // Input: s = "rat", t = "car"
 // Output: false
 
-const isAnagram = (s:string, t:string) => {
-    
+/*
+APPROACH: 
+count the number of characters in the string and match them together in a hash map
+ */
 
+const isAnagram = (s:string, t:string) => {
+    //Check if the lengths are the same and if they're not they are not anagrams
+
+    //create two varaibles for s and t hashmaps
+
+    //create a loop to populate the hashmap variables with the key being letters and value being the number of times it occures
 }
 
 
