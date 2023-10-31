@@ -16,6 +16,8 @@
 /*
 APPROACH: 
 count the number of characters in the string and match them together in a hash map
+in on loop we will populate two hashmaps
+second loop will compare the hashmaps
  */
 
 const isAnagram = (s:string, t:string) => {
