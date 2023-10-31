@@ -23,7 +23,12 @@ const isAnagram = (s:string, t:string) => {
 
     //create two varaibles for s and t hashmaps
 
-    //create a loop to populate the hashmap variables with the key being letters and value being the number of times it occures
+    //create a loop to populate/build the hashmap variables with the key being letters and value being the number of times it occures
+
+    //iterate throug the hashmap to make sure count are the same
+        //if the counts are not the same we can return false
+        
+    //return true if all else fails because they are anagrams
 }
 
 
