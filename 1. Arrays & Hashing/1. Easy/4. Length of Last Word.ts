@@ -41,7 +41,8 @@ function lengthOfLastWord(s: string) {
             counter++
         }
     }
-    //we can return the count if we finish if needed
+    //we can return the counter when all other functions are executed
+    return counter
 }
 
 
@@ -66,10 +67,10 @@ function lengthOfLastWord(s: string) {
 //     return count
 // }
 
-// console.log(lengthOfLastWord("Hello World")) //5
+console.log(lengthOfLastWord("Hello World")) //5
 console.log(lengthOfLastWord("   fly me   to   the moon  ")) //4
-// console.log(lengthOfLastWord("luffy is still joyboy")) //6
-// console.log(lengthOfLastWord("a")) //1
-// console.log(lengthOfLastWord(" a")) // 1
-// console.log(lengthOfLastWord("    day")) // 3
+console.log(lengthOfLastWord("luffy is still joyboy")) //6
+console.log(lengthOfLastWord("a")) //1
+console.log(lengthOfLastWord(" a")) // 1
+console.log(lengthOfLastWord("    day")) // 3
 console.log(lengthOfLastWord("word")) //4
