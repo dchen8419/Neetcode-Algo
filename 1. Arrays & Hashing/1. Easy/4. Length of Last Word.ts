@@ -23,7 +23,6 @@
 function lengthOfLastWord(s: string) {
     //create a new varaible for the modified argument by turning the string to lowercase and remove the space in front of the string and after
     let newS = s.toLowerCase().trim();
-    console.log(newS)
     //create an edge case if it's only one letter in the string we return one
     if (newS.length === 1) {
         return 1
