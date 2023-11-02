@@ -21,7 +21,8 @@
 
 
 function lengthOfLastWord(s: string) {
-    
+    //need to make sure the string is lowercase and remove the space in front of the string and after
+    //create an edge case if it's only one letter in the string we return that letter
 }
 
 
