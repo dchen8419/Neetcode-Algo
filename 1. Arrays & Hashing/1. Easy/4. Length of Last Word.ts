@@ -37,6 +37,9 @@ function lengthOfLastWord(s: string) {
             return counter
         }
         //but if we don't hit a space we will increase count
+        else {
+            counter++
+        }
     }
     //we can return the count if we finish if needed
 }
