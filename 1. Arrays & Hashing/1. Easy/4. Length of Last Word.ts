@@ -33,9 +33,11 @@ function lengthOfLastWord(s: string) {
     //create a for loop starting from the end and decrementing back to 0th index
     for ( let i = newS.length-1; i >= 0; i-- ) {
         //once we hit a space in the string we will return the count
+        if (newS[i] === ' ') {
+            return counter
+        }
         //but if we don't hit a space we will increase count
     }
-
     //we can return the count if we finish if needed
 }
 
