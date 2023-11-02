@@ -26,7 +26,7 @@ function lengthOfLastWord(s: string) {
     //create a counter to keep track of the last word
     //create a for loop starting from the end and decrementing back to 0th index
         //once we hit a space in the string we will return the count
-        
+        //but if we don't hit a space we will increase count
 }
 
 
