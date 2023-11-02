@@ -22,13 +22,14 @@
 
 function lengthOfLastWord(s: string) {
     //create a new varaible for the modified argument by turning the string to lowercase and remove the space in front of the string and after
-    let newS = s.toLowerCase().trim()
+    let newS = s.toLowerCase().trim();
     console.log(newS)
     //create an edge case if it's only one letter in the string we return one
     if (newS.length === 1) {
         return 1
-    }
-    //create a counter to keep track of the last word
+    };
+    //create a counter to keep track of the last word starting at 0
+    let counter = 0;
     //create a for loop starting from the end and decrementing back to 0th index
         //once we hit a space in the string we will return the count
         //but if we don't hit a space we will increase count
