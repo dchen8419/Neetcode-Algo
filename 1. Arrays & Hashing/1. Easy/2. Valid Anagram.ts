@@ -42,7 +42,7 @@ const isAnagram = (s:string, t:string) => {
             return false
         }
     }
-    //return true if all else fails because they are anagrams
+    //return true if they all work and false has not returned 
     return true
 }
 
