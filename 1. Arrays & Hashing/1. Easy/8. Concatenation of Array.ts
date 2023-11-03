@@ -21,11 +21,21 @@
 
 var getConcatenation = function(nums: number[]) {
     //create a varaible that will hold the length of the original nums
-
+    let numsLength = nums.length;
+    //create a variable for i
+    let i = 0
     //create a variable that will hold the number
     let dupN = 0
     //use a while loop to go through nums and append the holding variable to the end of array
-    while ()
+    while (i < numsLength) {
+        //set dupN to the current element
+        dupN = nums[i];
+        //push dupN to the end of the nums array
+        nums.push(dupN);
+        dupN = 0;
+        i++
+    }
+    return nums
     //return original argument nums
 }
 
@@ -37,5 +47,5 @@ var getConcatenation = function(nums: number[]) {
 //     return nums.concat(newArray)
 // };
 
-console.log(getConcatenation([1,2,1])) //[1,2,1,1,2,1]
+// console.log(getConcatenation([1,2,1])) //[1,2,1,1,2,1]
 console.log(getConcatenation([1,3,2,1])) //[1,3,2,1,1,3,2,1]
