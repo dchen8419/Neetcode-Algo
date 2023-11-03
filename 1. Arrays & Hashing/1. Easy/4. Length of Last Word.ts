@@ -27,6 +27,7 @@ Issues we run into:
 
 function lengthOfLastWord(s: string) {
     //trime the string
+    //will need to return the length of the trimmed string subracting the trimmerstring using the method lastIndexOf - 1
 }
 
 
