@@ -34,6 +34,7 @@ function lengthOfLastWord(s: string) {
     let lengthOfString = trimmedString.length;
     //create a variable to hold the index number of what element you're looking for
     let indexOfLastKnownWhiteSpace = trimmedString.lastIndexOf(' ');
+    //return the different of the length of the string and the indexOfLastKnownSpace to get the remaining length but -1 to give the correct length
     return lengthOfString - indexOfLastKnownWhiteSpace - 1;
 }
 
