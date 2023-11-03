@@ -34,6 +34,7 @@ var getConcatenation = function(nums: number[]) {
         nums.push(dupN);
         //reset dupN to 0
         dupN = 0;
+        //increment i after iteration
         i++
     }
     return nums
