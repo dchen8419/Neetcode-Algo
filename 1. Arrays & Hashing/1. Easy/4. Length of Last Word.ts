@@ -19,10 +19,14 @@
 // Output: 6
 // Explanation: The last word is "joyboy" with length 6.
 
+/*
+Issues we run into:
+-need to lower case all the words if hashing
+-need to remove the outer spaces
+*/
+
 function lengthOfLastWord(s: string) {
-    //create a counter that will hold the number of letters in the last word
-    //for loop through starting at the end
-        //if the first element is a space we will keep decrementing until we reach our first letter
+    //trime the string
 }
 
 
@@ -50,7 +54,7 @@ function lengthOfLastWord(s: string) {
 //     return counter
 // }
 
-// console.log(lengthOfLastWord("Hello World")) //5
+console.log(lengthOfLastWord("Hello World")) //5
 // console.log(lengthOfLastWord("   fly me   to   the moon  ")) //4
 // console.log(lengthOfLastWord("luffy is still joyboy")) //6
 // console.log(lengthOfLastWord("a")) //1
