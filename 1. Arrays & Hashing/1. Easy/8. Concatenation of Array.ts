@@ -30,6 +30,7 @@ var getConcatenation = function(nums: number[]) {
     while (i < numsLength) {
         //set dupN to the current element
         dupN = nums[i];
+        //push dupN to the end of the nums array
         nums.push(dupN);
         dupN = 0;
         i++
