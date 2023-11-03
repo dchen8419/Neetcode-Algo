@@ -20,8 +20,12 @@
 // - ans = [1,3,2,1,1,3,2,1]
 
 var getConcatenation = function(nums: number[]) {
+    //create a varaible that will hold the length of the original nums
+
     //create a variable that will hold the number
+    let dupN = 0
     //use a while loop to go through nums and append the holding variable to the end of array
+    while ()
     //return original argument nums
 }
 
