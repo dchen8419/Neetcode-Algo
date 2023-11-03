@@ -37,8 +37,8 @@ var getConcatenation = function(nums: number[]) {
         //increment i after iteration
         i++
     }
-    return nums
     //return original argument nums
+    return nums
 }
 
 // var getConcatenation = function(nums: number[]) {
