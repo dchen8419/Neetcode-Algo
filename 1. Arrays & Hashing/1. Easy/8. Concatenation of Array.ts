@@ -20,15 +20,18 @@
 // - ans = [1,3,2,1,1,3,2,1]
 
 var getConcatenation = function(nums: number[]) {
-    let newArray: number[] = []
+    //create a variable that will hold the number
+    //use a while loop to go through nums and append the holding variable to the end of array
+    //return original argument nums
+}
 
-    for( let i = 0; i < nums.length; i ++ ) {
-        newArray.push(nums[i])
-    }
-
-    return nums.concat(newArray)
-
-};
+// var getConcatenation = function(nums: number[]) {
+//     let newArray: number[] = []
+//     for( let i = 0; i < nums.length; i ++ ) {
+//         newArray.push(nums[i])
+//     }
+//     return nums.concat(newArray)
+// };
 
 console.log(getConcatenation([1,2,1])) //[1,2,1,1,2,1]
 console.log(getConcatenation([1,3,2,1])) //[1,3,2,1,1,3,2,1]
