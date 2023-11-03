@@ -29,6 +29,7 @@ function lengthOfLastWord(s: string) {
     //trime the string
     let trimmedString = s.trim();
     //will need to return the length of the trimmed string subracting the trimmerstring using the method lastIndexOf - 1
+    return trimmedString.length - trimmedString.lastIndexOf(' ') - 1;
 }
 
 
