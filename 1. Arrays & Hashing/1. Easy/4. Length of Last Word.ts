@@ -29,6 +29,12 @@ function lengthOfLastWord(s: string) {
     //trime the string
     let trimmedString = s.trim();
     //will need to return the length of the trimmed string subracting the trimmerstring using the method lastIndexOf - 1
+    //create varaibles to make it more understanding
+    //create a varaible for the length of the string
+    let lengthOfString = trimmedString.length;
+    //create a variable to hold the index number of what element you're looking for
+    let indexOfLastKnownWhiteSpace = trimmedString.lastIndexOf(' ');
+    return lengthOfString - indexOfLastKnownWhiteSpace - 1;
 }
 
 
@@ -56,8 +62,8 @@ function lengthOfLastWord(s: string) {
 //     return counter
 // }
 
-console.log(lengthOfLastWord("Hello World")) //5
-// console.log(lengthOfLastWord("   fly me   to   the moon  ")) //4
+// console.log(lengthOfLastWord("Hello World")) //5
+console.log(lengthOfLastWord("   fly me   to   the moon  ")) //4
 // console.log(lengthOfLastWord("luffy is still joyboy")) //6
 // console.log(lengthOfLastWord("a")) //1
 // console.log(lengthOfLastWord(" a")) // 1
