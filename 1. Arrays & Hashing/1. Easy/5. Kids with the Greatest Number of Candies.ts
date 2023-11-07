@@ -32,24 +32,23 @@ var kidsWithCandies = function(candies: number[], extraCandies: number) {
   const maxCandies = Math.max(...candies);
   
   //create a variable that will hold the array of booleans for as the results
-  const result: string[] = [];
+  const result: boolean[] = [];
   
   //create a for loop going through the whole array
   for (let i = 0; i < candies.length; i++) {
     //if the element + the extraCandies number is greater or equal to the maxCandies variable we will push 'true' into result array
     if (candies[i] + extraCandies >= maxCandies) {
-      result.push('true');
-      
+      result.push(true);
     } 
     //everything else we will return false
     else {
-      result.push('false');
+      result.push(false);
     }
   }
   //we will return the result once the loop is done
   return result;
 };
 
-// console.log(kidsWithCandies([2,3,5,1,3], 3)) // [true,true,true,false,true]
+console.log(kidsWithCandies([2,3,5,1,3], 3)) // [true,true,true,false,true]
 // console.log(kidsWithCandies([4,2,1,1,2], 1)) //[true,false,false,false,false]
 // console.log(kidsWithCandies([12,1,12], 10)) // [true,false,true]
