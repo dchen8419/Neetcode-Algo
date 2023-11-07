@@ -41,7 +41,7 @@ var kidsWithCandies = function(candies: number[], extraCandies: number) {
       result.push('true');
       
     } 
-    
+    //everything else we will return false
     else {
       result.push('false');
     }
