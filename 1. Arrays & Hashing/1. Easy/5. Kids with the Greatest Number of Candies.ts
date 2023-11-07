@@ -28,7 +28,9 @@
 // Output: [true,false,true]
 
 var kidsWithCandies = function(candies: number[], extraCandies: number) {
-    const maxCandies = Math.max(...candies);
+  //create a variable that will hold the highest element in the array
+  const maxCandies = Math.max(...candies);
+  console.log(maxCandies)
   
   const result: string[] = [];
   
@@ -43,6 +45,6 @@ var kidsWithCandies = function(candies: number[], extraCandies: number) {
   return result;
 };
 
-console.log(kidsWithCandies([2,3,5,1,3], 3)) // [true,true,true,false,true]
-console.log(kidsWithCandies([4,2,1,1,2], 1)) //[true,false,false,false,false]
-console.log(kidsWithCandies([12,1,12], 10)) // [true,false,true]
+// console.log(kidsWithCandies([2,3,5,1,3], 3)) // [true,true,true,false,true]
+// console.log(kidsWithCandies([4,2,1,1,2], 1)) //[true,false,false,false,false]
+// console.log(kidsWithCandies([12,1,12], 10)) // [true,false,true]
