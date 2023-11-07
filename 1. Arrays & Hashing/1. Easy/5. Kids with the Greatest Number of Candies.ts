@@ -46,7 +46,7 @@ var kidsWithCandies = function(candies: number[], extraCandies: number) {
       result.push('false');
     }
   }
-  
+  //we will return the result once the loop is done
   return result;
 };
 
