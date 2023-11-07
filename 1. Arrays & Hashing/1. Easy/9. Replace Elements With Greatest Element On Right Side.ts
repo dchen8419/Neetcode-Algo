@@ -27,6 +27,7 @@ var replaceElements = function(arr: number[]) {
     //set the last element of result array to -1
     result[arr.length - 1] = -1;
     
+    //create a for loop that will start at teh end
     for (let i: number = arr.length - 1; i > 0; i -= 1) {
         result[i - 1] = Math.max(arr[i], result[i]);
     }
