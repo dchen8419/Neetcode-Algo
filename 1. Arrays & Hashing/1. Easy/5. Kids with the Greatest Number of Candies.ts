@@ -30,10 +30,11 @@
 var kidsWithCandies = function(candies: number[], extraCandies: number) {
   //create a variable that will hold the highest element in the array
   const maxCandies = Math.max(...candies);
-  console.log(maxCandies)
+  
   //create a variable that will hold the array of booleans for as the results
   const result: string[] = [];
   
+  //create a for loop going through the whole array
   for (let i = 0; i < candies.length; i++) {
     if (candies[i] + extraCandies >= maxCandies) {
       result.push('true');
