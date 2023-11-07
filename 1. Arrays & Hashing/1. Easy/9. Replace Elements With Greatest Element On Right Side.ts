@@ -32,7 +32,7 @@ var replaceElements = function(arr: number[]) {
         //we will add to the result where the index of the element being added is subtracted by 1 and we take the max of the current arr[i] vs the current result[i]
         result[i - 1] = Math.max(arr[i], result[i]);
     }
-    
+    //return the result after the loop
     return result;
 };
 
