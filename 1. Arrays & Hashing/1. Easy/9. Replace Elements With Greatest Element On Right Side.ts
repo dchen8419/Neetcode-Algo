@@ -24,6 +24,7 @@
 var replaceElements = function(arr: number[]) {
     //create a new array name result that is the same length as the arguments array length
     const result: number[] = new Array(arr.length);
+    //set the last element of result array to -1
     result[arr.length - 1] = -1;
     
     for (let i: number = arr.length - 1; i > 0; i -= 1) {
