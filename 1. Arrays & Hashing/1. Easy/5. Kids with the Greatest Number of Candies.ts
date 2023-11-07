@@ -36,9 +36,13 @@ var kidsWithCandies = function(candies: number[], extraCandies: number) {
   
   //create a for loop going through the whole array
   for (let i = 0; i < candies.length; i++) {
+    //if the element + the extraCandies number is greater or equal to the maxCandies variable we will push 'true' into result array
     if (candies[i] + extraCandies >= maxCandies) {
       result.push('true');
-    } else {
+      
+    } 
+    
+    else {
       result.push('false');
     }
   }
