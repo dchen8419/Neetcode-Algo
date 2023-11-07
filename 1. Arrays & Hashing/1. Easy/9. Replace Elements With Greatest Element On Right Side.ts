@@ -29,6 +29,7 @@ var replaceElements = function(arr: number[]) {
     
     //create a for loop that will start at teh end
     for (let i: number = arr.length - 1; i > 0; i -= 1) {
+        //we will add to the result where the index of the element being added is subtracted by 1 and we take the max of the current arr[i] vs the current result[i]
         result[i - 1] = Math.max(arr[i], result[i]);
     }
     
