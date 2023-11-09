@@ -27,6 +27,7 @@ var isValid = function(s: string) {
     for (let i = 0; i < s.length; i++) {
          // If open parentheses are present, push it to stack...
         if (s[i] == '{') {
+            //if the brace is open then we will push the closing brace into the stack
             stack.push('}');
         } else if (s[i] == '[') {
             stack.push(']');
