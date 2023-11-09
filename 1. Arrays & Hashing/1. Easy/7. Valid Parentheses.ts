@@ -41,6 +41,7 @@ var isValid = function(s: string) {
             return false;
         }
     }
+    //if there is nothing in the stack we return true but if not it will automatically return false 
     return !stack.length;
 };
 
