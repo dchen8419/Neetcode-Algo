@@ -32,6 +32,7 @@ var isValid = function(s: string) {
             //else if the square brace is opening we will push the closing brace into the stack
         } else if (s[i] == '[') {
             stack.push(']');
+            //else if it's a regular opening brace we will push the closing brace into the stack
         } else if (s[i] == '(') {
             stack.push(')');
         }
