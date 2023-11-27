@@ -62,7 +62,7 @@ var romanToInt = function(s: string) {
             result += cur;
         }
     }
-
+    //finally return the result
     return result;
 };
 
