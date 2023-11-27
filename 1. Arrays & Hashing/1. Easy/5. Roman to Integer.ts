@@ -53,10 +53,11 @@ var romanToInt = function(s: string) {
         const cur = sym[s[i]];
         //create a variable for the next element after current
         const next = sym[s[i + 1]];
-
+        //first condition if the cur is less than the next we will add to the result with the next subtracting the cur then incrementing i by one skipping the next number that was already in place
         if (cur < next) {
             result += next - cur;
             i++;
+            
         } else {
             result += cur;
         }
