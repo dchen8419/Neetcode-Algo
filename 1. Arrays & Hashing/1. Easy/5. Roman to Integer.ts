@@ -51,7 +51,7 @@ var romanToInt = function(s: string) {
     for (let i = 0; i < s.length; i++) {
         //create a variable called cur for the current key in the sym hashamp
         const cur = sym[s[i]];
-        
+        //create a variable for the next element after current
         const next = sym[s[i + 1]];
 
         if (cur < next) {
