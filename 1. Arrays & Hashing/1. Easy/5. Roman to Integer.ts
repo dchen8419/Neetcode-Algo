@@ -47,7 +47,7 @@ var romanToInt = function(s: string) {
     }
     //create a result varaible where it will hold the number
     let result: number = 0;
-
+    //create a for loop to loop through the string
     for (let i = 0; i < s.length; i++) {
         const cur = sym[s[i]];
         const next = sym[s[i + 1]];
