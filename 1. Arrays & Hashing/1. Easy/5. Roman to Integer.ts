@@ -35,6 +35,7 @@
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 var romanToInt = function(s: string) {
+    //create a hashmap of the roman integers and their values
     const sym = {
         'I': 1,
         'V': 5,
@@ -44,7 +45,7 @@ var romanToInt = function(s: string) {
         'D': 500,
         'M': 1000
     }
-
+    //create a result varaible where it will hold the number
     let result: number = 0;
 
     for (let i = 0; i < s.length; i++) {
