@@ -57,7 +57,7 @@ var romanToInt = function(s: string) {
         if (cur < next) {
             result += next - cur;
             i++;
-            
+        //everything else we will set the result to the cur variable number
         } else {
             result += cur;
         }
