@@ -38,6 +38,10 @@
 function romanToInt(s: string) {
     //create a hashmap of the roman numerals
     //create a variable for the result
+    //for loop through the string starting at the beginning
+        //create varaiable for current
+        //create varaible for next
+        
 }
 
 // var romanToInt = function(s: string) {
