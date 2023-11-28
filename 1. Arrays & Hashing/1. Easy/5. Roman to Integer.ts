@@ -60,12 +60,13 @@ function romanToInt(s: string) {
     //for loop through the string starting at the beginning
     for ( let i = 0; i < s.length; i ++ ) {
         //create varaiable for current
+        let current = sym[s[i]]
         //create varaible for next
+        let next = sym[s[i+1]]
 
         //create first condition if the current is greater than the next we will subract the two and reassign the result to the new numbers and we also need to increment the i to skip over the two subracted
         //everything else we can add to the result
     }
-
     //finally return result
 }
 
