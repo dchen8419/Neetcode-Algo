@@ -46,13 +46,26 @@ Approach:
 
 function romanToInt(s: string) {
     //create a hashmap of the roman numerals
+    const sym = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
     //create a variable for the result
+    let result = 0;
     //for loop through the string starting at the beginning
+    for ( let i = 0; i < s.length; i ++ ) {
         //create varaiable for current
         //create varaible for next
 
         //create first condition if the current is greater than the next we will subract the two and reassign the result to the new numbers and we also need to increment the i to skip over the two subracted
         //everything else we can add to the result
+    }
+
     //finally return result
 }
 
