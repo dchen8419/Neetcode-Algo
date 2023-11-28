@@ -75,6 +75,7 @@ function romanToInt(s: string) {
         }
     }
     //finally return result
+    return result
 }
 
 
