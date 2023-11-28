@@ -42,7 +42,7 @@ function romanToInt(s: string) {
         //create varaiable for current
         //create varaible for next
 
-        //create first condition if the current is greater than the next we will subract the two and reassign the result to the new numbers
+        //create first condition if the current is greater than the next we will subract the two and reassign the result to the new numbers and we also need to increment the i to skip over the two subracted
         //everything else we can add to the result
     //finally return result
 }
