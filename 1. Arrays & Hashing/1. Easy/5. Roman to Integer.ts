@@ -34,37 +34,43 @@
 // Output: 1994
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
-var romanToInt = function(s: string) {
-    //create a hashmap of the roman integers and their values
-    const sym = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    }
-    //create a result varaible where it will hold the number
-    let result: number = 0;
-    //create a for loop to loop through the string
-    for (let i = 0; i < s.length; i++) {
-        //create a variable called cur for the current key in the sym hashamp
-        const cur = sym[s[i]];
-        //create a variable for the next element after current
-        const next = sym[s[i + 1]];
-        //first condition if the cur is less than the next we will add to the result with the next subtracting the cur then incrementing i by one skipping the next number that was already in place
-        if (cur < next) {
-            result += next - cur;
-            i++;
-        //everything else we will set the result to the cur variable number
-        } else {
-            result += cur;
-        }
-    }
-    //finally return the result
-    return result;
-};
+
+function romanToInt(s: string) {
+    //create a hashmap of the roman numerals
+    //create a variable for the result
+}
+
+// var romanToInt = function(s: string) {
+//     //create a hashmap of the roman integers and their values
+//     const sym = {
+//         'I': 1,
+//         'V': 5,
+//         'X': 10,
+//         'L': 50,
+//         'C': 100,
+//         'D': 500,
+//         'M': 1000
+//     }
+//     //create a result varaible where it will hold the number
+//     let result: number = 0;
+//     //create a for loop to loop through the string
+//     for (let i = 0; i < s.length; i++) {
+//         //create a variable called cur for the current key in the sym hashamp
+//         const cur = sym[s[i]];
+//         //create a variable for the next element after current
+//         const next = sym[s[i + 1]];
+//         //first condition if the cur is less than the next we will add to the result with the next subtracting the cur then incrementing i by one skipping the next number that was already in place
+//         if (cur < next) {
+//             result += next - cur;
+//             i++;
+//         //everything else we will set the result to the cur variable number
+//         } else {
+//             result += cur;
+//         }
+//     }
+//     //finally return the result
+//     return result;
+// };
 
 console.log(romanToInt("III")) // 3
 console.log(romanToInt("LVIII")) // 58
