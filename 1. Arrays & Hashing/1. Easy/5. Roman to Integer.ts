@@ -41,7 +41,10 @@ function romanToInt(s: string) {
     //for loop through the string starting at the beginning
         //create varaiable for current
         //create varaible for next
-        
+
+        //create first condition if the current is greater than the next we will subract the two and reassign the result to the new numbers
+        //everything else we can add to the result
+    //finally return result
 }
 
 // var romanToInt = function(s: string) {
