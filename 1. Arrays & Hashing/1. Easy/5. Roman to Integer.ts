@@ -34,6 +34,15 @@
 // Output: 1994
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
+/*
+Approach:
+    First we need to create a hash table that will correspond to teh certain number. 
+    Second, Looping through the string we will cehck the current and the one in front of the current aka next character at once to see if the
+        current is greater than the next one. 
+        If the current is not greater than the next we will subract the two numbers
+        but everything else where the current is greater than the next we can keep adding the current value to the variable holding the result
+    Third, return the result varaible holding the value
+*/
 
 function romanToInt(s: string) {
     //create a hashmap of the roman numerals
@@ -46,6 +55,13 @@ function romanToInt(s: string) {
         //everything else we can add to the result
     //finally return result
 }
+
+
+
+
+
+
+
 
 // var romanToInt = function(s: string) {
 //     //create a hashmap of the roman integers and their values
