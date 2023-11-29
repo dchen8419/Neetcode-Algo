@@ -32,6 +32,8 @@ var longestCommonPrefix = function(strs: string[]) {
         //inside loop will loop through the array and comparing to each string of the array
             //the first condition is that if the index is equal to the length of the first word of the array or the first letter does not match the strs at that point we will return the result
         //otherwise we will set the result to the strs at that point because they are matching
+    
+    //finally we return our result variable
 }
 
 
