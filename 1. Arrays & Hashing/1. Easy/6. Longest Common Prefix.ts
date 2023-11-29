@@ -14,8 +14,19 @@
 // Output: ""
 // Explanation: There is no common prefix among the input strings.
 
-var longestCommonPrefix = function(strs: string[]) {
+/*
+    Approach:
+        First we create a variable to hold our common prefix strings
+        We will have two loops that are nested but we will only loop thru the length of the word once
+        Second, we will create our first loop finding the number of indexes of the first word in the array
+        Third, the loop within the loop will be represented by each word in the array
+        Fourth, we will set a conditional in the inside loop to where if the index is equal to the length of the word or the word at that index does not equal the same letter we will return the res
+        Otherwise, we will keep adding letters that are the same to the result
+        Finally, returning the result
+*/
 
+var longestCommonPrefix = function(strs: string[]) {
+    
 }
 
 
