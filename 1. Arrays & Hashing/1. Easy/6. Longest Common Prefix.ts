@@ -26,14 +26,23 @@
 */
 
 var longestCommonPrefix = function(strs: string[]) {
-    //create a varaible that will hold the finaly return string
+    //create a varaible that will hold the final return string
     let result = "";
 
     //loop through the string array and return the index of each letter in the string of the array
-        //inside loop will loop through the array and comparing to each string of the array
-            //the first condition is that if the index is equal to the length of the first word of the array or the first letter does not match the strs at that point we will return the result
-        //otherwise we will set the result to the strs at that point because they are matching
-    
+    for ( let i = 0; i < strs[0].length; i ++ ) {
+        // i represent the index number of the string in the array
+        // strs[0].length represent the first strings index max number but would need to subtract 1 to start at 0
+            //inside loop will loop through the array and comparing to each string of the array
+            for ( let j = 0; j < strs.length; j ++ ) {
+                //the first condition is that if the index is equal to the length of the first word of the array or the first letter does not match the strs at that point we will return the result
+                if ( i === strs[j].length || j[i] != strs[0][i]) {
+                    return result
+                }
+                //otherwise we will set the result to the strs at that point because they are matching
+                result += strs[0][i]
+            }
+    }
     //finally we return our result variable
 }
 
@@ -51,4 +60,4 @@ var longestCommonPrefix = function(strs: string[]) {
 // };
 
 console.log(longestCommonPrefix(["flower","flow","flight"])) // "fl"
-console.log(longestCommonPrefix(["dog","racecar","car"])) // ""
+// console.log(longestCommonPrefix(["dog","racecar","car"])) // ""
