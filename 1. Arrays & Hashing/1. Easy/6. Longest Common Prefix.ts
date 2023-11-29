@@ -34,19 +34,25 @@ var longestCommonPrefix = function(strs: string[]) {
         // i represent the index number of the string in the array
         // strs[0].length represent the first strings index max number but would need to subtract 1 to start at 0
             //inside loop will loop through the array and comparing to each string of the array
-            for ( let j = 0; j < strs.length; j ++ ) {
+            for ( let j = 0; j < strs.length; j++ ) {
+                console.log(strs[j][i])
+                console.log(strs[j])
                 //the first condition is that if the index is equal to the length of the first word of the array or the first letter does not match the strs at that point we will return the result
-                if ( i === strs[j].length || j[i] != strs[0][i]) {
+                if ( i === strs[j].length || strs[j][i] !== strs[0][i] ) {
+                    console.log(strs[0][i])
+                    console.log(strs[j][i])
+                    console.log(strs[j])
                     return result
                 }
                 //otherwise we will set the result to the strs at that point because they are matching
                 result += strs[0][i]
+                console.log(strs[0][i])
             }
     }
     //finally we return our result variable
     return result
 }
-
+//testing
 
 // var longestCommonPrefix = function(strs: string[]) {
 //     if ( strs.length === 0 ) {
