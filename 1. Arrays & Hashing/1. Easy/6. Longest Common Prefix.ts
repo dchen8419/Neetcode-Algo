@@ -44,6 +44,7 @@ var longestCommonPrefix = function(strs: string[]) {
             }
     }
     //finally we return our result variable
+    return result
 }
 
 
