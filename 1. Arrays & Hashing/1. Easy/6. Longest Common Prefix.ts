@@ -16,11 +16,17 @@
 
 /*
     Approach:
-
+        We will first check the length of the string array to see if it contains any strings and if not we will return an empty string for edge case
+        The approach will be to have the first string in the array be out reference string where we will compare all the other strings in the array to it
+        When we compare the string we will remove the elements from the end until we start to have matching letters
+        So, we will loop trhough the length of the string array starting at index 1 because the first word in the array will be used to match with
+        We will then have a second loop inside the for loop, while loop, to cehck if the strings letter matches using the indexOf method on the current string wich is not equal to 0
+        then we can remove the last character of the prefix using the substring method starting at the end.
+        We will utilize two methods such as indexOf() and substring() 
 */
 
 var longestCommonPrefix = function(strs: string[]) {
-    
+    //check edge case if the length of the string is 0
 }
 //testing
 
