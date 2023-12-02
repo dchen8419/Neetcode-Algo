@@ -28,6 +28,8 @@
 var longestCommonPrefix = function(strs: string[]) {
     //check edge case if the length of the string is 0
     //create a variable to compare for the prefix
+
+    //use a for loop to loop through the strinsg array but starting at 1
 }
 //testing
 
