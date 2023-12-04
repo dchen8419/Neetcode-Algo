@@ -30,6 +30,7 @@ var longestCommonPrefix = function(strs: string[]) {
     //create a variable to compare for the prefix
 
     //use a for loop to loop through the strinsg array but starting at 1
+        //create an inner loop using the while loop with the condition of using the indexOf method
 }
 //testing
 
