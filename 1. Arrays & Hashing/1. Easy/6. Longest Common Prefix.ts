@@ -44,9 +44,8 @@ var longestCommonPrefix = function(strs: string[]) {
             }
         }
     }
-
-    
     //once out of the loop we will return the prefix
+    return ans;
 }
 //testing
 
