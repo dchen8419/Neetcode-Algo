@@ -16,13 +16,14 @@
 
 /*
     Approach:
-        We will first check the length of the string array to see if it contains any strings and if not we will return an empty string for edge case
-        The approach will be to have the first string in the array be out reference string where we will compare all the other strings in the array to it
-        When we compare the string we will remove the elements from the end until we start to have matching letters
-        So, we will loop trhough the length of the string array starting at index 1 because the first word in the array will be used to match with
-        We will then have a second loop inside the for loop, while loop, to cehck if the strings letter matches using the indexOf method on the current string wich is not equal to 0
-        then we can remove the last character of the prefix using the substring method starting at the end.
-        We will utilize two methods such as indexOf() and substring() 
+        Check if the vector strs is empty. If it is, there are no strings to compare, so we return an empty string.
+        Initialize a string variable ans with the first string in strs. This will be our initial common prefix.
+        Iterate through the remaining strings starting from the second string.
+        Inside the loop, use a while loop to check if the current string does not start with the current ans.
+        If the current string does not start with ans, remove the last character from ans by using the substr function and updating it to ans.substr(0, ans.length() - 1).
+        Check if ans becomes empty after removing the character. If it does, it means there is no common prefix among the strings, so we return an empty string.
+        Repeat steps 4-6 until the current string starts with ans.
+        After the loop ends, the value of ans will be the longest common prefix among all the strings. Return ans.
 */
 
 var longestCommonPrefix = function(strs: string[]) {
@@ -62,4 +63,4 @@ var longestCommonPrefix = function(strs: string[]) {
 // };
 
 console.log(longestCommonPrefix(["flower","flow","flight"])) // "fl"
-console.log(longestCommonPrefix(["dog","racecar","car"])) // ""
+// console.log(longestCommonPrefix(["dog","racecar","car"])) // ""
