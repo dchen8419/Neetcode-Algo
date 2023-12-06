@@ -37,6 +37,7 @@ var longestCommonPrefix = function(strs: string[]) {
         //create an inner loop using the while loop with the condition of using the indexOf method
         while (strs[i].indexOf(ans) !== 0) {
             //we will use the substring method on the answer to check if the letters match starting from the end
+            ans = ans.substring(0, ans.length - 1);
             //if the prefix is an empty string we will return an empty string
         }
     }
