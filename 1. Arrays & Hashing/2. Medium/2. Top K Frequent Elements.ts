@@ -34,10 +34,11 @@ const topKFrequent = (nums: number[], k:number) => {
     console.log(sortedAnswer)
     //slice the array starting at 0 and then ending at the kth position
     let slicedAnswer = sortedAnswer.slice(0, k)
-    
-    let pluckedAnswer = slicedAnswer.map(([k, v]) => {
+    //we will map through the slicedAnswer variable and pluck the numbers we need using the map method preferencing the k value
+    let pluckedAnswer = slicedAnswer.map(([k]) => {
         return k
     })
+    
     return pluckedAnswer
 }
 
@@ -66,4 +67,4 @@ const topKFrequent = (nums: number[], k:number) => {
 
 
 console.log(topKFrequent( [1,1,1,2,2,3], 2)) //[1,2]
-// console.log(topKFrequent( [1], 1)) //[1]
+console.log(topKFrequent( [1], 1)) //[1]
