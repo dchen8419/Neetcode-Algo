@@ -27,12 +27,14 @@ const topKFrequent = (nums: number[], k:number) => {
             cache[number] +=1
         }
     }
+    //return an array of array of the key value pairs
     let sortedAnswer = Object.entries(cache).sort(([k1, v1]: any, [k2, v2]: any) => {
-        return v2- v1
+        return v2 - v1
     })
-        
+    console.log(sortedAnswer)
+    //slice the array starting at 0 and then ending at the kth position
     let slicedAnswer = sortedAnswer.slice(0, k)
-
+    
     let pluckedAnswer = slicedAnswer.map(([k, v]) => {
         return k
     })
