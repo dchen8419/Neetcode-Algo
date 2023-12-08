@@ -38,7 +38,7 @@ const topKFrequent = (nums: number[], k:number) => {
     let pluckedAnswer = slicedAnswer.map(([k]) => {
         return k
     })
-    
+    //return the plucekdAnswer variable
     return pluckedAnswer
 }
 
