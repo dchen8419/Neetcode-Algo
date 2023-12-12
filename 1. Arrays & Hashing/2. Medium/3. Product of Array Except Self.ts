@@ -24,7 +24,6 @@ var productExceptSelf = function(nums: number[]) {
     const rightArray = new Array(nums.length).fill(0);
     rightArray[rightArray.length-1]= 1;
     
-    
     //loop through to populate left array
     for ( let i = 1; i < nums.length; i++ ) {
         leftArray[i] = nums[i-1] * leftArray[i - 1]
