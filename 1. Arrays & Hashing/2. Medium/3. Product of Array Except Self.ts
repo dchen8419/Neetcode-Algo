@@ -20,7 +20,7 @@ var productExceptSelf = function(nums: number[]) {
     //create left array and fill it to the same number, but with 0, as the nums length and set index 0 to the left array to 1
     const leftArray = new Array(nums.length).fill(0);
     leftArray[0] = 1
-    //create a right array and fill it to the same number as the nums length but turn the last number of the array to 1
+    //create a right array and fill it to the same number, but fill with 0,  as the nums length but turn the last number of the array to 1
     const rightArray = new Array(nums.length).fill(0);
     rightArray[rightArray.length-1]= 1;
     
