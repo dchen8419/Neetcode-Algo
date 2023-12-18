@@ -8,3 +8,8 @@
 //Example 2:
 //Input: p: 24.99 cur: [[20],[5]]
 //Output: [[.01]]
+
+//Approach:
+    //Will need to understand how javascript manipulates decimal points
+    //and will need a hash table for american currency
+    
