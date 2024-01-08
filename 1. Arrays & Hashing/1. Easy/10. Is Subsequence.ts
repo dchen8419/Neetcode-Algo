@@ -15,6 +15,7 @@
 // Output: false
 
 var isSubsequence = function(s:string, t:string) {
+    //create a new variable, newS, that will split the s string into individual characters
     let newS: string [] = s.split('')
     let newT: string [] = t.split('')
     let newStack: string[] = []
