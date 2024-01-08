@@ -23,6 +23,7 @@ var isSubsequence = function(s:string, t:string) {
     let newStack: string[] = []
     //create a variable that will keep count
     let count: number = 0
+    //create a for loop starting at 0 and the length of newT but it doesn't matter if it's newT or newS
     for( let i: number = 0; i < newT.length; i ++ ) {
 
         if (newT[i] === newS[count]) {
