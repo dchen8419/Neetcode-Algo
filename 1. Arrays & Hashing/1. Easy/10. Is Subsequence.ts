@@ -25,7 +25,7 @@ var isSubsequence = function(s:string, t:string) {
     let count: number = 0
     //create a for loop starting at 0 and the length of newT but it doesn't matter if it's newT or newS
     for( let i: number = 0; i < newT.length; i ++ ) {
-
+        //if the newS index element is the same as the newT index element we will push the newT element into the newStack and then increment the counter by 1
         if (newT[i] === newS[count]) {
             newStack.push(newT[i])
             count = count + 1
