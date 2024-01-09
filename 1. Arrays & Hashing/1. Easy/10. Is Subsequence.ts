@@ -34,6 +34,7 @@ var isSubsequence = function(s:string, t:string) {
             continue
         } 
     }
+    //when loop finish, we check if the newStack is the same as newS and if it is we can return true and if not we return false
     if (newStack.toString() == newS.toString()) {
         return true
     } else {
