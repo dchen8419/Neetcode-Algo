@@ -29,7 +29,7 @@ var isSubsequence = function(s:string, t:string) {
         if (newT[i] === newS[count]) {
             newStack.push(newT[i])
             count = count + 1
-            
+        //else if the count does not equal to the newT we will continue    
         } else if (newS[count] !== newT[i]) {
             continue
         } 
