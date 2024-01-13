@@ -16,6 +16,7 @@
 
 
 var generate = function(numRows: number) {
+    //create two variable that will start at 0
     let i: number = 0;
     let j: number = 0;
     //Create an array list to store the output result...
