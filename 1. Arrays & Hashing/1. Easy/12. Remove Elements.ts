@@ -40,6 +40,7 @@
 var removeElement = function(nums: number[], val: number) {
     //create a varaible that will be a number value holder and set it to zero
     let zeroStartIdx: number = 0;
+    //create a for loop starting at 0
     for ( let i: number = 0; i < nums.length; i ++ ) {
         if (nums[i] !== val) {
             nums[zeroStartIdx] = nums[i];
