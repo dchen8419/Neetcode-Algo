@@ -39,12 +39,15 @@
 
 var removeElement = function(nums: number[], val: number) {
     //create a varaible that will be a number value holder and set it to zero
-    let zeroStartIdx: number = 0;
+    let zeroStartIdx = 0;
     //create a for loop starting at 0
-    for ( let i: number = 0; i < nums.length; i ++ ) {
+    for ( let i = 0; i < nums.length; i ++ ) {
         //first condition to check if the first number in the numbers array matches the value
         if (nums[i] !== val) {
+            console.log(nums[zeroStartIdx])
+            //if the number does not match the val we will set the value of nums at zeroStartIdx as the index number to the value of the array element at that instance
             nums[zeroStartIdx] = nums[i];
+            
             zeroStartIdx++
         }
     }
@@ -52,4 +55,4 @@ var removeElement = function(nums: number[], val: number) {
 };
 
 console.log(removeElement([3,2,2,3],3))
-console.log(removeElement([0,1,2,2,3,0,4,2],2))
+// console.log(removeElement([0,1,2,2,3,0,4,2],2))
