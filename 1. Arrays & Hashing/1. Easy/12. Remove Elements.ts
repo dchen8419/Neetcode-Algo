@@ -42,6 +42,7 @@ var removeElement = function(nums: number[], val: number) {
     let zeroStartIdx: number = 0;
     //create a for loop starting at 0
     for ( let i: number = 0; i < nums.length; i ++ ) {
+        //first condition to check if the first number in the numbers array matches the value
         if (nums[i] !== val) {
             nums[zeroStartIdx] = nums[i];
             zeroStartIdx++
