@@ -38,6 +38,7 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeElement = function(nums: number[], val: number) {
+    //create a varaible that will be a number value holder and set it to zero
     let zeroStartIdx: number = 0;
     for ( let i: number = 0; i < nums.length; i ++ ) {
         if (nums[i] !== val) {
