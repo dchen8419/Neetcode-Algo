@@ -47,7 +47,7 @@ var removeElement = function(nums: number[], val: number) {
             console.log(nums[zeroStartIdx])
             //if the number does not match the val we will set the value of nums at zeroStartIdx as the index number to the value of the array element at that instance
             nums[zeroStartIdx] = nums[i];
-            
+            //then we will increment zeroStartIdx
             zeroStartIdx++
         }
     }
