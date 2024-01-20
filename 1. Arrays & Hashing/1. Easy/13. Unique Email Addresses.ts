@@ -26,6 +26,7 @@
 
 
 var numUniqueEmails = function(emails: string[]) {
+    //create a new Set called emailSet that is strickly typed string
     const emailSet = new Set<string>();
     for ( let i = 0; i < emails.length; i ++ ) {
         const [local, domain] = emails[i].split("@");
