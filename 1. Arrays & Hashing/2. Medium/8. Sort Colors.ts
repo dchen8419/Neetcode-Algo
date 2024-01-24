@@ -18,6 +18,7 @@
 var sortColors = function(nums: number[]) {
     //edge case to check if the length is less than 2 we can return the num array
     if (nums.length < 2) return nums;
+    //divide the num array in half and take the lowest number
     let mid = Math.floor(nums.length/2);
     let left: number[] = nums.slice(0, mid);
     let right: number[] = nums.slice(mid);
