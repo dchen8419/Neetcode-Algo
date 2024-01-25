@@ -30,6 +30,7 @@ var numUniqueEmails = function(emails: string[]) {
     const emailSet = new Set<string>();
     //create a for loop that will go through the length of the email string
     for ( let i = 0; i < emails.length; i ++ ) {
+        //array destructuring emails
         const [local, domain] = emails[i].split("@");
         const newLocal = local.replace(/\./g,"").split("+");
         const uniqueEmail = newLocal[0]+"@"+domain;
