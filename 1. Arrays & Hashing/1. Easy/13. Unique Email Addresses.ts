@@ -32,6 +32,7 @@ var numUniqueEmails = function(emails: string[]) {
     for ( let i = 0; i < emails.length; i ++ ) {
         //array destructuring emails
         const [local, domain] = emails[i].split("@");
+        //create a veriable that replaced at the decimal or plus sign
         const newLocal = local.replace(/\./g,"").split("+");
         const uniqueEmail = newLocal[0]+"@"+domain;
         emailSet.add(uniqueEmail);
