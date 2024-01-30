@@ -36,7 +36,7 @@ var numUniqueEmails = function(emails: string[]) {
         const newLocal = local.replace(/\./g,"").split("+");
         //create a unique email by adding the newLocal variable with the first element then the at symbol and the domain
         const uniqueEmail = newLocal[0]+"@"+domain;
-
+        //add to the set wit hteh unique email 
         emailSet.add(uniqueEmail);
     }
     return emailSet.size;
