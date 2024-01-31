@@ -39,6 +39,7 @@ var numUniqueEmails = function(emails: string[]) {
         //add to the set wit hteh unique email 
         emailSet.add(uniqueEmail);
     }
+    //return the email set size
     return emailSet.size;
 };
 
