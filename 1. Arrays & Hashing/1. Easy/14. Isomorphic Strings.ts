@@ -26,6 +26,7 @@
 
 
 var isIsomorphic = function(s: string, t: string) {
+    //edge case to check length of string and if it's not the same length we will return false
     if (s.length !== t.length) {
         return false;
     }
