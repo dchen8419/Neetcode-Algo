@@ -32,6 +32,7 @@ var isIsomorphic = function(s: string, t: string) {
     }
     //create hashmap for s string
     let sHashMap = {};
+    //create hashmap for t string
     let tHashMap = {};
     let current = 0;
 
