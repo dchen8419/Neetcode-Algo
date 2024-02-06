@@ -34,6 +34,7 @@ var isIsomorphic = function(s: string, t: string) {
     let sHashMap = {};
     //create hashmap for t string
     let tHashMap = {};
+    //create a variable that will hold number type
     let current = 0;
 
     while(current <= s.length-1) {
