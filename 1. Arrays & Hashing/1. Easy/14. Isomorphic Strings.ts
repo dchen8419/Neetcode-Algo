@@ -42,6 +42,7 @@ var isIsomorphic = function(s: string, t: string) {
         if (sHashMap[s[current]] !== tHashMap[t[current]]) {
             return false;
         }
+        //we will incrmenet the current by 1 to each hashmap
         sHashMap[s[current]] = current + 1
         tHashMap[t[current]] = current + 1
         current++
