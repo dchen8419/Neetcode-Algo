@@ -38,6 +38,7 @@ var isIsomorphic = function(s: string, t: string) {
     let current = 0;
     //create a while loop 
     while(current <= s.length-1) {
+        //if the hashmap of the current s does not match that of the hashmap of current t we will return false
         if (sHashMap[s[current]] !== tHashMap[t[current]]) {
             return false;
         }
