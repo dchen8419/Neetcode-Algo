@@ -45,6 +45,7 @@ var isIsomorphic = function(s: string, t: string) {
         //we will incrmenet the current by 1 to each hashmap
         sHashMap[s[current]] = current + 1
         tHashMap[t[current]] = current + 1
+        //increment current by 1
         current++
     }
     return true;
