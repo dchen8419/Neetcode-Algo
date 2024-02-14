@@ -48,6 +48,7 @@ var isIsomorphic = function(s: string, t: string) {
         //increment current by 1
         current++
     }
+    //return true when exit out of loop
     return true;
 };
 
