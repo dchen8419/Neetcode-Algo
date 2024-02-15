@@ -15,6 +15,7 @@
 // Output: false
 
 var canPlaceFlowers = function(flowerbed: number[], n: number) {
+	//set current variable to zero
     let current = 0; 
     const size = flowerbed.length;
 	for(var i = 0; i <= size; i++) {
