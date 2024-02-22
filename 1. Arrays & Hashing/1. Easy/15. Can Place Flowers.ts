@@ -21,6 +21,7 @@ var canPlaceFlowers = function(flowerbed: number[], n: number) {
     const size = flowerbed.length;
 	//create a for loop starting at zero and moving up the size variable number
 	for(var i = 0; i <= size; i++) {
+		//if condition to cehck if the index is less than the flowerbed length and the element at that index is equal to zero
 		if (i < size && flowerbed[i] == 0) {
 			current++;
 			if (i == 0) current++;
